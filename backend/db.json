@@ -1,0 +1,55 @@
+{
+  "quizzes": {
+    "dbms": [
+      {
+        "id": 1,
+        "question": "How to delete a directory in Linux?",
+        "answers": {
+          "answer_a": "ls",
+          "answer_b": "delete",
+          "answer_c": "remove",
+          "answer_d": "rmdir"
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+          "answer_a_correct": "false",
+          "answer_b_correct": "false",
+          "answer_c_correct": "false",
+          "answer_d_correct": "true"
+        },
+        "category": "linux"
+      }
+    ],
+    "oops": [
+      {
+        "id": 1,
+        "question": "How to delete a directory in Linux?",
+        "answers": {
+          "answer_a": "ls",
+          "answer_b": "delete",
+          "answer_c": "remove",
+          "answer_d": "rmdir"
+        },
+        "multiple_correct_answers": "false",
+        "correct_answers": {
+          "answer_a_correct": "false",
+          "answer_b_correct": "false",
+          "answer_c_correct": "false",
+          "answer_d_correct": "true"
+        }
+      }
+    ]
+  },
+  "users": [
+    {
+      "id": 1,
+      "name": "Narayan Dutta",
+      "email": "narayan69@gmail.com",
+      "password": "SaurabhxSanket",
+      "hackerRank": "https://www.hackerrank.com/riteshRanjan?hr_r=1",
+      "codeChef": "https://www.codechef.com/users/ritesranjan247",
+      "gfg": "https://auth.geeksforgeeks.org/user/riteshranjan/practice/",
+      "quizScore": 44
+    }
+  ]
+}
