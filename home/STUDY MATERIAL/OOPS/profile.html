@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="profile.css" />
+</head>
+
+<body>
+  <h1>OOPS</h1>
+  <div id="tab-menu-div">
+    <div class="tab">
+      <button id="firsttab" class="tablinks" onclick="openTab(event, 'Account')">
+        <div class="tab-button">
+          <div class="">
+            <p class="font-payment-tab-button-p">Introduction of Object Oriented Programming</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'Replenish')">
+        <div class="tab-button">
+          <div class=" ">
+            <p class="font-payment-tab-button-p">Encapsulation</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'Same-Day')">
+        <div class="tab-button">
+          <div class=" ">
+            <p class="font-payment-tab-button-p">Inheritance</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'Orders')">
+        <div class="tab-button">
+          <div class="">
+            <p class="font-payment-tab-button-p">Polymorphism</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'Subscriptions')">
+        <div class="tab-button">
+          <div class="">
+            <p class="font-payment-tab-button-p">Abstraction</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'Reservations')">
+        <div class="tab-button">
+          <div class="">
+            <p class="font-payment-tab-button-p">Top Interview Questions</p>
+          </div>
+        </div>
+      </button>
+
+
+    </div>
+    <div id="Account" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">Introduction of Object Oriented Programming</div>
+      <div id="hero-content">
+        <p>As the name suggests, Object-Oriented Programming or OOPs refers to languages that use objects in
+          programming. Object-oriented programming aims to implement real-world entities like inheritance, hiding,
+          polymorphism, etc in programming. The main aim of OOP is to bind together the data and the functions that
+          operate on them so that no other part of the code can access this data except that function.</p>
+        <p>OOPs Concepts:</p>
+        <ul>
+          <li>Class</li>
+          <li>Objects</li>
+          <li>Data Abstraction
+          </li>
+          <li>Encapsulation</li>
+          <li>Inheritance</li>
+          <li>Polymorphism</li>
+          <li>Dynamic Binding</li>
+          <li>Message Passing</li>
+        </ul>
+        <p>1. Class:</p>
+        <p>A class is a user-defined data type. It consists of data members and member functions, which can be accessed
+          and used by creating an instance of that class. It represents the set of properties or methods that are common
+          to all objects of one type. A class is like a blueprint for an object. </p>
+        <p>For Example: Consider the Class of Cars. There may be many cars with different names and brands but all of
+          them will share some common properties like all of them will have 4 wheels, Speed Limit, Mileage range, etc.
+          So here, Car is the class, and wheels, speed limits, mileage are their properties.</p>
+        <p>2. Object: </p>
+        <p>It is a basic unit of Object-Oriented Programming and represents the real-life entities. An Object is an
+          instance of a Class. When a class is defined, no memory is allocated but when it is instantiated (i.e. an
+          object is created) memory is allocated. An object has an identity, state, and behavior. Each object contains
+          data and code to manipulate the data. Objects can interact without having to know details of each others data
+          or code, it is sufficient to know the type of message accepted and type of response returned by the objects.</p>
+          <p>For example “Dog” is a real-life Object, which has some characteristics like color, Breed, Bark, Sleep, and Eats.</p>
+          <p>3. Data Abstraction: </p>
+          <p>Data abstraction is one of the most essential and important features of object-oriented programming. Data abstraction refers to providing only essential information about the data to the outside world, hiding the background details or implementation. Consider a real-life example of a man driving a car. The man only knows that pressing the accelerators will increase the speed of the car or applying brakes will stop the car, but he does not know about how on pressing the accelerator the speed is increasing, he does not know about the inner mechanism of the car or the implementation of the accelerator, brakes, etc in the car. This is what abstraction is.</p>
+          <p>4. Encapsulation: </p>
+          <p>Encapsulation is defined as the wrapping up of data under a single unit. It is the mechanism that binds together code and the data it manipulates. In Encapsulation, the variables or data of a class are hidden from any other class and can be accessed only through any member function of their class in which they are declared. As in encapsulation, the data in a class is hidden from other classes, so it is also known as data-hiding.</p>
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200911171522/EncapsulationinOOPs.png" alt="">
+          <p>Consider a real-life example of encapsulation, in a company, there are different sections like the accounts section, finance section, sales section, etc. The finance section handles all the financial transactions and keeps records of all the data related to finance. Similarly, the sales section handles all the sales-related activities and keeps records of all the sales. Now there may arise a situation when for some reason an official from the finance section needs all the data about sales in a particular month. In this case, he is not allowed to directly access the data of the sales section. He will first have to contact some other officer in the sales section and then request him to give the particular data. This is what encapsulation is. Here the data of the sales section and the employees that can manipulate them are wrapped under a single name “sales section”.</p>
+          <p>5. Inheritance: </p>
+          <p>Inheritance is an important pillar of OOP(Object-Oriented Programming). The capability of a class to derive properties and characteristics from another class is called Inheritance. When we write a class, we inherit properties from other classes. So when we create a class, we do not need to write all the properties and functions again and again, as these can be inherited from another class that possesses it. Inheritance allows the user to reuse the code whenever possible and reduce its redundancy.</p>
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200911171738/InheritanceinObjectOrientedProgramming.png" alt="">
+          <p>6. Polymorphism: </p>
+          <p>The word polymorphism means having many forms. In simple words, we can define polymorphism as the ability of a message to be displayed in more than one form. For example, A person at the same time can have different characteristics. Like a man at the same time is a father, a husband, an employee. So the same person posses different behavior in different situations. This is called polymorphism.</p>
+          <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200911171857/PolymorphisminObjectOrientedProgramming.png" alt="">
+          <p>7. Dynamic Binding:</p>
+          <p>In dynamic binding, the code to be executed in response to the function call is decided at runtime. Dynamic binding means that the code associated with a given procedure call is not known until the time of the call at run time. Dynamic Method Binding One of the main advantages of inheritance is that some derived class D has all the members of its base class B. Once D is not hiding any of the public members of B, then an object of D can represent B in any context where a B could be used. This feature is known as subtype polymorphism.</p>
+          <p>8. Message Passing:</p>
+          It is a form of communication used in object-oriented programming as well as parallel programming. Objects communicate with one another by sending and receiving information to each other. A message for an object is a request for execution of a procedure and therefore will invoke a function in the receiving object that generates the desired results. Message passing involves specifying the name of the object, the name of the function, and the information to be sent.
+          <p>Why do we need object-oriented programming</p>
+          <ul>
+            <li>To make the development and maintenance of projects more effortless. 
+            </li>
+            <li>To provide the feature of data hiding that is good for security concerns.  
+            </li>
+            <li>We can solve real-world problems if we are using object-oriented programming. 
+            </li>
+            <li>It ensures code reusability. 
+            </li>
+            <li>It lets us write generic code: which will work with a range of data, so we dont have to write basic stuff over and over again.</li>
+          </ul>
+      </div>
+
+    </div>
+
+    <div id="Replenish" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">Encapsulation</div>
+      <div id="hero-content">
+        
+      </div>
+
+    </div>
+
+    <div id="Same-Day" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">Inheritance</div>
+    </div>
+
+    <div id="Orders" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">Polymorphism</div>
+    </div>
+
+    <div id="Subscriptions" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">Abstraction</div>
+    </div>
+
+    <div id="Reservations" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">Top Interview Questions</div>
+    </div>
+  </div>
+</body>
+<script src="./profile.js"></script>
+
+</html>
