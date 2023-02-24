@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "watch:scss": "node-sass -w login/loginSignup.scss login/loginSignup.css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jsonServer": "json-server -w backend/db.json"
   },
   "repository": {
     "type": "git",
