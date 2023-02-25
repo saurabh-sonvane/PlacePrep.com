@@ -43,13 +43,51 @@
   "users": [
     {
       "id": 1,
-      "name": "Narayan Dutta",
+      "name": "Narayan Dutta1",
       "email": "narayan69@gmail.com",
       "password": "SaurabhxSanket",
       "hackerRank": "https://www.hackerrank.com/riteshRanjan?hr_r=1",
       "codeChef": "https://www.codechef.com/users/ritesranjan247",
       "gfg": "https://auth.geeksforgeeks.org/user/riteshranjan/practice/",
       "quizScore": 44
+    },
+    {
+      "id": 2,
+      "name": "Narayan Dutta2",
+      "email": "narayan691@gmail.com",
+      "password": "SaurabhxSanket",
+      "hackerRank": "https://www.hackerrank.com/riteshRanjan?hr_r=1",
+      "codeChef": "https://www.codechef.com/users/ritesranjan247",
+      "gfg": "https://auth.geeksforgeeks.org/user/riteshranjan/practice/",
+      "quizScore": 44
+    },
+    {
+      "id": 3,
+      "name": "Narayan Dutta3",
+      "email": "narayan692@gmail.com",
+      "password": "SaurabhxSanket",
+      "hackerRank": "https://www.hackerrank.com/riteshRanjan?hr_r=1",
+      "codeChef": "https://www.codechef.com/users/ritesranjan247",
+      "gfg": "https://auth.geeksforgeeks.org/user/riteshranjan/practice/",
+      "quizScore": 44
+    },
+    {
+      "name": "test",
+      "email": "test@test.com",
+      "password": "test",
+      "id": 4
+    },
+    {
+      "name": "a",
+      "email": "a@b.com",
+      "password": "avc",
+      "id": 5
+    },
+    {
+      "name": "a",
+      "email": "a",
+      "password": "a",
+      "id": 6
     }
   ]
 }

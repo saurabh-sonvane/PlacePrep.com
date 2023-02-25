@@ -4,6 +4,7 @@
   "description": "quiz app",
   "main": "index.js",
   "scripts": {
+    "watch:scss": "node-sass -w login/loginSignup.scss login/loginSignup.css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "jsonServer": "json-server -w backend/db.json"
   },
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/s17200/PlacePrep.com/issues"
   },
-  "homepage": "https://github.com/s17200/PlacePrep.com#readme"
+  "homepage": "https://github.com/s17200/PlacePrep.com#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
 }
