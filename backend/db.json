@@ -75,19 +75,22 @@
       "name": "test",
       "email": "test@test.com",
       "password": "test",
-      "id": 4
+      "id": 4,
+      "quizScore": 33
     },
     {
       "name": "a",
       "email": "a@b.com",
       "password": "avc",
-      "id": 5
+      "id": 5,
+      "quizScore": 50
     },
     {
-      "name": "a",
+      "name": "a2",
       "email": "a",
       "password": "a",
-      "id": 6
+      "id": 6,
+      "quizScore": 88
     }
   ]
 }

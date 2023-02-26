@@ -10308,7 +10308,9 @@ h6,
 .courses-item:hover .courses-text {
   height: calc(100% + 40px);
 }
-
+.subject-grid .d-flex {
+  height: 90px;
+}
 .team-carousel .owl-nav,
 .related-carousel .owl-nav {
   position: absolute;
