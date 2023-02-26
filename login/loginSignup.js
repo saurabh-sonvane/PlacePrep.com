@@ -70,6 +70,7 @@ async function getUser({ email, password }) {
         let json = await res.json();
         if (json.length > 0) {
             localStorage.setItem("user", JSON.stringify(json[0]));
+            location.href = '/HomePage/index.html'
         }
 
     } catch (error) {
