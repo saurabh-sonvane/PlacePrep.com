@@ -1,0 +1,24 @@
+{
+  "name": "placeprep",
+  "version": "1.0.0",
+  "description": "quiz app",
+  "main": "index.js",
+  "scripts": {
+    "watch:scss": "node-sass -w login/loginSignup.scss login/loginSignup.css",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "jsonServer": "json-server -w backend/db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s17200/PlacePrep.com.git"
+  },
+  "author": "shs tech",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s17200/PlacePrep.com/issues"
+  },
+  "homepage": "https://github.com/s17200/PlacePrep.com#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
