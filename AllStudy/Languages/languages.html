@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LANGUAGES</title>
+  <link rel="stylesheet" href="languages.css" />
+</head>
+
+<body>
+  <h1>Logical Reasoning</h1>
+  <div id="tab-menu-div">
+    <div class="tab">
+
+      <!-- sidebar buttons  -->
+      <button id="firsttab" class="tablinks" onclick="openTab(event, 'Account')">
+        <div class="tab-button">
+          <div class="">
+            <p class="font-payment-tab-button-p">JAVA</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'Replenish')">
+        <div class="tab-button">
+          <div class=" ">
+            <p class="font-payment-tab-button-p">C++</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'Same-Day')">
+        <div class="tab-button">
+          <div class=" ">
+            <p class="font-payment-tab-button-p">Python</p>
+          </div>
+        </div>
+      </button>
+    </div>
+    <!-- main data   -->
+    <div id="Account" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">Learn JAVA</div>
+      <div id="hero-content">
+        <!-- fill  -->
+        <iframe src="https://docs.google.com/document/d/1bBF4dXYUqFUSFPSZYixww887VGGhFMRZlR6EKBhfbZQ/edit?usp=sharing" height="700em" width="1170" title="Iframe Example"></iframe>
+      </div>
+
+    </div>
+
+    <div id="Replenish" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">Learn C++</div>
+      <div id="hero-content">
+        <!-- fill  -->
+      </div>
+    </div>
+    <div id="Same-Day" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">Learn Python</div>
+      <div id="hero-content">
+        <!-- fill  -->
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./languages.js"></script>
+
+</html>
