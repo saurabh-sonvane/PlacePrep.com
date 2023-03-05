@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Create </title>
+    <style>
+        * {
+            font-family: system-ui;
+        }
+        form {
+            display: grid;
+            width: 35%;
+            margin: auto;
+            gap: 10px;
+            background-color: whitesmoke;
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        form input {
+            height: 45px;
+            border: none;
+            border-radius: 10px;
+            padding-left: 10px;
+        }
+
+        form input:focus {
+            outline-color: #d6e2fa;
+        }
+
+        form input[type="submit"] {
+            background-color: #d6e2fa;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="text" id="Question" placeholder="Question">
+        <input type="text" id="optionA" placeholder="optionA">
+        <input type="text" id="optionB" placeholder="optionB">
+        <input type="text" id="optionC" placeholder="optionC">
+        <input type="text" id="optionD" placeholder="optionD">
+        <input type="text" id="multiple" placeholder="multiple answers?(boolean)">
+        <input type="text" id="answerA" placeholder="answerA (boolean)">
+        <input type="text" id="answerB" placeholder="answerB (boolean)">
+        <input type="text" id="answerC" placeholder="answerC (boolean)">
+        <input type="text" id="answerD" placeholder="answerD (boolean)">
+        <input type="text" id="category" placeholder="category">
+        <input type="submit" value="Create">
+    </form>
+</body>
+
+<script src="./index.js"> </script>
+</html>
