@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+* {
+  font-family: "Inter", "Roboto", sans-serif;
+}
+#tab-menu-div {
+  min-width: 550px;
+  /* height: 100%; */
+  display: flex;
+}
+/* Style the tab */
+.tab {
+  float: left;
+  border: none;
+  width: 22%;
+  min-width: 190px;
+  top: 50px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  display: block;
+  background-color: inherit;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.font-payment-tab-button-p {
+  margin: 8px;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: var(--payment-tab-btn-hover);
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active p {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 100%;
+  border-left: none;
+  display: none;
+  box-sizing: border-box;
+  top: 50px;
+  border-left: 1px solid #cdcccd;
+}
+.tab-content-heading {
+  margin-left: 30px;
+  font-size: 30px;
+  font-weight: 500;
+  height: 45px;
+  border-style: none;
+  border-bottom: 1px solid #222;
+}
+.tab-button {
+  display: flex;
+  margin: auto;
+}
+.tablinks:hover p {
+  text-decoration: underline;
+}
+.tab-button-img {
+  width: 20%;
+  margin: auto;
+}
+
+.tab-button-text p {
+  font-size: 0.875rem;
+}
+
+.tab-button-text {
+  width: 80%;
+  margin: auto;
+  margin-left: -40px;
+}
+.tablinks {
+  width: 20%;
+  margin: auto;
+}
+
+.act-into {
+  display: flex;
+  margin-left: 30px;
+  border-bottom: 1px solid #ddd;
+  padding: 9px 2px;
+}
+.act-info-title {
+  font-weight: 600;
+  font-size: 13px;
+  width: 200px;
+  min-width: 90px;
+}
+.act-info-value {
+  font-size: 13px;
+  display: flex;
+  width: 100%;
+}
+.edit-btn {
+  color: rgb(19, 107, 234);
+  cursor: pointer;
+  font-size: 13px;
+}
+.edit-btns {
+  display: flex;
+  justify-content: space-between;
+}
+.edit-black-round-btn {
+  background-color: #222;
+  color: #fff;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 36px;
+  border-radius: 50px;
+  font-weight: 500px;
+  cursor: pointer;
+}
+.edit-outline-btn {
+  background-color: #fff;
+  color: #222;
+  padding: 0;
+  display: flex;
+  border: 1px solid #222;
+}
+.update-block {
+  margin-left: 30px;
+  width: 320px;
+  max-width: 320px;
+  box-sizing: border-box;
+  display: none;
+}
+.update-block > input {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-sizing: border-box;
+  display: block;
+  padding: 10px 20px;
+  width: 100%;
+  margin: 10px 0;
+}
+.update-block > input:focus {
+  outline: none;
+}
+.edit-active .act-into {
+  display: none;
+}
+.edit-active .update-block {
+  display: block;
+}
+.act-info-birthday > p {
+  margin: 2px 0;
+}
+
+#hero-content{
+  margin-left: 30px;
+}
+
+
+@media screen and (max-width: 600px) {
+  #tab-menu-div {
+    flex-wrap: wrap;
+  }
+  .tab {
+    width: 100%;
+    display: none;
+  }
+  .tab > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

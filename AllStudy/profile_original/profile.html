@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+  <body>
+    <div id="tab-menu-div">
+      <div class="tab">
+        <button
+          id="firsttab"
+          class="tablinks"
+          onclick="openTab(event, 'Account')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">Account Information</p>
+            </div>
+          </div>
+        </button>
+
+        <button class="tablinks" onclick="openTab(event, 'Replenish')">
+          <div class="tab-button">
+            <div class=" ">
+              <p class="font-payment-tab-button-p">Auto-Replenish</p>
+            </div>
+          </div>
+        </button>
+
+        <button class="tablinks" onclick="openTab(event, 'Same-Day')">
+          <div class="tab-button">
+            <div class=" ">
+              <p class="font-payment-tab-button-p">Same-Day Unlimited</p>
+            </div>
+          </div>
+        </button>
+
+        <button class="tablinks" onclick="openTab(event, 'Orders')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">Recent Orders</p>
+            </div>
+          </div>
+        </button>
+
+        <button class="tablinks" onclick="openTab(event, 'Subscriptions')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">Subscriptions</p>
+            </div>
+          </div>
+        </button>
+
+        <button class="tablinks" onclick="openTab(event, 'Reservations')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">Reservations</p>
+            </div>
+          </div>
+        </button>
+
+        <button class="tablinks" onclick="openTab(event, 'Addresses')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">Saved Addresses</p>
+            </div>
+          </div>
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'Payments')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">Payments & Credits</p>
+            </div>
+          </div>
+        </button>
+        <button id="lasttab" class="tablinks" onclick="openTab(event, 'emi')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">Email & Mail Preferences</p>
+            </div>
+          </div>
+        </button>
+      </div>
+      <div id="Account" class="tabcontent">
+        <div class="tab-content-heading">Account Information</div>
+        <div id="name-block">
+          <div class="act-into">
+            <p class="act-info-title">Name</p>
+            <p class="act-info-value">Ankit Agrawal</p>
+            <p class="edit-btn" onclick="toggleEdit('name-block')">Edit</p>
+          </div>
+          <div class="update-block">
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+            <div class="edit-btns">
+              <div
+                onclick="toggleEdit('name-block')"
+                id="edit-cancel-btn"
+                class="edit-black-round-btn edit-outline-btn">
+                <p>Cancel</p>
+              </div>
+              <div
+                onclick="updateInfo('name-block')"
+                id="edit-update-btn"
+                class="edit-black-round-btn">
+                <p>Update</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="email-block">
+          <div class="act-into">
+            <p class="act-info-title">Email</p>
+            <p class="act-info-value">aggrawalankitsra@gmail.com</p>
+            <p class="edit-btn" onclick="toggleEdit('email-block')">Edit</p>
+          </div>
+          <div class="update-block">
+            <input type="email" placeholder="Email" />
+            <input type="email" placeholder="Confirm Email" />
+            <div class="edit-btns">
+              <div
+                onclick="toggleEdit('email-block')"
+                id="edit-cancel-btn"
+                class="edit-black-round-btn edit-outline-btn">
+                <p>Cancel</p>
+              </div>
+              <div
+                onclick="updateInfo('email-block')"
+                id="edit-update-btn"
+                class="edit-black-round-btn">
+                <p>Update</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="password-block">
+          <div class="act-into">
+            <p class="act-info-title">Password</p>
+            <p class="act-info-value"
+              >&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;</p
+            >
+            <p class="edit-btn" onclick="toggleEdit('password-block')">Edit</p>
+          </div>
+          <div class="update-block">
+            <input type="password" placeholder="Password" />
+            <input type="password" placeholder="Confirm password" />
+            <div class="edit-btns">
+              <div
+                onclick="toggleEdit('password-block')"
+                id="edit-cancel-btn"
+                class="edit-black-round-btn edit-outline-btn">
+                <p>Cancel</p>
+              </div>
+              <div
+                onclick="updateInfo('password-block')"
+                id="edit-update-btn"
+                class="edit-black-round-btn">
+                <p>Update</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="password-block">
+          <div class="act-into">
+            <p class="act-info-title">Birthday</p>
+            <div class="act-info-value">
+              <div class="act-info-birthday">
+                <p>June 6</p>
+                <p>If you need to change your birth date,</p>
+                <p>please call Sephora at 1-877-SEPHORA.</p>
+              </div>
+            </div>
+            <p class="edit-btn" onclick="toggleEdit('password-block')">Edit</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="Replenish" class="tabcontent">
+        <div class="tab-content-heading">Auto-Replenish</div>
+      </div>
+
+      <div id="Same-Day" class="tabcontent">
+        <div class="tab-content-heading">Same-Day Unlimited</div></div
+      >
+
+      <div id="Orders" class="tabcontent">
+        <div class="tab-content-heading">Recent Orders</div>
+      </div>
+
+      <div id="Subscriptions" class="tabcontent">
+        <div class="tab-content-heading">Subscriptions</div>
+        <p>Ankit was here</p>
+      </div>
+
+      <div id="Reservations" class="tabcontent">
+        <div class="tab-content-heading">Reservations</div>
+        <p>Aahwan was here</p>
+      </div>
+
+      <div id="Addresses" class="tabcontent">
+        <div class="tab-content-heading">Saved Addresses</div>
+        <p>next tab mat click kerna</p>
+      </div>
+      <div id="Payments" class="tabcontent">
+        <div class="tab-content-heading">Payments & Credits</div>
+        <p>.|. khush kar liya click</p>
+      </div>
+
+      <div id="emi" class="tabcontent">
+        <div class="tab-content-heading">Email & Mail Preferences</div>
+        <p> jasusi kar rhe ho kya last option kon dekhta </p>
+      </div>
+    </div>
+  </body>
+  <script src="./profile.js"></script>
+</html>
