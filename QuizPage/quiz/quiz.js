@@ -12,6 +12,7 @@ window.onload = () => {
         // document.getElementsByClassName('question_container')[0].style.width = '70%';
         // document.getElementsByClassName('store_result_container')[0].style.width = '25%';
     }
+    textNumberDiv1.style.display = 'none';
     getQuestions({ category: "oops" });
 }
 let quizzes = [
@@ -69,7 +70,7 @@ var counter = 0;
 function next() {
     yourStore();
     renderQuestion();
-
+    console.log(counter);
 }
 
 function renderQuestion() {
@@ -91,9 +92,12 @@ function renderQuestion() {
 function pre() {
     btn[2].style.display = "block";
     btn[1].style.display = "none";
-    if (counter < 5) {
+    console.log(counter, quizzes.length);
+
+    if (counter <= quizzes.length) {
         if (counter > 0) {
             counter--;
+            console.log(document.querySelectorAll(".your_choice:last-child")[0].remove())
         }
         question = '<p class="heading">Q: ' + (counter + 1) + '. ' + quizzes[counter].question + '</p><div class="options_container">';
         question += "<div class='option_input'><input name='options_" + counter + "' type='checkbox' value='A'>" + quizzes[counter].optionA + "</div>";
@@ -120,7 +124,7 @@ function yourStore() {
         storeData[counter] = checkedOption;
         storeAns[counter] = correctOption;
     } else {
-        storeData[counter] = 'y';
+        storeData[counter] = 'skipped';
         storeAns[counter] = 'x';
 
     }
@@ -132,7 +136,7 @@ function result() {
     scoreDiv.innerHTML = "Score";
     let score = 0;
     textNumberDiv1.innerHTML = "";
-    for (j = 0; j < userAnswer.length; j++) {
+    for (j = 0; j < quizzes.length; j++) {
         if (storeData[j] == storeAns[j]) {
             textNumberDiv1.innerHTML += '<div id="result_div">' + (j + 1) + '.Right Answer</div>';
             score++;
@@ -141,7 +145,8 @@ function result() {
             textNumberDiv1.innerHTML += '<div id="result_div">' + (j + 1) + '.Wrong Answer</div>';
         }
     }
-    scoreDiv.innerHTML = "Score : " + score + "/" + userAnswer.length;
+    textNumberDiv1.style.display = 'none';
+    scoreDiv.innerHTML = "Score : " + score + "/" + quizzes.length;
 }
 async function getQuestions({ category = "oops" }) {
     try {
