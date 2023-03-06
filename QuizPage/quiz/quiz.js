@@ -12,6 +12,7 @@ window.onload = () => {
         // document.getElementsByClassName('question_container')[0].style.width = '70%';
         // document.getElementsByClassName('store_result_container')[0].style.width = '25%';
     }
+    getQuestions({ category: "oops" });
 }
 let quizzes = [
     {
@@ -65,7 +66,6 @@ let questions = quizzes.map((question) => {
 })
 question = '';
 var counter = 0;
-renderQuestion();
 function next() {
     yourStore();
     renderQuestion();
@@ -119,6 +119,9 @@ function yourStore() {
     if (checkedOption != '') {
         storeData[counter] = checkedOption;
         storeAns[counter] = correctOption;
+    } else {
+        storeData[counter] = 'y';
+        storeAns[counter] = 'x';
 
     }
 
@@ -139,4 +142,22 @@ function result() {
         }
     }
     scoreDiv.innerHTML = "Score : " + score + "/" + userAnswer.length;
+}
+async function getQuestions({ category = "oops" }) {
+    try {
+        const res = await fetch(`http://localhost:3000/mcq?category=${category}`, {
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
+        let json = await res.json();
+        console.log(json);
+        if (json.length > 0) {
+            quizzes = json;
+            renderQuestion();
+        }
+
+    } catch (error) {
+        console.log("error", error);
+    }
 }
