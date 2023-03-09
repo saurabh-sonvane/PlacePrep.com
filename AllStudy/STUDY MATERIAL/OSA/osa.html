@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OOPS</title>
+  <link rel="stylesheet" href="osa.css" />
+</head>
+
+<body>
+  <h1>OSA</h1>
+  <div id="tab-menu-div">
+    <div class="tab">
+      <button id="firsttab" class="tablinks" onclick="openTab(event, 'Account')">
+        <div class="tab-button">
+          <div class="">
+            <p class="font-payment-tab-button-p">Operating System</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'Replenish')">
+        <div class="tab-button">
+          <div class=" ">
+            <p class="font-payment-tab-button-p">Types of Operating Systems</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'Same-Day')">
+        <div class="tab-button">
+          <div class=" ">
+            <p class="font-payment-tab-button-p">Process </p>
+          </div>
+        </div>
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'Orders')">
+        <div class="tab-button">
+          <div class="">
+            <p class="font-payment-tab-button-p">Process Scheduling</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'Subscriptions')">
+        <div class="tab-button">
+          <div class="">
+            <p class="font-payment-tab-button-p">Thread</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'Reservations')">
+        <div class="tab-button">
+          <div class="">
+            <p class="font-payment-tab-button-p">Scheduling Algorithms</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'CriticalProblem')">
+        <div class="tab-button">
+          <div class="">
+            <p class="font-payment-tab-button-p">The Critical Section Problem
+            </p>
+          </div>
+        </div>
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'Synchronization')">
+        <div class="tab-button">
+          <div class="">
+            <p class="font-payment-tab-button-p">Synchronization Tools
+            </p>
+          </div>
+        </div>
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'Deadlocks')">
+        <div class="tab-button">
+          <div class="">
+            <p class="font-payment-tab-button-p">Deadlocks</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'Bankersalgorithm')">
+        <div class="tab-button">
+          <div class="">
+            <p class="font-payment-tab-button-p">Banker's algorithm</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'MemoryManagement')">
+        <div class="tab-button">
+          <div class="">
+            <p class="font-payment-tab-button-p">Memory Management</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'Techniques')">
+        <div class="tab-button">
+          <div class="">
+            <p class="font-payment-tab-button-p">Techniques</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'PageFault')">
+        <div class="tab-button">
+          <div class="">
+            <p class="font-payment-tab-button-p">Page Fault</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'PageReplacementAlgorithms')">
+        <div class="tab-button">
+          <div class="">
+            <p class="font-payment-tab-button-p">Page Replacement Algorithms</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'DiskSchedulingAlgorithms')">
+        <div class="tab-button">
+          <div class="">
+            <p class="font-payment-tab-button-p">Disk Scheduling Algorithms</p>
+          </div>
+        </div>
+      </button>
+
+      <button class="tablinks" onclick="openTab(event, 'KeyTerms')">
+        <div class="tab-button">
+          <div class="">
+            <p class="font-payment-tab-button-p">Key Terms</p>
+          </div>
+        </div>
+      </button>
+
+
+    </div>
+    <div id="Account" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">Operating System</div>
+      <div id="hero-content">
+        <p><span id="docs-internal-guid-a0b805de-7fff-1f26-3a53-07ee99dc97ee"><span>An</span><strong> Operating System</strong><span> can be defined as an interface between user and hardware. It is responsible for the execution of all the processes, Resource Allocation, CPU management, File Management and many other tasks. The purpose of an operating system is to provide an environment in which a user can execute programs in a convenient and efficient manner</span></span></p>
+      </div>
+
+    </div>
+
+    <div id="Replenish" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">Types of Operating Systems</div>
+      <div id="hero-content">
+        <p dir="ltr"><strong>● Types of Operating Systems :&nbsp;</strong></p>
+        <p><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>1. Batch OS &ndash;</strong><span> A set of similar jobs are stored in the main memory for execution. A job gets assigned to the CPU, only when the execution of the previous job completes.</span></p>
+        <p><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>2. Multiprogramming OS &ndash; </strong><span>The main memory consists of jobs waiting for CPU time. The OS selects one of the processes and assigns it to the CPU. Whenever the executing process needs to wait for any other operation (like I/O), the OS selects another process from the job queue and assigns it to the CPU. This way, the CPU is never kept idle and the user gets the flavor of getting multiple tasks done at once.</span></p>
+        <p><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><span><strong>3. Multitasking OS &ndash;</strong> </span><span>Multitasking OS combines the benefits of Multiprogramming OS and CPU scheduling to perform quick switches between jobs. The switch is so quick that the user can interact with each program as it runs.&nbsp;</span></p>
+        <p><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>4. Time Sharing OS &ndash;</strong><span> Time-sharing systems require interaction with the user to instruct the OS to perform various tasks. The OS responds with an output. The instructions are usually given through an input device like the keyboard.&nbsp;</span></p>
+        <p><span id="docs-internal-guid-bd7df916-7fff-9785-3045-f3353b20b1aa"><br /><strong>5. Real Time OS &ndash;</strong><span> Real-Time OS are usually built for dedicated systems to accomplish a specific set of tasks within deadlines.</span></span></p>
+      </div>
+    </div>
+    <div id="Same-Day" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">Process</div>
+      <div id="hero-content">
+        <p dir="ltr"><strong>Process :-</strong></p>
+        <p dir="ltr"><span id="docs-internal-guid-b3cf5e24-7fff-528e-e03a-41648882d196"><span>A <strong>process</strong> is a program under execution.</span><span><strong> The value of the program counter (PC) indicates the address of the next instruction of the process being executed</strong></span><span><strong>.</strong> Each process is represented by a Process Control Block (PCB). </span></span></p>
+      </div>
+    </div>
+
+    <div id="Orders" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">Process Scheduling</div>
+      <div id="hero-content">
+        <p dir="ltr"><strong>&nbsp;Process Scheduling:&nbsp;</strong></p>
+        <p dir="ltr">&nbsp;</p>
+        <p dir="ltr"><strong>1. Arrival Time &ndash;</strong> Time at which the process arrives in the ready queue.&nbsp;</p>
+        <p dir="ltr">&nbsp;</p>
+        <p dir="ltr"><strong>2. Completion Time &ndash;</strong> Time at which process completes its execution.&nbsp;</p>
+        <p dir="ltr">&nbsp;</p>
+        <p dir="ltr"><strong>3. Burst Time &ndash;</strong> Time required by a process for CPU execution.</p>
+        <p dir="ltr">&nbsp;</p>
+        <p dir="ltr"><strong>4. Turn Around Time &ndash;</strong> Time Difference between completion time and arrival time.&nbsp;</p>
+        <p dir="ltr"><em><strong>Turn Around Time = Completion Time - Arrival Time&nbsp;</strong></em></p>
+        <p dir="ltr">&nbsp;</p>
+        <p dir="ltr"><strong>5. Waiting Time (WT) &ndash;</strong> Time Difference between turn around time and burst time.&nbsp;</p>
+        <p dir="ltr"><em><strong>Waiting Time = Turnaround Time - Burst Time&nbsp;</strong></em></p>
+        <p>&nbsp;</p>
+      </div>
+    </div>
+
+    <div id="Subscriptions" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">Thread</div>
+      <div id="hero-content">
+        <p dir="ltr"><strong>● Thread :&nbsp;</strong></p>
+        <p dir="ltr"><span>A thread is a lightweight process and forms the basic unit of CPU utilization. A process can perform more than one task at the same time by including multiple threads.</span></p>
+        <p dir="ltr"><span>● A thread has its own program counter, register set, and stack&nbsp;</span></p>
+        <p dir="ltr"><span>● A thread shares resources with other threads of the same process: the code section, the data section, files and signals.&nbsp;</span></p>
+        <p dir="ltr"><strong>Note :</strong></p>
+        <p dir="ltr"><span>&nbsp;A new thread, or a child process of a given process, can be introduced by using the fork() system call. A process with n fork() system call generates 2^n &ndash; 1 child processes. There are two types of threads:&nbsp;</span></p>
+        <p dir="ltr"><span>● User threads (User threads are implemented by users)&nbsp;</span></p>
+        <p dir="ltr"><span>● Kernel threads (Kernel threads are implemented by OS)</span></p>
+        <p><span>&nbsp;</span></p>
+      </div>
+    </div>
+
+    <div id="Reservations" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">Scheduling Algorithms</div>
+      <div id="hero-content">
+        <p dir="ltr"><strong>● Scheduling Algorithms :&nbsp;</strong></p>
+        <p dir="ltr"><strong>1. First Come First Serve (FCFS) :</strong><span> Simplest scheduling algorithm that schedules according to arrival times of processes.&nbsp;</span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>2. Shortest Job First (SJF):</strong><span> Processes which have the shortest burst time are scheduled first.&nbsp;</span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>3. Shortest Remaining Time First (SRTF):</strong><span> It is a preemptive mode of SJF algorithm in which jobs are scheduled according to the shortest remaining time.&nbsp;</span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>4. Round Robin (RR) Scheduling:</strong><span> Each process is assigned a fixed time, in a cyclic way.&nbsp;</span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>5. Priority Based scheduling (Non Preemptive):</strong><span> In this scheduling, processes are scheduled according to their priorities, i.e., highest priority process is scheduled first. If priorities of two processes match, then scheduling is according to the arrival time.&nbsp;</span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>6. Highest Response Ratio Next (HRRN):</strong><span> In this scheduling, processes with the highest response ratio are scheduled. This algorithm avoids starvation. Response Ratio = (Waiting Time + Burst time) / Burst time</span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>7. Multilevel Queue Scheduling (MLQ): </strong><span>According to the priority of the process, processes are placed in the different queues. Generally high priority processes are placed in the top level queue. Only after completion of processes from the top level queue, lower level queued processes are scheduled.&nbsp;</span></p>
+        <p dir="ltr"><span id="docs-internal-guid-5cd2f054-7fff-db35-c046-8c9c1a7658f2"><br /><strong>8. Multilevel Feedback Queue (MLFQ) Scheduling:</strong><span> It allows the process to move in between queues. The idea is to separate processes according to the characteristics of their CPU bursts. If a process uses too much CPU time, it is moved to a lower-priority queue.</span></span></p>
+      </div>
+    </div>
+    
+    <div id="CriticalProblem" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">The Critical Section Problem</div>
+      <div id="hero-content">
+        <p dir="ltr"><strong>● The Critical Section Problem:&nbsp;</strong></p>
+        <p dir="ltr"><strong>1. Critical Section &ndash; </strong><span>The portion of the code in the program where shared variables are accessed and/or updated.&nbsp;</span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>2. Remainder Section &ndash;</strong><span> The remaining portion of the program excluding the Critical Section.&nbsp;</span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>3. Race around Condition &ndash;</strong><span> The final output of the code depends on the order in which the variables are accessed. This is termed as the race around condition.</span></p>
+        <p dir="ltr"><span><span><br /><br /></span></span></p>
+        <p dir="ltr"><span style="text-decoration: underline;"><em><strong>A solution for the critical section problem must satisfy the following three conditions:&nbsp;</strong></em></span></p>
+        <p dir="ltr"><strong>1. Mutual Exclusion &ndash;</strong><span> If a process Pi is executing in its critical section, then no other process is allowed to enter into the critical section.&nbsp;</span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>2. Progress &ndash;</strong><span> If no process is executing in the critical section, then the decision of a process to enter a critical section cannot be made by any other process that is executing in its remainder section. The selection of the process cannot be postponed indefinitely.&nbsp;</span></p>
+        <p dir="ltr"><span id="docs-internal-guid-4e188124-7fff-b68d-1d99-7e28400de5cb"><br /><strong>3. Bounded Waiting &ndash;</strong><span> There exists a bound on the number of times other processes can enter into the critical section after a process has made a request to access the critical section and before the request is granted.</span></span></p>
+      </div>
+    </div>
+    
+    <div id="Synchronization" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">Synchronization Tools</div>
+      <div id="hero-content">
+        <p dir="ltr"><strong>● Synchronization Tools:&nbsp;</strong></p>
+        <p dir="ltr"><strong>1. Semaphore : </strong><span>Semaphore is a protected variable or abstract data type that is used to lock the resource being used. The value of the semaphore indicates the status of a common resource.&nbsp;</span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><span style="text-decoration: underline;"><strong>There are two types of semaphores:&nbsp;</strong></span></p>
+        <p dir="ltr"><strong>Binary semaphores</strong><span> (Binary semaphores take only 0 and 1 as value and are used to implement mutual exclusion and synchronize concurrent processes.)</span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>Counting semaphores</strong><span> (A counting semaphore is an integer variable whose value can range over an unrestricted domain.)</span></p>
+        <p dir="ltr"><span id="docs-internal-guid-93fe4cb8-7fff-8a8c-01d7-d7ca412518ca"><br /><span><strong>Mutex</strong> </span><span>(A mutex provides mutual exclusion, either producer or consumer can have the key (mutex) and proceed with their work. As long as the buffer is filled by the producer, the consumer needs to wait, and vice versa. At any point of time, only one thread can work with the entire buffer. The concept can be generalized using semaphore.) </span></span></p>
+      </div>
+    </div>
+    
+    <div id="Deadlocks" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">Deadlocks</div>
+      <div id="hero-content">
+        <p dir="ltr"><strong>● Deadlocks :</strong></p>
+        <p dir="ltr"><span>&nbsp;</span><span>A situation where a set of processes are blocked because each process is holding a resource and waiting for another resource acquired by some other process. Deadlock can arise if following four conditions hold simultaneously (Necessary Conditions):&nbsp;</span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><span><strong>1. Mutual Exclusion &ndash;</strong> </span><span>One or more than one resource is non-sharable (Only one process can use at a time).&nbsp;</span></p>
+        <p dir="ltr"><strong>2. Hold and Wait &ndash; </strong><span>A process is holding at least one resource and waiting for resources.&nbsp;</span></p>
+        <p dir="ltr"><strong>3. No Preemption &ndash; </strong><span>A resource cannot be taken from a process unless the process releases the resource.&nbsp;</span></p>
+        <p dir="ltr"><span id="docs-internal-guid-cf88d855-7fff-5891-0ccb-33f8d4b0831b"><strong>4. Circular Wait &ndash;</strong><span> A set of processes are waiting for each other in circular form.</span></span></p>
+        <p dir="ltr">&nbsp;</p>
+        <p dir="ltr"><strong>● Methods for handling deadlock:&nbsp;</strong></p>
+        <p dir="ltr"><span><span><span><span>&nbsp;</span></span></span></span></p>
+        <p dir="ltr"><span style="text-decoration: underline;"><strong>There are three ways to handle deadlock&nbsp;</strong></span></p>
+        <p dir="ltr"><strong>1. Deadlock prevention or avoidance :</strong><span> The idea is to not let the system into a deadlock state.&nbsp;</span></p>
+        <p dir="ltr"><strong>2. Deadlock detection and recovery :</strong><span> Let deadlock occur, then do preemption to handle it once occurred.&nbsp;</span></p>
+        <p dir="ltr"><span id="docs-internal-guid-cf88d855-7fff-5891-0ccb-33f8d4b0831b"><span><span id="docs-internal-guid-c7964e89-7fff-1fd0-e90c-175f709a6c01"><strong>3. Ignore the problem all together :</strong><span> If deadlock is very rare, then let it happen and reboot the system. This is the approach that both Windows and UNIX take.</span></span> </span></span></p>
+      </div>
+    </div>
+    
+    <div id="Bankersalgorithm" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">Banker's algorithm</div>
+      <div id="hero-content">
+        <p dir="ltr"><span id="docs-internal-guid-5171f7dd-7fff-3f34-4d78-43440f4013df"><strong>● Banker's algorithm</strong><span> is used to avoid deadlock. It is one of the deadlock-avoidance methods. It is named as Banker's algorithm on the banking system where a bank never allocates available cash in such a manner that it can no longer satisfy the requirements of all of its customers. </span></span></p>
+      </div>
+    </div>
+    
+    <div id="MemoryManagement" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">Memory Management</div>
+      <div id="hero-content">
+        <p dir="ltr"><strong>● </strong><span><strong>Memory Management:</strong> </span><span>These techniques allow the memory to be shared among multiple processes.&nbsp;</span></p>
+        <p dir="ltr"><strong>● Overlays &ndash;</strong><span> The memory should contain only those instructions and data that are required at a given time.&nbsp;</span></p>
+        <p dir="ltr"><strong>● Swapping &ndash;</strong><span> In multiprogramming, the instructions that have used the time slice are swapped out from the memory.&nbsp;</span></p>
+        <p><span>&nbsp;</span></p>
+      </div>
+    </div>
+    
+    <div id="Techniques" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">Techniques</div>
+      <div id="hero-content">
+        <p dir="ltr"><strong>● Techniques :&nbsp;</strong></p>
+        <p dir="ltr"><strong>(a) Single Partition Allocation Schemes &ndash;</strong><span> The memory is divided into two parts. One part is kept to be used by the OS and the other is kept to be used by the users.</span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>(b) Multiple Partition Schemes &ndash;&nbsp;</strong></p>
+        <p dir="ltr"><span><strong>1. Fixed Partition &ndash;</strong> </span><span>The memory is divided into fixed size partitions.&nbsp;</span></p>
+        <p dir="ltr"><strong>2. Variable Partition &ndash;</strong><span> The memory is divided into variable sized partitions.</span></p>
+        <p dir="ltr"><em>Note : Variable partition allocation schemes:&nbsp;</em></p>
+        <p dir="ltr"><strong>1. First Fit &ndash;</strong><span> The arriving process is allotted the first hole of memory in which it fits completely.&nbsp;</span></p>
+        <p dir="ltr"><strong>2. Best Fit &ndash;</strong><span> The arriving process is allotted the hole of memory in which it fits the best by leaving the minimum memory empty.&nbsp;</span></p>
+        <p dir="ltr"><strong>3. Worst Fit &ndash;</strong><span> The arriving process is allotted the hole of memory in which it leaves the maximum gap.</span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>Note:&nbsp;</strong></p>
+        <p dir="ltr"><span>● Best fit does not necessarily give the best results for memory allocation.&nbsp;</span></p>
+        <p dir="ltr"><span>● The cause of external fragmentation is the condition in Fixed partitioning and Variable partitioning saying that the entire process should be allocated in a contiguous memory location.Therefore</span><span> Paging</span><span> is used.&nbsp;</span></p>
+        <p dir="ltr"><strong>1. Paging &ndash; </strong><span>The physical memory is divided into equal sized frames. The main memory is divided into fixed size pages. The size of a physical memory frame is equal to the size of a virtual memory frame.&nbsp;</span></p>
+        <p dir="ltr"><span id="docs-internal-guid-b5a42971-7fff-4876-60e9-49a4f56772b9"><strong>2. Segmentation &ndash;</strong><span> Segmentation is implemented to give users a view of memory. The logical address space is a collection of segments. Segmentation can be implemented with or without the use of paging.</span></span></p>
+      </div>
+    </div>
+    
+    <div id="PageFault" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">Page Fault</div>
+      <div id="hero-content">
+        <p dir="ltr"><strong>● Page Fault:&nbsp;</strong></p>
+        <p dir="ltr"><span>A page fault is a type of interrupt, raised by the hardware when a running program accesses a memory page that is mapped into the virtual address space, but not loaded in physical memory</span></p>
+        <p><span>&nbsp;</span></p>
+      </div>
+    </div>
+    
+    <div id="PageReplacementAlgorithms" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">Page Replacement Algorithms</div>
+      <div id="hero-content">
+        <p dir="ltr"><strong>Page Replacement Algorithms (Important):&nbsp;</strong></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>1. First In First Out (FIFO) &ndash;</strong><span> This is the simplest page replacement algorithm. In this algorithm, the operating system keeps track of all pages in the memory in a queue, the oldest page is in the front of the queue. When a page needs to be replaced, the page in the front of the queue is selected for removal.&nbsp;</span></p>
+        <p dir="ltr"><span>For example, consider page reference string 1, 3, 0, 3, 5, 6 and 3 page slots. Initially, all slots are empty, so when 1, 3, 0 come they are allocated to the empty slots &mdash;&gt; 3 Page Faults. When 3 comes, it is already in memory so &mdash;&gt; 0 Page Faults. Then 5 comes, it is not available in memory so it replaces the oldest page slot i.e 1. &mdash;&gt; 1 Page Fault. Finally, 6 comes, it is also not available in memory so it replaces the oldest page slot i.e 3 &mdash;&gt; 1 Page Fault.</span></p>
+        <p dir="ltr"><span>Belady&rsquo;s anomaly:</span><span>Belady&rsquo;s anomaly proves that it is possible to have more page faults when increasing the number of page frames while using the First in First Out (FIFO) page replacement algorithm. For example, if we consider reference string ( 3 2 1 0 3 2 4 3 2 1 0 4 ) and 3 slots, we get 9 total page faults, but if we increase slots to 4, we get 10 page faults.&nbsp;</span></p>
+        <p dir="ltr"><span><strong>2. Optimal Page replacement &ndash;</strong> </span><span>In this algorithm, pages are replaced which are not used for the longest duration of time in the future. Let us consider page reference string 7 0 1 2 0 3 0 4 2 3 0 3 2 and 4 page slots. Initially, all slots are empty, so when 7 0 1 2 are allocated to the empty slots &mdash;&gt; 4 Page faults. 0 is already there so &mdash;&gt; 0 Page fault. When 3 came it will take the place of 7 because it is not used for the longest duration of time in the future.&mdash;&gt; 1 Page fault. 0 is already there so &mdash;&gt; 0 Page fault. 4 will takes place of 1 &mdash;&gt; 1 Page Fault. Now for the further page reference string &mdash;&gt; 0 Page fault because they are already available in the memory. Optimal page replacement is perfect, but not possible in practice as an operating system cannot know future requests. The use of Optimal Page replacement is to set up a benchmark so that other replacement algorithms can be analyzed against it.&nbsp;</span></p>
+        <p dir="ltr"><span id="docs-internal-guid-f6b7eb74-7fff-a060-5d4b-aa5032c411d2"><strong>3. Least Recently Used (LRU) &ndash; </strong><span>In this algorithm, the page will be replaced with the one which is least recently used. Let say the page reference string 7 0 1 2 0 3 0 4 2 3 0 3 2 . Initially, we had 4-page slots empty. Initially, all slots are empty, so when 7 0 1 2 are allocated to the empty slots &mdash;&gt; 4 Page faults. 0 is already there so &mdash;&gt; 0 Page fault. When 3 comes it will take the place of 7 because it is least recently used &mdash;&gt; 1 Page fault. 0 is already in memory so &mdash;&gt; 0 Page fault. 4 will take place of 1 &mdash;&gt; 1 Page Fault. Now for the further page reference string &mdash;&gt; </span><strong>0 Page fault</strong><span> because they are already available in the memory.</span></span></p>
+      </div>
+    </div>
+    
+    <div id="DiskSchedulingAlgorithms" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">Disk Scheduling Algorithms</div>
+      <div id="hero-content">
+        <p dir="ltr"><strong>● Disk Scheduling:</strong><span> Disk scheduling is done by operating systems to schedule I/O requests arriving for disk. Disk scheduling is also known as I/O scheduling.&nbsp;</span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>1. Seek Time:</strong><span> Seek time is the time taken to locate the disk arm to a specified track where the data is to be read or written.&nbsp;</span></p>
+        <p dir="ltr"><strong>2. Rotational Latency:</strong><span> Rotational Latency is the time taken by the desired sector of disk to rotate into a position so that it can access the read/write heads.&nbsp;</span></p>
+        <p dir="ltr"><strong>3. Transfer Time:</strong><span> Transfer time is the time to transfer the data. It depends on the rotating speed of the disk and number of bytes to be transferred.&nbsp;</span></p>
+        <p dir="ltr"><strong>4. Disk Access Time:</strong><span> Seek Time + Rotational Latency + Transfer Time&nbsp;</span></p>
+        <p dir="ltr"><span><strong>5. Disk Response Time:</strong><span> Response Time is the average of time spent by a request waiting to perform its I/O operation. Average Response time is the response time of all requests.</span></span></p>
+        <p dir="ltr"><strong></strong></p>
+        <p dir="ltr"><strong>● Disk Scheduling Algorithms :-</strong></p>
+        <p dir="ltr"><strong><span><span>&nbsp;</span></span></strong></p>
+        <p dir="ltr"><strong>1. FCFS</strong><span><strong>:</strong> FCFS is the simplest of all the Disk Scheduling Algorithms. In FCFS, the requests are addressed in the order they arrive in the disk queue.&nbsp;</span></p>
+        <p dir="ltr"><strong><span><span>&nbsp;</span></span></strong></p>
+        <p dir="ltr"><strong>2. SSTF: </strong><span>In SSTF (Shortest Seek Time First), requests having the shortest seek time are executed first. So, the seek time of every request is calculated in advance in a queue and then they are scheduled according to their calculated seek time. As a result, the request near the disk arm will get executed first.&nbsp;</span></p>
+        <p dir="ltr"><strong><span><span>&nbsp;</span></span></strong></p>
+        <p dir="ltr"><strong>3. SCAN:</strong><span> In SCAN algorithm the disk arm moves into a particular direction and services the requests coming in its path and after reaching the end of the disk, it reverses its direction and again services the request arriving in its path. So, this algorithm works like an elevator and hence is also known as elevator algorithm.&nbsp;</span></p>
+        <p dir="ltr"><strong><span><span>&nbsp;</span></span></strong></p>
+        <p dir="ltr"><strong>4. CSCAN:</strong><span> In SCAN algorithm, the disk arm again scans the path that has been scanned, after reversing its direction. So, it may be possible that too many requests are waiting at the other end or there may be zero or few requests pending at the scanned area.</span></p>
+        <p dir="ltr"><strong><span><span>&nbsp;</span></span></strong></p>
+        <p dir="ltr"><strong>5. LOOK:</strong><span> It is similar to the SCAN disk scheduling algorithm except for the difference that the disk arm in spite of going to the end of the disk goes only to the last request to be serviced in front of the head and then reverses its direction from there only. Thus it prevents the extra delay which occurred due to unnecessary traversal to the end of the disk.</span></p>
+        <p dir="ltr"><strong><span id="docs-internal-guid-77215a27-7fff-4a00-45b4-a1815bbf2bcb"><br /><span>6. CLOOK:</span></span></strong><span id="docs-internal-guid-77215a27-7fff-4a00-45b4-a1815bbf2bcb"> As LOOK is similar to SCAN algorithm, CLOOK is similar to CSCAN disk scheduling algorithm. In CLOOK, the disk arm in spite of going to the end goes only to the last request to be serviced in front of the head and then from there goes to the other end&rsquo;s last request. Thus, it also prevents the extra delay which occurred due to unnecessary traversal to the end of the disk.</span></p>
+      </div>
+    </div>
+    
+    <div id="KeyTerms" class="tabcontent" style="display: none">
+      <div class="tab-content-heading">Key Terms</div>
+      <div id="hero-content">
+        <p dir="ltr"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="font-size: medium;"><strong> &nbsp; &nbsp; &nbsp; KEY Terms</strong></span></span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>Real-time system</strong><span> is used in the case when rigid-time requirements have been placed on the operation of a processor. It contains well defined and fixed time constraints.&nbsp;</span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>● A monolithic kernel</strong><span> is a kernel which includes all operating system code in a single executable image.&nbsp;</span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>● Micro kernel: </strong><span>Microkernel is the kernel which runs minimal performance affecting services for the operating system. In the microkernel operating system all other operations are performed by the processor.&nbsp;</span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><span><strong>Macro Kernel:</strong> </span><span>Macro Kernel is a combination of micro and monolithic kernel.&nbsp;</span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>● Re-entrancy :</strong><span> It is a very useful memory saving technique that is used for multi-programmed time sharing systems. It provides functionality that multiple users can share a single copy of a program during the same period. It has two key aspects:The program code cannot modify itself and the local data for each user process must be stored separately.&nbsp;</span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>● Demand paging</strong><span> specifies that if an area of memory is not currently being used, it is swapped to disk to make room for an application's need.&nbsp;</span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>● Virtual memory</strong><span> (Imp) is a very useful memory management technique which enables processes to execute outside of memory. This technique is especially used when an executing program cannot fit in the physical memory.&nbsp;</span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>● RAID</strong><span> stands for Redundant Array of Independent Disks. It is used to store the same data redundantly to improve the overall performance. There are 7 RAID levels.&nbsp;</span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><span><strong>● Logical address</strong> space</span><span> specifies the address that is generated by the CPU. On the other hand, </span><span>physical address space </span><span>specifies the address that is seen by the memory unit.&nbsp;</span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>● Fragmentation</strong><span> is a phenomenon of memory wastage. It reduces the capacity and performance because space is used inefficiently.&nbsp;</span></p>
+        <p dir="ltr"><span><strong>1. Internal fragmentation:</strong> It occurs when we deal with the systems that have fixed size allocation units.</span></p>
+        <p dir="ltr"><span><strong>2. External fragmentation:</strong> It occurs when we deal with systems that have variable-size allocation units.&nbsp;</span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>● Spooling </strong><span>is a process in which data is temporarily gathered to be used and executed by a device, program or the system. It is associated with printing. When different applications send output to the printer at the same time, spooling keeps these all jobs into a disk file and queues them accordingly to the printer.</span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>● Starvation</strong><span> is Resource management problem. In this problem, a waiting process does not get the resources it needs for a long time because the resources are being allocated to other processes.</span></p>
+        <p dir="ltr"><span><span>&nbsp;</span></span></p>
+        <p dir="ltr"><strong>● Aging</strong><span> is a technique used to avoid starvation in the resource scheduling system. </span></p>
+        <p dir="ltr">&nbsp;</p>
+        <p dir="ltr"><strong>● Advantages of multithreaded programming:&nbsp;</strong></p>
+        <p dir="ltr"><span>1. Enhance the responsiveness to the users.&nbsp;</span></p>
+        <p dir="ltr"><span>2. Resource sharing within the process.&nbsp;</span></p>
+        <p dir="ltr"><span>3. Economical&nbsp;</span></p>
+        <p dir="ltr"><span>4. Completely utilize the multiprocessing architecture.&nbsp;</span></p>
+        <p dir="ltr"><span id="docs-internal-guid-027c5f05-7fff-7676-a961-d4ce03d6e26b"><br /><strong>● Thrashing</strong><span> is a phenomenon in virtual memory schemes when the processor spends most of its time in swapping pages, rather than executing instructions. </span></span></p>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="./osa.js"></script>
+
+</html>
