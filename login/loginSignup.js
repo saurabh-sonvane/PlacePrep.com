@@ -35,7 +35,7 @@ signupSubmitBtn.addEventListener('click', (e) => {
     let email = document.getElementById('user-email').value;
     let password = document.getElementById('user-password').value;
     console.log(name, email, password);
-    addUser({ body: JSON.stringify({ name: name, email: email, password: password }) })
+    addUser({ body: JSON.stringify({ name: name, email: email, password: password, totalScore: 0, quizScores: {} }) })
 })
 loginSubmitBtn.addEventListener('click', (e) => {
     e.preventDefault();

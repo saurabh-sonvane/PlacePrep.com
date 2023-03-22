@@ -8,7 +8,11 @@
       "hackerRank": "https://www.hackerrank.com/riteshRanjan?hr_r=1",
       "codeChef": "https://www.codechef.com/users/ritesranjan247",
       "gfg": "https://auth.geeksforgeeks.org/user/riteshranjan/practice/",
-      "quizScore": 44
+      "totalScore": 44,
+      "quizScores": {
+        "python": 33,
+        "cpp": 21
+      }
     },
     {
       "id": 2,
@@ -18,7 +22,11 @@
       "hackerRank": "https://www.hackerrank.com/riteshRanjan?hr_r=1",
       "codeChef": "https://www.codechef.com/users/ritesranjan247",
       "gfg": "https://auth.geeksforgeeks.org/user/riteshranjan/practice/",
-      "quizScore": 44
+      "totalScore": 44,
+      "quizScores": {
+        "python": 33,
+        "oops": 21
+      }
     },
     {
       "id": 3,
@@ -28,28 +36,66 @@
       "hackerRank": "https://www.hackerrank.com/riteshRanjan?hr_r=1",
       "codeChef": "https://www.codechef.com/users/ritesranjan247",
       "gfg": "https://auth.geeksforgeeks.org/user/riteshranjan/practice/",
-      "quizScore": 44
+      "totalScore": 44,
+      "quizScores": {
+        "oops": 0,
+        "python": 2
+      }
     },
     {
       "name": "test",
       "email": "test@test.com",
       "password": "test",
       "id": 4,
-      "quizScore": 33
+      "totalScore": 33,
+      "quizScores": {
+        "oops": 0,
+        "python": 2
+      }
     },
     {
       "name": "a",
       "email": "a@b.com",
       "password": "avc",
       "id": 5,
-      "quizScore": 50
+      "totalScore": 50,
+      "quizScores": {
+        "oops": 38,
+        "python": 2
+      }
     },
     {
       "name": "a2",
       "email": "a",
       "password": "a",
       "id": 6,
-      "quizScore": 88
+      "totalScore": 88,
+      "quizScores": {
+        "oops": 0,
+        "python": 2
+      }
+    },
+    {
+      "name": "hero",
+      "email": "hero@hero.com",
+      "password": "hero",
+      "id": 7,
+      "totalScore": 2,
+      "quizScores": {
+        "oops": 0,
+        "python": 2
+      }
+    },
+    {
+      "name": "a1",
+      "email": "a1@b.com",
+      "password": "a1",
+      "totalScore": 2,
+      "quizScores": {
+        "oops": 0,
+        "python": 2
+      },
+      "id": 8
     }
   ],
   "mcq": [
@@ -1184,7 +1230,7 @@
       "answerB": "false",
       "answerC": "false",
       "answerD": "true",
-      "category": "c++",
+      "category": "cpp",
       "id": 81
     },
     {
@@ -1198,7 +1244,7 @@
       "answerB": "false",
       "answerC": "true",
       "answerD": "false",
-      "category": "c++",
+      "category": "cpp",
       "id": 82
     },
     {
@@ -1212,7 +1258,7 @@
       "answerB": "true",
       "answerC": "false",
       "answerD": "false",
-      "category": "c++",
+      "category": "cpp",
       "id": 83
     },
     {
@@ -1226,7 +1272,7 @@
       "answerB": "false",
       "answerC": "false",
       "answerD": "true",
-      "category": "c++",
+      "category": "cpp",
       "id": 84
     },
     {
@@ -1240,7 +1286,7 @@
       "answerB": "false",
       "answerC": "true",
       "answerD": "false",
-      "category": "c++",
+      "category": "cpp",
       "id": 85
     },
     {
@@ -1254,7 +1300,7 @@
       "answerB": "false",
       "answerC": "false",
       "answerD": "false",
-      "category": "c++",
+      "category": "cpp",
       "id": 86
     },
     {
@@ -1268,7 +1314,7 @@
       "answerB": "false",
       "answerC": "false",
       "answerD": "true",
-      "category": "c++",
+      "category": "cpp",
       "id": 87
     },
     {
@@ -1282,7 +1328,7 @@
       "answerB": "false",
       "answerC": "true",
       "answerD": "false",
-      "category": "c++",
+      "category": "cpp",
       "id": 88
     },
     {
@@ -1296,7 +1342,7 @@
       "answerB": "false",
       "answerC": "false",
       "answerD": "true",
-      "category": "c++",
+      "category": "cpp",
       "id": 89
     },
     {
@@ -1310,7 +1356,7 @@
       "answerB": "false",
       "answerC": "false",
       "answerD": "true",
-      "category": "c++",
+      "category": "cpp",
       "id": 90
     },
     {
@@ -1324,7 +1370,7 @@
       "answerB": "false",
       "answerC": "true",
       "answerD": "false",
-      "category": "c++",
+      "category": "cpp",
       "id": 91
     },
     {
@@ -1338,7 +1384,7 @@
       "answerB": "false",
       "answerC": "false",
       "answerD": "true",
-      "category": "c++",
+      "category": "cpp",
       "id": 92
     },
     {
@@ -1352,7 +1398,7 @@
       "answerB": "false",
       "answerC": "true",
       "answerD": "false",
-      "category": "c++",
+      "category": "cpp",
       "id": 93
     },
     {
@@ -1366,7 +1412,7 @@
       "answerB": "false",
       "answerC": "false",
       "answerD": "true",
-      "category": "c++",
+      "category": "cpp",
       "id": 94
     },
     {
@@ -1380,7 +1426,7 @@
       "answerB": "false",
       "answerC": "false",
       "answerD": "false",
-      "category": "c++",
+      "category": "cpp",
       "id": 95
     },
     {
@@ -1394,7 +1440,7 @@
       "answerB": "false",
       "answerC": "true",
       "answerD": "false",
-      "category": "c++",
+      "category": "cpp",
       "id": 96
     },
     {
@@ -1408,7 +1454,7 @@
       "answerB": "false",
       "answerC": "false",
       "answerD": "true",
-      "category": "c++",
+      "category": "cpp",
       "id": 97
     },
     {
@@ -1422,7 +1468,7 @@
       "answerB": "false",
       "answerC": "false",
       "answerD": "false",
-      "category": "c++",
+      "category": "cpp",
       "id": 98
     },
     {
@@ -1436,7 +1482,7 @@
       "answerB": "true",
       "answerC": "false",
       "answerD": "false",
-      "category": "c++",
+      "category": "cpp",
       "id": 99
     },
     {
@@ -1450,7 +1496,7 @@
       "answerB": "false",
       "answerC": "true",
       "answerD": "false",
-      "category": "c++",
+      "category": "cpp",
       "id": 100
     },
     {

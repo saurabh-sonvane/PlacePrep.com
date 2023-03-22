@@ -84,14 +84,14 @@
           class="collapse navbar-collapse justify-content-between px-lg-3"
           id="navbarCollapse">
           <div class="navbar-nav mx-auto py-0">
-            <a href="index.html" class="nav-item nav-link">Home</a>
-            <a href="about.html" class="nav-item nav-link">About</a>
-            <a href="course.html" class="nav-item nav-link">Subjects</a>
-            <a href="../QuizPage/QuizPage.html" class="nav-item nav-link active"
+            <a href="../HomePage/index.html" class="nav-item nav-link">Home</a>
+            <a href="../HomePage/about.html" class="nav-item nav-link">About</a>
+            <a href="../HomePage/course.html" class="nav-item nav-link active"
+              >Subjects</a
+            >
+            <a href="../QuizPage/QuizPage.html" class="nav-item nav-link"
               >Quiz</a
             >
-            <a href="chatbot.html" class="nav-item nav-link">Chat-Bot</a>
-            <a href="ranking.html" class="nav-item nav-link">Rankings</a>
             <div class="nav-item dropdown">
               <a
                 href="#"
@@ -105,9 +105,13 @@
                 <a href="team.html" class="dropdown-item">Mentors</a>
               </div>
             </div>
-            <a href="contact.html" class="nav-item nav-link">Contact</a>
+            <a href="../HomePage/contact.html" class="nav-item nav-link"
+              >Contact</a
+            >
           </div>
-          <a class="btn btn-primary py-2 px-4 d-none d-lg-block join-us-btn"
+          <a
+            href=""
+            class="btn btn-primary py-2 px-4 d-none d-lg-block join-us-btn"
             >Join Us</a
           >
         </div>
@@ -120,14 +124,41 @@
       class="jumbotron jumbotron-fluid page-header position-relative overlay-bottom"
       style="margin-bottom: 90px">
       <div class="container text-center py-5">
-        <h1 class="text-white display-1">Quizzes</h1>
+        <h1 class="text-white display-1">Quiz</h1>
         <div class="d-inline-flex text-white mb-5">
           <p class="m-0 text-uppercase"
             ><a class="text-white" href="">Home</a></p
           >
           <i class="fa fa-angle-double-right pt-1 px-3"></i>
-          <p class="m-0 text-uppercase">Quizzes</p>
+          <p class="m-0 text-uppercase">Quiz</p>
         </div>
+        <!-- <div class="mx-auto mb-5" style="width: 100%; max-width: 600px">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <button
+                class="btn btn-outline-light bg-white text-body px-4 dropdown-toggle"
+                type="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Subjects</button
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">OOPs</a>
+                <a class="dropdown-item" href="#">DBMS</a>
+                <a class="dropdown-item" href="#">DSA</a>
+              </div>
+            </div>
+            <input
+              type="text"
+              class="form-control border-light"
+              style="padding: 30px 25px"
+              placeholder="Keyword" />
+            <div class="input-group-append">
+              <button class="btn btn-secondary px-4 px-lg-5">Search</button>
+            </div>
+          </div>
+        </div> -->
       </div>
     </div>
     <!-- Header End -->
@@ -140,56 +171,186 @@
             <div class="section-title text-center position-relative mb-5">
               <h6
                 class="d-inline-block position-relative text-secondary text-uppercase pb-2"
-                >Quiz Modes</h6
+                >Our Subjects</h6
               >
-              <h1 class="display-4">Select Quiz Mode</h1>
+              <h1 class="display-4">Select Subject To Start Quiz</h1>
             </div>
           </div>
         </div>
         <div class="row subject-grid">
           <div class="col-lg-4 col-md-6 pb-4">
-            <section class="card-section" id="card-section">
-              <div class="card">
-                <div class="card-part card-top">
-                  <span class="card-icon">Quiz</span>
-                  <h2 class="card-title">Practice Mode</h2>
-                </div>
-                <div class="card-part card-center">
-                  <span class="time">Practice Makes Perfect</span>
-                </div>
-                <div class="card-part card-bottom">
-                  <ul class="list-options">
-                    <li>Get Live Answers</li>
-                    <li>20 Multiple Choice Questions</li>
-                    <li>Quiz yourself regularly to improve</li>
-                  </ul>
-                  <button class="btn-signup" id="practice-quiz">Start</button>
+            <div
+              class="courses-list-item position-relative d-block overflow-hidden mb-2"
+              href="course.html">
+              <img
+                class="img-fluid"
+                src="../HomePage/img/courses-1.jpg"
+                alt="" />
+              <div class="courses-text">
+                <h4 class="text-center text-white px-3">Python</h4>
+                <div class="border-top w-100 mt-3">
+                  <div class="d-flex justify-content-between p-4">
+                    <span class="text-white"
+                      ><i class="fa fa-user mr-2"></i>Vaibhav Appasaheb
+                      Chaudhari</span
+                    >
+                    <span class="text-white"
+                      ><i class="fa fa-star mr-2"></i>4.5
+                      <small>(250)</small></span
+                    >
+                  </div>
                 </div>
               </div>
-            </section>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-6 pb-4"> </div>
           <div class="col-lg-4 col-md-6 pb-4">
-            <section class="card-section" id="card-section">
-              <div class="card">
-                <div class="card-part card-top">
-                  <span class="card-icon">Quiz</span>
-                  <h2 class="card-title">Test Mode</h2>
-                </div>
-                <div class="card-part card-center">
-                  <span class="time">Test Your Knowledge</span>
-                </div>
-                <div class="card-part card-bottom">
-                  <ul class="list-options">
-                    <li>Instant Results</li>
-                    <li>6 Subjects to Explore</li>
-                    <li>Beat the Competition for Top Ranking</li>
-                  </ul>
-                  <button class="btn-signup" id="test-quiz">Start</button>
+            <div
+              class="courses-list-item position-relative d-block overflow-hidden mb-2"
+              href="course.html">
+              <img
+                class="img-fluid"
+                src="../HomePage/img/courses-2.jpg"
+                alt="" />
+              <div class="courses-text">
+                <h4 class="text-center text-white px-3">C++</h4>
+                <div class="border-top w-100 mt-3">
+                  <div class="d-flex justify-content-between p-4">
+                    <span class="text-white"
+                      ><i class="fa fa-user mr-2"></i>Wabale Sushant
+                      Valmik</span
+                    >
+                    <span class="text-white"
+                      ><i class="fa fa-star mr-2"></i>4.5
+                      <small>(250)</small></span
+                    >
+                  </div>
                 </div>
               </div>
-            </section>
+            </div>
           </div>
+          <div class="col-lg-4 col-md-6 pb-4">
+            <div
+              class="courses-list-item position-relative d-block overflow-hidden mb-2"
+              href="course.html">
+              <img
+                class="img-fluid"
+                src="../HomePage/img/courses-3.jpg"
+                alt="" />
+              <div class="courses-text">
+                <h4 class="text-center text-white px-3">Java</h4>
+                <div class="border-top w-100 mt-3">
+                  <div class="d-flex justify-content-between p-4">
+                    <span class="text-white"
+                      ><i class="fa fa-user mr-2"></i>Abhishek Sunil Ohol</span
+                    >
+                    <span class="text-white"
+                      ><i class="fa fa-star mr-2"></i>4.5
+                      <small>(250)</small></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 pb-4">
+            <div
+              class="courses-list-item position-relative d-block overflow-hidden mb-2"
+              href="course.html">
+              <img
+                class="img-fluid"
+                src="../HomePage/img/courses-4.jpg"
+                alt="" />
+              <div class="courses-text">
+                <h4 class="text-center text-white px-3">Osa</h4>
+                <div class="border-top w-100 mt-3">
+                  <div class="d-flex justify-content-between p-4">
+                    <span class="text-white"
+                      ><i class="fa fa-user mr-2"></i>Vaibhav Appasaheb
+                      Chaudhari</span
+                    >
+                    <span class="text-white"
+                      ><i class="fa fa-star mr-2"></i>4.5
+                      <small>(250)</small></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 pb-4">
+            <div
+              class="courses-list-item position-relative d-block overflow-hidden mb-2"
+              href="course.html">
+              <img
+                class="img-fluid"
+                src="../HomePage/img/courses-5.jpg"
+                alt="" />
+              <div class="courses-text">
+                <h4 class="text-center text-white px-3">Dsa</h4>
+                <div class="border-top w-100 mt-3">
+                  <div class="d-flex justify-content-between p-4">
+                    <span class="text-white"
+                      ><i class="fa fa-user mr-2"></i>Gadakh Kaustubh
+                      Kishor</span
+                    >
+                    <span class="text-white"
+                      ><i class="fa fa-star mr-2"></i>4.5
+                      <small>(250)</small></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 pb-4">
+            <div
+              class="courses-list-item position-relative d-block overflow-hidden mb-2"
+              href="course.html">
+              <img
+                class="img-fluid"
+                src="../HomePage/img/courses-6.jpg"
+                alt="" />
+              <div class="courses-text">
+                <h4 class="text-center text-white px-3">OOPs</h4>
+                <div class="border-top w-100 mt-3">
+                  <div class="d-flex justify-content-between p-4">
+                    <span class="text-white"
+                      ><i class="fa fa-user mr-2"></i>Wabale Sushant
+                      Valmik</span
+                    >
+                    <span class="text-white"
+                      ><i class="fa fa-star mr-2"></i>4.5
+                      <small>(250)</small></span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col-12">
+            <nav aria-label="Page navigation">
+              <ul class="pagination pagination-lg justify-content-center mb-0">
+                <li class="page-item disabled">
+                  <a class="page-link rounded-0" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                </li>
+                <li class="page-item active"
+                  ><a class="page-link" href="#">1</a></li
+                >
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link rounded-0" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div> -->
         </div>
       </div>
     </div>
@@ -328,7 +489,17 @@
     <script src="../HomePage/lib/counterup/counterup.min.js"></script>
     <script src="../HomePage/lib/owlcarousel/owl.carousel.min.js"></script>
     <!-- Javascript -->
-    <script src="../HomePage/js/main.js"></script>
-    <script src="./QuizPage.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      const subjects = document.querySelectorAll(".subject-grid>div");
+      const subArray = ["python", "cpp", "java", "osa", "dsa", "oops"];
+      subjects.forEach((e, i) => {
+        e.addEventListener("click", () => {
+          localStorage.setItem("subject", subArray[i]);
+          console.log(subArray[i]);
+          location.href = "./quiz/quiz.html";
+        });
+      });
+    </script>
   </body>
 </html>
