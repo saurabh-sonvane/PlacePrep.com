@@ -5,10 +5,11 @@ test.addEventListener('click', goToTest);
 
 function goToPractice(event) {
     localStorage.setItem('quiz-type', 'practice');
-    location.href = './quiz/quiz.html'
+    location.href = './SelectSubject.html'
 }
 function goToTest(event) {
     localStorage.setItem('quiz-type', 'test');
-    location.href = './quiz/quiz.html'
-
+    location.href = './SelectSubject.html'
 }
+
+// location.href = './quiz/quiz.html' 

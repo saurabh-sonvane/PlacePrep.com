@@ -4,6 +4,7 @@ const textNumberDiv1 = document.getElementById('result');
 const scoreDiv = document.getElementById('score');
 const userAnswer = document.getElementsByTagName('input');
 const btn = document.getElementsByClassName('btn');
+const backBtn = document.getElementById('back-btn');
 window.onload = () => {
     const type = localStorage.getItem('quiz-type');
     if (type == 'test') {
@@ -12,8 +13,12 @@ window.onload = () => {
         // document.getElementsByClassName('question_container')[0].style.width = '70%';
         // document.getElementsByClassName('store_result_container')[0].style.width = '25%';
     }
+    backBtn.addEventListener('click', () => {
+        history.back()
+    })
     textNumberDiv1.style.display = 'none';
-    getQuestions({ category: "oops" });
+    let currentSubject = localStorage.getItem('subject');
+    getQuestions({ category: currentSubject });
 }
 let quizzes = [
     {
@@ -147,6 +152,34 @@ function result() {
     }
     textNumberDiv1.style.display = 'none';
     scoreDiv.innerHTML = "Score : " + score + "/" + quizzes.length;
+    const type = localStorage.getItem('quiz-type');
+    if (type == 'test') {
+        getScores().then(res => {
+            let quizScores = res.quizScores
+            let newTotal = 0;
+            let flag = false;
+            console.log('previous scores', quizScores);
+            let currentSubject = localStorage.getItem('subject');
+            for (const key in quizScores) {
+                if (key === currentSubject) {
+                    if (quizScores[key] < score) {
+                        quizScores[key] = score;
+                    }
+                    flag = true;
+                }
+                newTotal += quizScores[key]
+                console.log(`${key}: ${quizScores[key]}`);
+            }
+            if (!flag) {
+                quizScores[currentSubject] = score
+                newTotal += score
+                console.log(quizScores);
+            }
+            console.log(newTotal);
+            updateScore({ total: newTotal, individual: quizScores })
+        })
+    }
+
 }
 async function getQuestions({ category = "oops" }) {
     try {
@@ -161,6 +194,43 @@ async function getQuestions({ category = "oops" }) {
             quizzes = json;
             renderQuestion();
         }
+
+    } catch (error) {
+        console.log("error", error);
+    }
+}
+async function updateScore({ total, individual }) {
+    let user = JSON.parse(localStorage.getItem('user'));
+    const quizScores = {
+        "totalScore": total,
+        "quizScores": individual // object
+    }
+    console.log(quizScores);
+    try {
+        const res = await fetch(`http://localhost:3000/users/${user.id}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(quizScores),
+        });
+        console.log("res", res);
+    } catch (error) {
+        console.log("error", error);
+    }
+}
+async function getScores() {
+    let user = JSON.parse(localStorage.getItem('user'));
+    console.log("userSc", user);
+    try {
+        const res = await fetch(`http://localhost:3000/users/${user.id}`, {
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
+        let json = await res.json();
+        localStorage.setItem("user", JSON.stringify(json));
+        return json;
 
     } catch (error) {
         console.log("error", error);

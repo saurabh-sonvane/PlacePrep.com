@@ -28,7 +28,13 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="../HomePage/css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./QuizPage.css" />
+    <style>
+      .table .thead-dark th {
+        color: #fff;
+        background-color: #343a40;
+        border-color: #454d55;
+      }
+    </style>
   </head>
   <body>
     <!-- Topbar Start -->
@@ -87,11 +93,11 @@
             <a href="index.html" class="nav-item nav-link">Home</a>
             <a href="about.html" class="nav-item nav-link">About</a>
             <a href="course.html" class="nav-item nav-link">Subjects</a>
-            <a href="../QuizPage/QuizPage.html" class="nav-item nav-link active"
+            <a href="../QuizPage/QuizPage.html" class="nav-item nav-link"
               >Quiz</a
             >
             <a href="chatbot.html" class="nav-item nav-link">Chat-Bot</a>
-            <a href="ranking.html" class="nav-item nav-link">Rankings</a>
+            <a href="ranking.html" class="nav-item nav-link active">Rankings</a>
             <div class="nav-item dropdown">
               <a
                 href="#"
@@ -118,15 +124,15 @@
     <!-- Header Start -->
     <div
       class="jumbotron jumbotron-fluid page-header position-relative overlay-bottom"
-      style="margin-bottom: 90px">
+      style="margin-bottom: 30px">
       <div class="container text-center py-5">
-        <h1 class="text-white display-1">Quizzes</h1>
+        <h1 class="text-white display-1">Ranking</h1>
         <div class="d-inline-flex text-white mb-5">
           <p class="m-0 text-uppercase"
             ><a class="text-white" href="">Home</a></p
           >
           <i class="fa fa-angle-double-right pt-1 px-3"></i>
-          <p class="m-0 text-uppercase">Quizzes</p>
+          <p class="m-0 text-uppercase">Ranking</p>
         </div>
       </div>
     </div>
@@ -134,62 +140,42 @@
 
     <!-- Subjects Start -->
     <div class="container-fluid py-5">
-      <div class="container py-5">
-        <div class="row mx-0 justify-content-center">
-          <div class="col-lg-8">
-            <div class="section-title text-center position-relative mb-5">
-              <h6
-                class="d-inline-block position-relative text-secondary text-uppercase pb-2"
-                >Quiz Modes</h6
-              >
-              <h1 class="display-4">Select Quiz Mode</h1>
-            </div>
-          </div>
-        </div>
+      <div class="container py-2">
+        <div class="row mx-0 justify-content-center"> </div>
         <div class="row subject-grid">
-          <div class="col-lg-4 col-md-6 pb-4">
-            <section class="card-section" id="card-section">
-              <div class="card">
-                <div class="card-part card-top">
-                  <span class="card-icon">Quiz</span>
-                  <h2 class="card-title">Practice Mode</h2>
-                </div>
-                <div class="card-part card-center">
-                  <span class="time">Practice Makes Perfect</span>
-                </div>
-                <div class="card-part card-bottom">
-                  <ul class="list-options">
-                    <li>Get Live Answers</li>
-                    <li>20 Multiple Choice Questions</li>
-                    <li>Quiz yourself regularly to improve</li>
-                  </ul>
-                  <button class="btn-signup" id="practice-quiz">Start</button>
-                </div>
-              </div>
-            </section>
-          </div>
-          <div class="col-lg-4 col-md-6 pb-4"> </div>
-          <div class="col-lg-4 col-md-6 pb-4">
-            <section class="card-section" id="card-section">
-              <div class="card">
-                <div class="card-part card-top">
-                  <span class="card-icon">Quiz</span>
-                  <h2 class="card-title">Test Mode</h2>
-                </div>
-                <div class="card-part card-center">
-                  <span class="time">Test Your Knowledge</span>
-                </div>
-                <div class="card-part card-bottom">
-                  <ul class="list-options">
-                    <li>Instant Results</li>
-                    <li>6 Subjects to Explore</li>
-                    <li>Beat the Competition for Top Ranking</li>
-                  </ul>
-                  <button class="btn-signup" id="test-quiz">Start</button>
-                </div>
-              </div>
-            </section>
-          </div>
+          <button id="btnExport" type="button" class="btn btn-success"
+            >Export to Excel</button
+          >
+          <table class="table table-striped" id="rankTable">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Overall Score</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>55</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>32</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>22</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
@@ -327,8 +313,9 @@
     <script src="../HomePage/lib/waypoints/waypoints.min.js"></script>
     <script src="../HomePage/lib/counterup/counterup.min.js"></script>
     <script src="../HomePage/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
     <!-- Javascript -->
     <script src="../HomePage/js/main.js"></script>
-    <script src="./QuizPage.js"></script>
+    <script src="./ranking.js"></script>
   </body>
 </html>
