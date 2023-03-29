@@ -87,15 +87,20 @@
       }
     },
     {
-      "name": "a1",
-      "email": "a1@b.com",
-      "password": "a1",
-      "totalScore": 2,
-      "quizScores": {
-        "oops": 0,
-        "python": 2
-      },
-      "id": 8
+      "name": "test",
+      "email": "welot26890@mitigado.com",
+      "password": "test",
+      "totalScore": 0,
+      "quizScores": {},
+      "id": 25
+    },
+    {
+      "name": "123",
+      "email": "welot26890@mitigado.com",
+      "password": "123",
+      "totalScore": 0,
+      "quizScores": {},
+      "id": 26
     }
   ],
   "mcq": [
