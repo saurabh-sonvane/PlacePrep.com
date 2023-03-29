@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/s17200/PlacePrep.com#readme",
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
     "node-sass": "^8.0.0"
   }
 }
