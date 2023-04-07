@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="chat.css">
 </head>
+
 <body>
-    <h1>chatbot</h1>
+    <main class="page__main">
+        <div class="block--background">
+            <div class="chatbot__overview">
+                <ul class="chatlist">
+                    <li class="bot__output bot__output--standard">Hey, I'm Suru!</li>
+                    <li class="bot__output bot__output--standard">I will guide you through Placeprep!</li>
+                    <li class="bot__output bot__output--standard">
+                        <span class="bot__output--second-sentence">You can ask me a bunch of things!</span>
+                        <ul>
+                            <li class="input__nested-list">Something <span class="bot__command">about</span> Placeprep</li>
+                            <li class="input__nested-list">what do you want to learn?
+                                <ul >
+                                    <li class="input__nested-list"><span class="bot__command">Coding Languages</span></li>
+                                    <li class="input__nested-list"><span class="bot__command">Logical Reasoning</span></li>
+                                    <li class="input__nested-list"><span class="bot__command">Verbal Ability</span></li>
+                                    <li class="input__nested-list"><span class="bot__command">DBMS</span></li>
+                                    <li class="input__nested-list"><span class="bot__command">DSA</span></li>
+                                    <li class="input__nested-list"><span class="bot__command">OOPS</span></li>
+                                    <li class="input__nested-list"><span class="bot__command">OSA</span></li>
+                                    
+                                </ul>
+                            </li>
+                            
+                            <li class="input__nested-list">copy paste mcq from Placeprep test to know correct answer  </li>
+                            
+                            <li class="input__nested-list">Maybe I could <span class="bot__command">help</span> (for
+                                more instructions)</li>
+                            <li class="input__nested-list">Note:  Type <span class="bot__command">commands</span> which is in blue color.</li>
+                        </ul>
+                      
+                    </li>
+                </ul>
+            </div>
+            <div class="chatbox-area">
+                <form action="" id="chatform">
+                    <textarea placeholder="Talk to me!" class="chatbox" name="chatbox" resize: "none"
+                        minlength="2"></textarea>
+                    <input class="submit-button" type="submit" value="send">
+                </form>
+            </div>
+            <div class="block--background"></div>
+
+    </main>
 </body>
+
+<script type="module" src="chatbot.js"></script>
 </html>

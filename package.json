@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch:scss": "node-sass -w login/loginSignup.scss login/loginSignup.css",
+    "node-sass": "node-sass --output-style compressed -o chatBot/css chatBot/scss",
     "test": "echo \"Error: no test specified\" && exit 1",
     "jsonServer": "json-server -w backend/db.json"
   },
