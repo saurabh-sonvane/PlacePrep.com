@@ -1,0 +1,1 @@
+document.querySelector("h1").textContent = JSON.parse(localStorage.getItem('user')).name;

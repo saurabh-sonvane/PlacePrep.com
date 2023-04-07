@@ -1,108 +1,4 @@
 {
-  "users": [
-    {
-      "id": 1,
-      "name": "Narayan Dutta1",
-      "email": "narayan69@gmail.com",
-      "password": "SaurabhxSanket",
-      "hackerRank": "https://www.hackerrank.com/riteshRanjan?hr_r=1",
-      "codeChef": "https://www.codechef.com/users/ritesranjan247",
-      "gfg": "https://auth.geeksforgeeks.org/user/riteshranjan/practice/",
-      "totalScore": 44,
-      "quizScores": {
-        "python": 33,
-        "cpp": 21
-      }
-    },
-    {
-      "id": 2,
-      "name": "Narayan Dutta2",
-      "email": "narayan691@gmail.com",
-      "password": "SaurabhxSanket",
-      "hackerRank": "https://www.hackerrank.com/riteshRanjan?hr_r=1",
-      "codeChef": "https://www.codechef.com/users/ritesranjan247",
-      "gfg": "https://auth.geeksforgeeks.org/user/riteshranjan/practice/",
-      "totalScore": 44,
-      "quizScores": {
-        "python": 33,
-        "oops": 21
-      }
-    },
-    {
-      "id": 3,
-      "name": "Narayan Dutta3",
-      "email": "narayan692@gmail.com",
-      "password": "SaurabhxSanket",
-      "hackerRank": "https://www.hackerrank.com/riteshRanjan?hr_r=1",
-      "codeChef": "https://www.codechef.com/users/ritesranjan247",
-      "gfg": "https://auth.geeksforgeeks.org/user/riteshranjan/practice/",
-      "totalScore": 44,
-      "quizScores": {
-        "oops": 0,
-        "python": 2
-      }
-    },
-    {
-      "name": "test",
-      "email": "test@test.com",
-      "password": "test",
-      "id": 4,
-      "totalScore": 33,
-      "quizScores": {
-        "oops": 0,
-        "python": 2
-      }
-    },
-    {
-      "name": "a",
-      "email": "a@b.com",
-      "password": "avc",
-      "id": 5,
-      "totalScore": 50,
-      "quizScores": {
-        "oops": 38,
-        "python": 2
-      }
-    },
-    {
-      "name": "a2",
-      "email": "a",
-      "password": "a",
-      "id": 6,
-      "totalScore": 88,
-      "quizScores": {
-        "oops": 0,
-        "python": 2
-      }
-    },
-    {
-      "name": "hero",
-      "email": "hero@hero.com",
-      "password": "hero",
-      "id": 7,
-      "totalScore": 2,
-      "quizScores": {
-        "oops": 0,
-        "python": 2
-      }
-    },
-    {
-      "name": "test",
-      "email": "welot26890@mitigado.com",
-      "password": "test",
-      "totalScore": 0,
-      "quizScores": {},
-      "id": 25
-    },
-    {
-      "name": "123",
-      "email": "welot26890@mitigado.com",
-      "password": "123",
-      "totalScore": 0,
-      "quizScores": {},
-      "id": 26
-    }
-  ],
   "mcq": [
     {
       "question": "What is the implicit return type of constructor?",
@@ -1235,7 +1131,7 @@
       "answerB": "false",
       "answerC": "false",
       "answerD": "true",
-      "category": "cpp",
+      "category": "c++",
       "id": 81
     },
     {
@@ -1249,7 +1145,7 @@
       "answerB": "false",
       "answerC": "true",
       "answerD": "false",
-      "category": "cpp",
+      "category": "c++",
       "id": 82
     },
     {
@@ -1263,7 +1159,7 @@
       "answerB": "true",
       "answerC": "false",
       "answerD": "false",
-      "category": "cpp",
+      "category": "c++",
       "id": 83
     },
     {
@@ -1277,7 +1173,7 @@
       "answerB": "false",
       "answerC": "false",
       "answerD": "true",
-      "category": "cpp",
+      "category": "c++",
       "id": 84
     },
     {
@@ -1291,7 +1187,7 @@
       "answerB": "false",
       "answerC": "true",
       "answerD": "false",
-      "category": "cpp",
+      "category": "c++",
       "id": 85
     },
     {
@@ -1305,7 +1201,7 @@
       "answerB": "false",
       "answerC": "false",
       "answerD": "false",
-      "category": "cpp",
+      "category": "c++",
       "id": 86
     },
     {
@@ -1319,7 +1215,7 @@
       "answerB": "false",
       "answerC": "false",
       "answerD": "true",
-      "category": "cpp",
+      "category": "c++",
       "id": 87
     },
     {
@@ -1333,7 +1229,7 @@
       "answerB": "false",
       "answerC": "true",
       "answerD": "false",
-      "category": "cpp",
+      "category": "c++",
       "id": 88
     },
     {
@@ -1347,7 +1243,7 @@
       "answerB": "false",
       "answerC": "false",
       "answerD": "true",
-      "category": "cpp",
+      "category": "c++",
       "id": 89
     },
     {
@@ -1361,7 +1257,7 @@
       "answerB": "false",
       "answerC": "false",
       "answerD": "true",
-      "category": "cpp",
+      "category": "c++",
       "id": 90
     },
     {
@@ -1375,7 +1271,7 @@
       "answerB": "false",
       "answerC": "true",
       "answerD": "false",
-      "category": "cpp",
+      "category": "c++",
       "id": 91
     },
     {
@@ -1389,7 +1285,7 @@
       "answerB": "false",
       "answerC": "false",
       "answerD": "true",
-      "category": "cpp",
+      "category": "c++",
       "id": 92
     },
     {
@@ -1403,7 +1299,7 @@
       "answerB": "false",
       "answerC": "true",
       "answerD": "false",
-      "category": "cpp",
+      "category": "c++",
       "id": 93
     },
     {
@@ -1417,7 +1313,7 @@
       "answerB": "false",
       "answerC": "false",
       "answerD": "true",
-      "category": "cpp",
+      "category": "c++",
       "id": 94
     },
     {
@@ -1431,7 +1327,7 @@
       "answerB": "false",
       "answerC": "false",
       "answerD": "false",
-      "category": "cpp",
+      "category": "c++",
       "id": 95
     },
     {
@@ -1445,7 +1341,7 @@
       "answerB": "false",
       "answerC": "true",
       "answerD": "false",
-      "category": "cpp",
+      "category": "c++",
       "id": 96
     },
     {
@@ -1459,7 +1355,7 @@
       "answerB": "false",
       "answerC": "false",
       "answerD": "true",
-      "category": "cpp",
+      "category": "c++",
       "id": 97
     },
     {
@@ -1473,7 +1369,7 @@
       "answerB": "false",
       "answerC": "false",
       "answerD": "false",
-      "category": "cpp",
+      "category": "c++",
       "id": 98
     },
     {
@@ -1487,7 +1383,7 @@
       "answerB": "true",
       "answerC": "false",
       "answerD": "false",
-      "category": "cpp",
+      "category": "c++",
       "id": 99
     },
     {
@@ -1501,7 +1397,7 @@
       "answerB": "false",
       "answerC": "true",
       "answerD": "false",
-      "category": "cpp",
+      "category": "c++",
       "id": 100
     },
     {
