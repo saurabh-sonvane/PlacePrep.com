@@ -1,6 +1,12 @@
 {
   "users": [
     {
+        "id":0,
+        "name":"admin",
+        "email":"sonvanesaurabh77@gmail.com",
+        "password":"admin"
+    },
+    {
       "id": 1,
       "name": "Narayan Dutta2",
       "email": "narayan69@gmail.com",

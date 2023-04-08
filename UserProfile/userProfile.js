@@ -1,4 +1,11 @@
 
+var data=JSON.parse(localStorage.getItem("user"));
+console.log(data.password);
+
+document.getElementById("logout").addEventListener("click",()=>{
+    localStorage.clear();
+    alert("Logged Out Sucessfully!");
+})
 
 document.querySelector("form").addEventListener("submit", fun);
 var nameField = document.getElementById("na");
@@ -19,8 +26,7 @@ document.getElementById("mcq").addEventListener("click",()=>{
 window.onload = function () {
     loadUser();
     console.log(mail.value)
-    if(mail.value=="sonvanesaurabh77@gmail.com"){
-        
+    if(mail.value=="sonvanesaurabh77@gmail.com" && data.password=="admin"){
             document.getElementById("mcq").style.display="block";
     }
     let joinNowBtn = document.querySelector(".join-us-btn");
