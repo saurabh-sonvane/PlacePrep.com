@@ -1,1219 +1,2216 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>PlacePrep - Interview Prepration Made Easy</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Content" name="keywords" />
+    <meta content="Content" name="description" />
 
-<head>
-  <meta charset="utf-8" />
-  <title>PlacePrep - Interview Prepration Made Easy</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta content="Content" name="keywords" />
-  <meta content="Content" name="description" />
+    <!-- Favicon -->
+    <link href="/HomePage/img/favicon.ico" rel="icon" />
 
-  <!-- Favicon -->
-  <link href="/HomePage/img/favicon.ico" rel="icon" />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet" />
 
-  <!-- Google Web Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
-    rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet" />
 
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <!-- Libraries Stylesheet -->
+    <link
+      href="/HomePage/lib/owlcarousel/assets/owl.carousel.min.css"
+      rel="stylesheet" />
 
-  <!-- Libraries Stylesheet -->
-  <link href="/HomePage/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../../../HomePage/css/style.css" rel="stylesheet" />
 
-  <!-- Customized Bootstrap Stylesheet -->
-  <link href="../../../HomePage/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="dbms.css" />
+    <style>
+      .table .thead-dark th {
+        color: #fff;
+        background-color: #343a40;
+        border-color: #454d55;
+      }
+    </style>
+  </head>
 
-  <link rel="stylesheet" href="dbms.css" />
-  <style>
-    .table .thead-dark th {
-      color: #fff;
-      background-color: #343a40;
-      border-color: #454d55;
-    }
-  </style>
-</head>
-
-<body>
-  <!-- Topbar Start -->
-  <div class="container-fluid bg-dark">
-    <div class="row py-2 px-lg-5">
-      <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
-        <div class="d-inline-flex align-items-center text-white">
-          <small><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</small>
-          <small class="px-3">|</small>
-          <small><i class="fa fa-envelope mr-2"></i>placeprep@gmail.com</small>
+  <body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark">
+      <div class="row py-2 px-lg-5">
+        <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+          <div class="d-inline-flex align-items-center text-white">
+            <small><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</small>
+            <small class="px-3">|</small>
+            <small
+              ><i class="fa fa-envelope mr-2"></i>placeprep@gmail.com</small
+            >
+          </div>
         </div>
-      </div>
-      <div class="col-lg-6 text-center text-lg-right">
-        <div class="d-inline-flex align-items-center">
-          <a class="text-white px-2" href="">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a class="text-white px-2" href="">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a class="text-white px-2" href="">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a class="text-white px-2" href="">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a class="text-white pl-2" href="">
-            <i class="fab fa-youtube"></i>
-          </a>
+        <div class="col-lg-6 text-center text-lg-right">
+          <div class="d-inline-flex align-items-center">
+            <a class="text-white px-2" href="">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="text-white px-2" href="">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="text-white px-2" href="">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a class="text-white px-2" href="">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a class="text-white pl-2" href="">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Topbar End -->
+    <!-- Topbar End -->
 
-  <!-- Navbar Start -->
-  <div class="container-fluid p-0">
-    <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
-      <a href="../../../../HomePage/index.html" class="navbar-brand ml-lg-3">
-        <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>PlacePrep</h1>
-      </a>
-      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
-        <div class="navbar-nav mx-auto py-0">
-          <a href="../../../HomePage/index.html" class="nav-item nav-link">Home</a>
-          <a href="../../../HomePage/about.html" class="nav-item nav-link">About</a>
-          <a href="../../../HomePage/course.html" class="nav-item nav-link active">Subjects</a>
-          <a href="../../../QuizPage/QuizPage.html" class="nav-item nav-link">Quiz</a>
-          <a href="../../../chatBot/chatbot.html" class="nav-item nav-link">Chat-Bot</a>
-          <a href="../../../ranking/ranking.html" class="nav-item nav-link ">Rankings</a>
-          <div class="nav-item dropdown">
-            <a href="../#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-            <div class="dropdown-menu m-0">
-              <!-- <a href="../../detail.html" class="dropdown-item">Subject Detail</a> -->
-              <a href="../../../HomePage/feature.html" class="dropdown-item">Our Features</a>
-              <a href="../../../HomePage/team.html" class="dropdown-item">Mentors</a>
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+      <nav
+        class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="../../../../HomePage/index.html" class="navbar-brand ml-lg-3">
+          <h1 class="m-0 text-uppercase text-primary"
+            ><i class="fa fa-book-reader mr-3"></i>PlacePrep</h1
+          >
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between px-lg-3"
+          id="navbarCollapse">
+          <div class="navbar-nav mx-auto py-0">
+            <a href="../../../HomePage/index.html" class="nav-item nav-link"
+              >Home</a
+            >
+            <a href="../../../HomePage/about.html" class="nav-item nav-link"
+              >About</a
+            >
+            <a
+              href="../../../HomePage/course.html"
+              class="nav-item nav-link active"
+              >Subjects</a
+            >
+            <a href="../../../QuizPage/QuizPage.html" class="nav-item nav-link"
+              >Quiz</a
+            >
+            <a href="../../../chatBot/chatbot.html" class="nav-item nav-link"
+              >Chat-Bot</a
+            >
+            <a href="../../../ranking/ranking.html" class="nav-item nav-link"
+              >Rankings</a
+            >
+            <div class="nav-item dropdown">
+              <a
+                href="../#"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                >Pages</a
+              >
+              <div class="dropdown-menu m-0">
+                <!-- <a href="../../detail.html" class="dropdown-item">Subject Detail</a> -->
+                <a href="../../../HomePage/feature.html" class="dropdown-item"
+                  >Our Features</a
+                >
+                <a href="../../../HomePage/team.html" class="dropdown-item"
+                  >Mentors</a
+                >
+              </div>
+            </div>
+            <!-- <a href="../../../HomePage/contact.html" class="nav-item nav-link">Contact</a> -->
+          </div>
+          <a
+            class="btn btn-primary py-2 px-4 d-none d-lg-block join-us-btn"
+            href="../../../login/loginSignup.html"
+            target="_blank"
+            >Join Us</a
+          >
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div
+      class="jumbotron jumbotron-fluid page-header position-relative overlay-bottom"
+      style="margin-bottom: 30px">
+      <div class="container text-center py-5">
+        <h1 class="text-white display-1">DBMS</h1>
+        <div class="d-inline-flex text-white mb-5">
+          <p class="m-0 text-uppercase"
+            ><a class="text-white" href="../../">Home</a></p
+          >
+          <i class="fa fa-angle-double-right pt-1 px-3"></i>
+          <p class="m-0 text-uppercase">Subjects</p>
+          <i class="fa fa-angle-double-right pt-1 px-3"></i>
+          <p class="m-0 text-uppercase">DBMS</p>
+        </div>
+      </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Subjects Start -->
+    <div id="tab-menu-div">
+      <div class="tab">
+        <button
+          id="firsttab"
+          class="tablinks"
+          onclick="openTab(event, 'Account')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">What is Database</p>
             </div>
           </div>
-          <a href="../../../HomePage/contact.html" class="nav-item nav-link">Contact</a>
-        </div>
-        <a class="btn btn-primary py-2 px-4 d-none d-lg-block join-us-btn" href="../../../login/loginSignup.html"
-          target="_blank">Join Us</a>
-      </div>
-    </nav>
-  </div>
-  <!-- Navbar End -->
+        </button>
 
-  <!-- Header Start -->
-  <div class="jumbotron jumbotron-fluid page-header position-relative overlay-bottom" style="margin-bottom: 30px">
-    <div class="container text-center py-5">
-      <h1 class="text-white display-1">DBMS</h1>
-      <div class="d-inline-flex text-white mb-5">
-        <p class="m-0 text-uppercase"><a class="text-white" href="../../">Home</a></p>
-        <i class="fa fa-angle-double-right pt-1 px-3"></i>
-        <p class="m-0 text-uppercase">Subjects</p>
-        <i class="fa fa-angle-double-right pt-1 px-3"></i>
-        <p class="m-0 text-uppercase">DBMS</p>
-      </div>
-    </div>
-  </div>
-  <!-- Header End -->
-
-  <!-- Subjects Start -->
-  <div id="tab-menu-div">
-    <div class="tab">
-      <button id="firsttab" class="tablinks" onclick="openTab(event, 'Account')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p">What is Database</p>
+        <button class="tablinks" onclick="openTab(event, 'Replenish')">
+          <div class="tab-button">
+            <div class=" ">
+              <p class="font-payment-tab-button-p">DBMS</p>
+            </div>
           </div>
-        </div>
-      </button>
+        </button>
 
-      <button class="tablinks" onclick="openTab(event, 'Replenish')">
-        <div class="tab-button">
-          <div class=" ">
-            <p class="font-payment-tab-button-p">DBMS</p>
+        <button class="tablinks" onclick="openTab(event, 'Same-Day')">
+          <div class="tab-button">
+            <div class=" ">
+              <p class="font-payment-tab-button-p">RDBMS</p>
+            </div>
           </div>
-        </div>
-      </button>
+        </button>
 
-      <button class="tablinks" onclick="openTab(event, 'Same-Day')">
-        <div class="tab-button">
-          <div class=" ">
-            <p class="font-payment-tab-button-p">RDBMS</p>
+        <button class="tablinks" onclick="openTab(event, 'Orders')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">ER diagram</p>
+            </div>
           </div>
-        </div>
-      </button>
+        </button>
 
-      <button class="tablinks" onclick="openTab(event, 'Orders')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p">ER diagram</p>
+        <button class="tablinks" onclick="openTab(event, 'Subscriptions')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">Entity Set</p>
+            </div>
           </div>
-        </div>
-      </button>
+        </button>
 
-      <button class="tablinks" onclick="openTab(event, 'Subscriptions')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p">Entity Set</p>
+        <button class="tablinks" onclick="openTab(event, 'Reservations')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">Relationship</p>
+            </div>
           </div>
-        </div>
-      </button>
+        </button>
 
-      <button class="tablinks" onclick="openTab(event, 'Reservations')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p">Relationship</p>
+        <button
+          class="tablinks"
+          onclick="openTab(event, 'CardinalityConstraint')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">Cardinality Constraint</p>
+            </div>
           </div>
-        </div>
-      </button>
+        </button>
 
-      <button class="tablinks" onclick="openTab(event, 'CardinalityConstraint')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p">Cardinality Constraint</p>
+        <button class="tablinks" onclick="openTab(event, 'Attributes')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">Attributes</p>
+            </div>
           </div>
-        </div>
-      </button>
+        </button>
 
-      <button class="tablinks" onclick="openTab(event, 'Attributes')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p">Attributes</p>
+        <button class="tablinks" onclick="openTab(event, 'Constraints')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">Constraints</p>
+            </div>
           </div>
-        </div>
-      </button>
+        </button>
 
-      <button class="tablinks" onclick="openTab(event, 'Constraints')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p">Constraints</p>
+        <button
+          class="tablinks"
+          onclick="openTab(event, 'ClosureAttributeSet')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p"
+                >Closure of an Attribute Set</p
+              >
+            </div>
           </div>
-        </div>
-      </button>
+        </button>
 
-      <button class="tablinks" onclick="openTab(event, 'ClosureAttributeSet')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p">Closure of an Attribute Set</p>
+        <button
+          class="tablinks"
+          onclick="openTab(event, 'FunctionalDependency')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">Functional Dependency </p>
+            </div>
           </div>
-        </div>
-      </button>
+        </button>
 
-      <button class="tablinks" onclick="openTab(event, 'FunctionalDependency')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p">Functional Dependency
-            </p>
+        <button
+          class="tablinks"
+          onclick="openTab(event, 'DecompositionRelation')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p"
+                >Decomposition of a Relation</p
+              >
+            </div>
           </div>
-        </div>
-      </button>
+        </button>
 
-      <button class="tablinks" onclick="openTab(event, 'DecompositionRelation')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p">Decomposition of a Relation</p>
+        <button class="tablinks" onclick="openTab(event, 'Normalization')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">Normalization</p>
+            </div>
           </div>
-        </div>
-      </button>
+        </button>
 
-      <button class="tablinks" onclick="openTab(event, 'Normalization')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p">Normalization</p>
+        <button class="tablinks" onclick="openTab(event, 'Transaction')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">Transaction</p>
+            </div>
           </div>
-        </div>
-      </button>
+        </button>
 
-      <button class="tablinks" onclick="openTab(event, 'Transaction')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p">Transaction</p>
+        <button class="tablinks" onclick="openTab(event, 'ACID')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">ACID Properties</p>
+            </div>
           </div>
-        </div>
-      </button>
+        </button>
 
-      <button class="tablinks" onclick="openTab(event, 'ACID')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p">ACID Properties</p>
+        <button class="tablinks" onclick="openTab(event, 'Schedules')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">Schedules</p>
+            </div>
           </div>
-        </div>
-      </button>
+        </button>
 
-      <button class="tablinks" onclick="openTab(event, 'Schedules')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p">Schedules</p>
+        <button class="tablinks" onclick="openTab(event, 'Serializability')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">Serializability</p>
+            </div>
           </div>
-        </div>
-      </button>
+        </button>
 
-      <button class="tablinks" onclick="openTab(event, 'Serializability')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p">Serializability</p>
+        <button class="tablinks" onclick="openTab(event, 'FileStructures')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">File Structures</p>
+            </div>
           </div>
-        </div>
-      </button>
+        </button>
 
-      <button class="tablinks" onclick="openTab(event, 'FileStructures')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p">File Structures</p>
+        <button class="tablinks" onclick="openTab(event, 'BTrees')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">B Trees</p>
+            </div>
           </div>
-        </div>
-      </button>
+        </button>
 
-      <button class="tablinks" onclick="openTab(event, 'BTrees')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p">B Trees</p>
+        <button class="tablinks" onclick="openTab(event, 'SQL')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">SQL</p>
+            </div>
           </div>
+        </button>
+      </div>
+      <div id="Account" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">What is Database</div>
+        <div id="hero-content">
+          <p
+            >A database is a collection of related data which represents some
+            aspect of the real world. A database system is designed to be built
+            and populated with data for a certain task.
+          </p>
         </div>
-      </button>
+      </div>
 
-      <button class="tablinks" onclick="openTab(event, 'SQL')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p">SQL</p>
+      <div id="Replenish" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">DBMS</div>
+        <div id="hero-content">
+          <p
+            ><strong>Database Management System (DBMS)</strong> is a software
+            for storing and retrieving users' data while considering appropriate
+            security measures. It consists of a group of programs which
+            manipulate the database. The DBMS accepts the request for data from
+            an application and instructs the operating system to provide the
+            specific data. In large systems, a DBMS helps users and other
+            third-party software to store and retrieve data.
+          </p>
+          <p
+            >Database management systems were developed to handle the following
+            difficulties of typical File-processing systems supported by
+            conventional operating systems.
+            <br />
+            <br />
+            1. Data redundancy and inconsistency
+            <br />
+            2. Difficulty in accessing data
+            <br />
+            3. Data isolation – multiple files and formats
+            <br />
+            4. Integrity problems
+            <br />
+            5. Atomicity of updates
+            <br />
+            6. Concurrent access by multiple users
+            <br />
+            7. Security problems
+            <br />
+          </p>
+        </div>
+      </div>
+      <div id="Same-Day" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">RDBMS</div>
+        <div id="hero-content">
+          <p
+            >A<strong> relational database management system (RDBMS)</strong> is
+            a collection of programs and capabilities that enable IT teams and
+            others to create, update, administer and otherwise interact with a
+            relational database. RDBMSes store data in the form of tables, with
+            most commercial relational database management systems using
+            Structured Query Language (SQL) to access the database. However,
+            since SQL was invented after the initial development of the
+            relational model, it is not necessary for RDBMS use.</p
+          >
+          <p
+            >The RDBMS is the most popular database system among organizations
+            across the world. It provides a dependable method of storing and
+            retrieving large amounts of data while offering a combination of
+            system performance and ease of implementation.</p
+          >
+        </div>
+      </div>
+
+      <div id="Orders" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">ER diagram</div>
+        <div id="hero-content">
+          <p
+            >● ER diagram or Entity Relationship diagram is a conceptual model
+            that gives the graphical representation of the logical structure of
+            the database.
+            <br />
+            ● It shows all the constraints and relationships that exist among
+            the different components.
+            <br />
+            ● An ER diagram is mainly composed of following three components-
+            Entity Sets, Attributes and Relationship Set.
+            <br />
+            ● Roll_no is a primary key that can identify each entity uniquely
+            <br />
+            ● Thus, by using a student's roll number, a student can be
+            identified uniquely.
+            <br />
+          </p>
+          <img
+            src="https://static.javatpoint.com/dbms/images/dbms-er-model-concept.png"
+            alt="" />
+        </div>
+      </div>
+
+      <div id="Subscriptions" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">Entity Set</div>
+        <div id="hero-content">
+          <p
+            ><b>Entity Set:</b> An entity set is a set of the same type of
+            entities.
+            <br />
+            <br />
+            ●<b> Strong Entity Set:</b>
+            <br />
+            A strong entity set is an entity set that contains sufficient
+            attributes to uniquely identify all its entities.
+            <br />
+            In other words, a primary key exists for a strong entity set. o
+            Primary key of a strong entity set is represented by underlining it.
+            <br />
+            <br />
+            ● <b> Weak Entity Set:</b> <br />
+            A weak entity set is an entity set that does not contain sufficient
+            attributes to uniquely identify its entities. o In other words, a
+            primary key does not exist for a weak entity set. o However, it
+            contains a partial key called a discriminator.
+            <br />
+            Discriminator can identify a group of entities from the entity set.
+            o
+            <br />
+          </p>
+        </div>
+      </div>
+
+      <div id="Reservations" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">Relationship</div>
+        <div id="hero-content">
+          <p
+            ><span
+              >A<strong> relationship</strong> is defined as an association
+              among several entities.&nbsp;</span
+            ></p
+          >
+          <p
+            ><span><span>&nbsp;</span></span></p
+          >
+          <p
+            ><span>●</span><strong> Unary Relationship Set -</strong
+            ><span>
+              Unary relationship set is a relationship set where only one&nbsp;
+              &nbsp; entity set participates in a relationship set.&nbsp;</span
+            ></p
+          >
+          <p
+            ><span>●<strong>Binary Relationship Set</strong> - </span
+            ><span
+              >Binary relationship set is a relationship set where two entity
+              sets participate in a relationship set.&nbsp;</span
+            ></p
+          >
+          <p
+            ><span>● <strong>Ternary Relationship Set</strong> - </span
+            ><span
+              >Ternary relationship set is a relationship set where three entity
+              sets participate in a relationship set.&nbsp;</span
+            ></p
+          >
+          <p
+            ><span
+              ><span>● <strong>N-ary Relationship Set</strong> - </span
+              ><span
+                >N-ary relationship set is a relationship set where
+                &lsquo;n&rsquo; entity sets participate in a relationship
+                set.</span
+              ></span
+            ></p
+          >
+        </div>
+      </div>
+
+      <div id="CardinalityConstraint" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">Cardinality Constraint</div>
+        <div id="hero-content">
+          <p dir="ltr"
+            ><span
+              ><strong>Cardinality</strong> constraint defines the maximum
+              number of relationship instances in which an &nbsp; entity can
+              participate.</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span><span>&nbsp;</span></span></p
+          >
+          <p dir="ltr"
+            ><span>● <strong>One-to-One Cardinality</strong> -</span
+            ><span>
+              An entity in set A can be associated with at most one entity in
+              set B. An entity in set B can be associated with at most one
+              entity in set A.</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span>● <strong>One-to-Many Cardinality</strong> -</span
+            ><span>
+              An entity in set A can be associated with any number (zero or
+              more) of entities in set B. An entity in set B can be associated
+              with at most one entity in set A.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span>●<strong> Many-to-One Cardinality</strong> - </span
+            ><span
+              >An entity in set A can be associated with at most one entity in
+              set B. An entity in set B can be associated with any number of
+              entities in set A.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span
+              ><span>●<strong> Many-to-Many Cardinality</strong> -</span
+              ><span>
+                An entity in set A can be associated with any number (zero or
+                more) of entities in set B. An entity in set B can be associated
+                with any number (zero or more) of entities in set A.
+              </span></span
+            ></p
+          >
+        </div>
+      </div>
+
+      <div id="Attributes" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">Attributes</div>
+        <div id="hero-content">
+          <p dir="ltr"
+            ><strong>Attributes</strong> are the descriptive properties which
+            are owned by each entity of an Entity Set.&nbsp;</p
+          >
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>Types of Attributes:&nbsp;</strong></p>
+          <p dir="ltr"
+            >● <strong>Simple Attributes </strong>- Simple attributes are those
+            attributes which cannot be divided further. Ex. Age&nbsp;</p
+          >
+          <p dir="ltr"
+            >● <strong>Composite Attributes</strong> - Composite attributes are
+            those attributes which are composed of many other simple attributes.
+            Ex. Name, Address&nbsp;</p
+          >
+          <p dir="ltr"
+            >●<strong> Multi Valued Attributes</strong> - Multi valued
+            attributes are those attributes which can take more than one value
+            for a given entity from an entity set. Ex. Mobile No, Email
+            ID&nbsp;</p
+          >
+          <p dir="ltr"
+            >● <strong>Derived Attributes</strong> - Derived attributes are
+            those attributes which can be derived from other attribute(s). Ex.
+            Age can be derived from DOB.&nbsp;</p
+          >
+          <p dir="ltr"
+            >● <strong>Key Attributes</strong> - Key attributes are those
+            attributes which can identify an entity uniquely in an entity set.
+            Ex. Roll No.</p
+          >
+          <p>&nbsp;</p>
+        </div>
+      </div>
+
+      <div id="Constraints" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">Constraints</div>
+        <div id="hero-content">
+          <p dir="ltr"
+            ><span
+              ><strong>Relational constraints</strong> are the restrictions
+              imposed on the database contents and operations. They ensure the
+              correctness of data in the database.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span><span>&nbsp;</span></span></p
+          >
+          <p dir="ltr"
+            ><span>● <strong>Domain Constraint</strong> -</span
+            ><span>
+              Domain constraint defines the domain or set of values for an
+              attribute. It specifies that the value taken by the attribute must
+              be the atomic value from its domain.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span>● <strong>Tuple Uniqueness Constraint</strong> -</span
+            ><span>
+              Tuple Uniqueness constraint specifies that all the tuples must be
+              necessarily unique in any relation.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span>● <strong>Key Constraint</strong> -</span
+            ><span>
+              All the values of the primary key must be unique. The value of the
+              primary key must not be null.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span>●<strong> Entity Integrity Constraint</strong> -</span
+            ><span>
+              Entity integrity constraint specifies that no attribute of primary
+              key must contain a null value in any relation.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span>● <strong>Referential Integrity Constraint</strong> -</span
+            ><span>
+              It specifies that all the values taken by the foreign key must
+              either be available in the relation of the primary key or be
+              null.</span
+            ></p
+          >
+          <p><span>&nbsp;</span></p>
+        </div>
+      </div>
+
+      <div id="ClosureAttributeSet" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">Closure of an Attribute Set</div>
+        <div id="hero-content">
+          <p dir="ltr"
+            >The set of all those attributes which can be functionally
+            determined from an attribute set is called a
+            <strong>closure of that attribute set</strong>. Keys: A key is a set
+            of attributes that can identify each tuple uniquely in the given
+            relation.&nbsp;</p
+          >
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>Types of Keys:</strong></p>
+          <p dir="ltr"
+            >●<strong> Super Key</strong> - A superkey is a set of attributes
+            that can identify each tuple uniquely in the given relation. A super
+            key may consist of any number of attributes.&nbsp;</p
+          >
+          <p dir="ltr"
+            >● <strong>Candidate Key</strong> - A set of minimal attribute(s)
+            that can identify each tuple uniquely in the given relation is
+            called a candidate key.&nbsp;</p
+          >
+          <p dir="ltr"
+            >●<strong> Primary Key</strong> - A primary key is a candidate key
+            that the database designer selects while designing the database.
+            Primary Keys are unique and NOT NULL.</p
+          >
+          <img
+            src="https://www.gatevidyalay.com/wp-content/uploads/2018/04/Super-Key-Candidate-Key-Primary-Key.png"
+            alt="" />
+          <p dir="ltr"
+            >● <strong>Alternate Key</strong> - Candidate keys that are left
+            unimplemented or unused after&nbsp; &nbsp; implementing the primary
+            key are called as alternate keys.&nbsp;</p
+          >
+          <p dir="ltr"
+            >● <strong>Foreign Key</strong> - An attribute &lsquo;X&rsquo; is
+            called as a foreign key to some other attribute &lsquo;Y&rsquo; when
+            its values are dependent on the values of attribute &lsquo;Y&rsquo;.
+            The relation in which attribute &lsquo;Y&rsquo; is present is called
+            as the referenced relation. The relation in which attribute
+            &lsquo;X&rsquo; is present is called as the referencing
+            relation.&nbsp;</p
+          >
+          <p dir="ltr"
+            >● <strong>Composite Key</strong> - A primary key composed of
+            multiple attributes and not just a single attribute is called a
+            composite key.&nbsp;</p
+          >
+          <p dir="ltr"
+            >● <strong>Unique Key</strong> - It is unique for all the records of
+            the table. Once assigned, its value cannot be changed i.e. it is
+            non-updatable. It may have a NULL value.</p
+          >
+          <p>&nbsp;</p>
+        </div>
+      </div>
+
+      <div id="FunctionalDependency" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">Functional Dependency</div>
+        <div id="hero-content">
+          <p dir="ltr"
+            ><span
+              >In any relation, a <strong>functional dependency</strong> &alpha;
+              &rarr; &beta; holds if- Two tuples having same value of attribute
+              &alpha; also have same value for attribute &beta;.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span><span>&nbsp;</span></span></p
+          >
+          <p dir="ltr"
+            ><strong>Types of Functional Dependency:&nbsp;</strong></p
+          >
+          <p dir="ltr"
+            ><span
+              >● <strong>Trivial Functional Dependencies</strong> &ndash;</span
+            ><span>&nbsp;</span></p
+          >
+          <p dir="ltr"
+            ><span
+              >A functional dependency X &rarr; Y is said to be trivial if and
+              only if Y &sube; X. o Thus, if RHS of a functional dependency is a
+              subset of LHS, then it is called a trivial functional
+              dependency.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span
+              >●
+              <strong>Non-Trivial Functional Dependencies</strong>
+              &ndash;&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span
+              >A functional dependency X &rarr; Y is said to be non-trivial if
+              and only if Y &nsub; X. o Thus, if there exists at least one
+              attribute in the RHS of a functional dependency that is not a part
+              of LHS, then it is called a non-trivial functional
+              dependency.</span
+            ></p
+          >
+          <p><span>&nbsp;</span></p>
+        </div>
+      </div>
+
+      <div id="DecompositionRelation" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">Decomposition of a Relation</div>
+        <div id="hero-content">
+          <p dir="ltr"
+            ><span
+              >The process of breaking up or dividing a single relation into two
+              or more sub relations is called the<strong>
+                decomposition of a relation.&nbsp;</strong
+              ></span
+            ></p
+          >
+          <p dir="ltr"
+            ><span><span>&nbsp;</span></span></p
+          >
+          <p dir="ltr"><strong>Properties of Decomposition:&nbsp;</strong></p>
+          <p dir="ltr"
+            ><span>● <strong>Lossless Decomposition</strong> -</span
+            ><span> Lossless decomposition ensures&nbsp;</span></p
+          >
+          <p dir="ltr"
+            ><span
+              >No information is lost from the original relation during
+              decomposition. o When the sub relations are joined back, the same
+              relation is obtained that was decomposed.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span>● <strong>Dependency Preservation</strong> -</span
+            ><span> Dependency preservation ensures&nbsp;</span></p
+          >
+          <p dir="ltr"
+            ><span
+              >None of the functional dependencies that hold on the original
+              relation are lost. o The sub relations still hold or satisfy the
+              functional dependencies of the original relation.</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span><span>&nbsp;</span></span></p
+          >
+          <p dir="ltr"><strong>Types of Decomposition:&nbsp;</strong></p>
+          <p dir="ltr"
+            ><span>● <strong>Lossless Join Decomposition:</strong></span></p
+          >
+          <p dir="ltr"
+            ><span
+              >o Consider there is a relation R which is decomposed into sub
+              relations R1, R2, &hellip;., Rn. o This decomposition is called
+              lossless join decomposition when the join of the sub relations
+              results in the same relation R that was decomposed.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span
+              >o For lossless join decomposition, we always have- R1 ⋈ R2 ⋈ R3
+              &hellip;&hellip;. ⋈ Rn = R where ⋈ is a natural join
+              operator&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span>● <strong>Lossy Join Decomposition:</strong></span
+            ><strong>&nbsp;</strong></p
+          >
+          <p dir="ltr"
+            ><span
+              >o Consider there is a relation R which is decomposed into sub
+              relations R1, R2, &hellip;., Rn.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span
+              >o This decomposition is called lossy join decomposition when the
+              join of the sub&nbsp;</span
+            >
+          </p>
+          <p dir="ltr"
+            ><span
+              >relations does not result in the same relation R that was
+              decomposed.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span
+              >o For lossy join decomposition, we always have- R1 ⋈ R2 ⋈ R3
+              &hellip;&hellip;. ⋈ Rn &sup; R where ⋈ is a natural join
+              operator&nbsp;</span
+            ></p
+          >
+          <p><span>&nbsp;</span></p>
+        </div>
+      </div>
+
+      <div id="Normalization" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">Normalization</div>
+        <div id="hero-content">
+          <p dir="ltr"
+            ><span
+              >In DBMS, database normalization is a process of making the
+              database consistent by-&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"><strong>● Reducing the redundancies&nbsp;</strong></p>
+          <p dir="ltr"
+            ><span
+              >●<strong>
+                Ensuring the integrity of data through lossless
+                decomposition</strong
+              ></span
+            ></p
+          >
+          <p dir="ltr"
+            ><span><span>&nbsp;</span></span></p
+          >
+          <p dir="ltr"><strong>Normal Forms:&nbsp;</strong></p>
+          <p dir="ltr"
+            ><span>● <strong>First Normal Form (1NF) -</strong></span
+            ><span>
+              A given relation is called in First Normal Form (1NF) if&nbsp;
+              &nbsp; each cell of the table contains only an atomic value i.e.
+              if the attribute of every tuple is either single valued or a null
+              value.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span>● <strong>Second Normal Form (2NF) </strong></span
+            ><span
+              ><strong>-</strong> A given relation is called in Second Normal
+              Form (2NF) if and only if&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"><span>o Relation already exists in 1NF.&nbsp;</span></p>
+          <p dir="ltr"
+            ><span
+              >o No partial dependency exists in the relation. A &rarr; B is
+              called a partial dependency if and only if- A is a subset of some
+              candidate key and B is a non-prime attribute.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span>● <strong>Third Normal Form (3NF) -</strong></span
+            ><span>
+              A given relation is called in Third Normal Form (3NF) if and only
+              if&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"><span>o Relation already exists in 2NF.&nbsp;</span></p>
+          <p dir="ltr"
+            ><span
+              >o No transitive dependency exists for non-prime attributes. A
+              &rarr; B is called a transitive dependency if and only if- A is
+              not a super key and B is a non-prime attribute.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span>● <strong>Boyce-Codd Normal Form -</strong></span
+            ><span>
+              A given relation is called in BCNF if and only if&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"><span>o Relation already exists in 3NF.&nbsp;</span></p>
+          <p dir="ltr"
+            ><span
+              >o For each non-trivial functional dependency &lsquo;A &rarr;
+              B&rsquo;, A is a super key of the relation</span
+            ></p
+          >
+          <p><span>&nbsp;</span></p>
+          <img
+            src="https://www.gatevidyalay.com/wp-content/uploads/2018/06/Normal-Forms-in-DBMS-Point-01.png"
+            alt="" />
+        </div>
+      </div>
+
+      <div id="Transaction" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">Transaction</div>
+        <div id="hero-content">
+          <p dir="ltr"
+            ><strong>Transaction</strong> is a single logical unit of work
+            formed by a set of operations.&nbsp;
+          </p>
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"
+            ><span style="text-decoration: underline"
+              ><strong>Operations in Transaction:&nbsp;</strong></span
+            >
+          </p>
+          <p dir="ltr"
+            ><strong>● Read Operation -</strong> Read(A) instruction will read
+            the value of &lsquo;A&rsquo; from the database and will store it in
+            the buffer in main memory.&nbsp;</p
+          >
+          <p dir="ltr"
+            ><strong>● Write Operation &ndash;</strong> Write(A) will write the
+            updated value of &lsquo;A&rsquo; from the buffer to the
+            database.&nbsp;</p
+          >
+          <p dir="ltr"><strong>Transaction States:&nbsp;</strong></p>
+          <img
+            src="https://www.gatevidyalay.com/wp-content/uploads/2018/05/Transaction-States-in-DBMS.png"
+            alt="" />
+          <p dir="ltr"><strong>● Active State &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >o This is the first state in the life cycle of a
+            transaction.&nbsp;</p
+          >
+          <p dir="ltr"
+            >o A transaction is called in an active state as long as its
+            instructions are getting executed.</p
+          >
+          <p dir="ltr"
+            >o All the changes made by the transaction now are stored in the
+            buffer in main memory.&nbsp;</p
+          >
+          <p dir="ltr"
+            ><strong>● Partially Committed State &ndash;&nbsp;</strong></p
+          >
+          <p dir="ltr"
+            >o After the last instruction of the transaction has been executed,
+            it enters into a partially committed state.&nbsp;</p
+          >
+          <p dir="ltr"
+            >o After entering this state, the transaction is considered to be
+            partially committed.&nbsp;</p
+          >
+          <p dir="ltr"
+            >o It is not considered fully committed because all the changes made
+            by the transaction are still stored in the buffer in main
+            memory.&nbsp;</p
+          >
+          <p dir="ltr"><strong>● Committed State &ndash;</strong>&nbsp;</p>
+          <p dir="ltr"
+            >o After all the changes made by the transaction have been
+            successfully stored into the database, it enters into a committed
+            state.&nbsp;</p
+          >
+          <p dir="ltr"
+            >o Now, the transaction is considered to be fully
+            committed.&nbsp;</p
+          >
+          <p dir="ltr"><strong>● Failed State &ndash;</strong></p>
+          <p dir="ltr"
+            >o When a transaction is getting executed in the active state or
+            partially committed state and some failure occurs due to which it
+            becomes impossible to continue the execution, it enters into a
+            failed state</p
+          >
+          <p dir="ltr"><strong>● Aborted State &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >o After the transaction has failed and entered into a failed state,
+            all the changes made by it have to be undone.&nbsp;</p
+          >
+          <p dir="ltr"
+            >o To undo the changes made by the transaction, it becomes necessary
+            to roll back the transaction.&nbsp;</p
+          >
+          <p dir="ltr"
+            >o After the transaction has rolled back completely, it enters into
+            an aborted state.&nbsp;</p
+          >
+          <p dir="ltr"><strong>● Terminated State &ndash;</strong>&nbsp;</p>
+          <p dir="ltr"
+            >o This is the last state in the life cycle of a
+            transaction.&nbsp;</p
+          >
+          <p dir="ltr"
+            >o After entering the committed state or aborted state, the
+            transaction finally enters into a terminated state where its life
+            cycle finally comes to an end.</p
+          >
+          <p>&nbsp;</p>
+        </div>
+      </div>
+
+      <div id="ACID" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">ACID Properties</div>
+        <div id="hero-content">
+          <p dir="ltr"
+            ><span
+              >To ensure the consistency of the database, certain properties are
+              followed by all the transactions occurring in the system. These
+              properties are called as
+              <span style="text-decoration: underline"
+                ><strong>ACID Properties of a transaction.&nbsp;</strong></span
+              ></span
+            >
+          </p>
+          <p dir="ltr"
+            ><span
+              ><strong><em>● Atomicity &ndash;</em></strong
+              >&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span
+              >o This property ensures that either the transaction occurs
+              completely or it does not occur at all. o In other words, it
+              ensures that no transaction occurs partially.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><strong><em>● Consistency &ndash;</em></strong></p
+          >
+          <p dir="ltr"
+            ><span
+              >o This property ensures that integrity constraints are
+              maintained.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span
+              >o In other words, it ensures that the database remains consistent
+              before and after the transaction.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><strong><em>● Isolation &ndash;</em></strong
+            ><span>&nbsp;</span></p
+          >
+          <p dir="ltr"
+            ><span
+              >o This property ensures that multiple transactions can occur
+              simultaneously without causing any inconsistency.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span
+              >o The resultant state of the system after executing all the
+              transactions is the same as the state that would be achieved if
+              the transactions were executed serially one after the
+              other.&nbsp;</span
+            >
+          </p>
+          <p dir="ltr"
+            ><strong><em>● Durability &ndash;</em></strong
+            ><span>&nbsp;</span></p
+          >
+          <p dir="ltr"
+            ><span
+              >o This property ensures that all the changes made by a
+              transaction after its successful execution are written
+              successfully to the disk.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span
+              >o It also ensures that these changes exist permanently and are
+              never lost even if there occurs a failure of any kind.
+            </span></p
+          >
+          <p><span>&nbsp;</span></p>
+        </div>
+      </div>
+      <div id="Schedules" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">Schedules</div>
+        <div id="hero-content">
+          <p dir="ltr"
+            >&nbsp;The order in which the operations of multiple transactions
+            appear for execution is called as a <strong>schedule</strong>.</p
+          >
+          <img
+            src="https://www.gatevidyalay.com/wp-content/uploads/2018/05/Types-of-Schedules-in-DBMS.png"
+            alt="" />
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>● Serial Schedules &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >o All the transactions execute serially one after the other. o When
+            one transaction executes, no other transaction is allowed to
+            execute.&nbsp;</p
+          >
+          <p dir="ltr"
+            >o Serial schedules are always- Consistent, Recoverable, Cascadeless
+            and Strict.&nbsp;</p
+          >
+          <p dir="ltr"><strong>● Non-Serial Schedules &ndash;</strong>&nbsp;</p>
+          <p dir="ltr"
+            >o Multiple transactions execute concurrently. o Operations of all
+            the transactions are inter leaved or mixed with each other.&nbsp;</p
+          >
+          <p dir="ltr"
+            >o Non-serial schedules are not always- Consistent, Recoverable,
+            Cascadeless and Strict.</p
+          >
+          <p>&nbsp;</p>
+        </div>
+      </div>
+
+      <div id="Serializability" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">Serializability</div>
+        <div id="hero-content">
+          <p dir="ltr"
+            ><span
+              >● Some non-serial schedules may lead to inconsistency of the
+              database.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span
+              >● <strong>Serializability</strong> is a concept that helps to
+              identify which non-serial schedules are correct and will maintain
+              the consistency of the database.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"
+            ><span
+              ><strong><em>● Serializable Schedules &ndash;</em></strong
+              >&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span
+              >o If a given non-serial schedule of &lsquo;n&rsquo; transactions
+              is equivalent to some serial schedule of &lsquo;n&rsquo;
+              transactions, then it is called as a serializable
+              schedule.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span
+              >o Serializable schedules are always- Consistent, Recoverable,
+              Cascadeless and Strict</span
+            >
+          </p>
+          <p dir="ltr"
+            ><span><span>&nbsp;</span></span></p
+          >
+          <p dir="ltr"
+            ><strong
+              ><span>Types of Serializability &ndash;&nbsp;</span></strong
+            ></p
+          >
+          <p dir="ltr"
+            ><strong>● Conflict Serializability -</strong
+            ><span>
+              If a given non-serial schedule can be converted into a serial
+              schedule by swapping its non-conflicting operations, then it is
+              called a conflict serializable schedule.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><strong>● View Serializability -</strong
+            ><span>
+              If a given schedule is found to be viewed as equivalent to some
+              serial schedule, then it is called a view serializable
+              schedule.</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span><span>&nbsp;</span></span></p
+          >
+          <p dir="ltr"
+            ><strong
+              ><span>Non-Serializable Schedules &ndash;&nbsp;</span></strong
+            ></p
+          >
+          <p dir="ltr"
+            ><span
+              >● A non-serial schedule which is not serializable is called a
+              non-serializable schedule.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span
+              >● A non-serializable schedule is not guaranteed to produce the
+              same effect as produced by some serial schedule on any consistent
+              database.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span
+              ><strong>● Non-serializable schedules-</strong> may or may not be
+              consistent, may or may not be recoverable.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><strong>● Irrecoverable Schedules &ndash;</strong
+            ><span> If in a schedule,&nbsp;</span></p
+          >
+          <p dir="ltr"
+            ><span
+              >o A transaction performs a dirty read operation from an
+              uncommitted transaction&nbsp;</span
+            >
+          </p>
+          <p dir="ltr"
+            ><span
+              >o And commits before the transaction from which it has read the
+              value then such a schedule is known as an Irrecoverable
+              Schedule.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><strong>● Recoverable Schedules &ndash;</strong
+            ><span> If in a schedule,&nbsp;</span></p
+          >
+          <p dir="ltr"
+            ><span
+              >o A transaction performs a dirty read operation from an
+              uncommitted transaction</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span
+              >o And its commit operation is delayed till the uncommitted
+              transaction either commits or roll backs</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span
+              >then such a schedule is known as a Recoverable
+              Schedule.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span><span>&nbsp;</span></span></p
+          >
+          <p dir="ltr"
+            ><strong>Types of Recoverable Schedules &ndash;&nbsp;</strong></p
+          >
+          <p dir="ltr"
+            ><strong>● Cascading Schedule -</strong
+            ><span>
+              If in a schedule, failure of one transaction causes several other
+              &nbsp; dependent transactions to rollback or abort, then such a
+              schedule is called as a Cascading Schedule or Cascading Rollback
+              or Cascading Abort.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><strong>● Cascadeless Schedule -</strong
+            ><span>
+              If in a schedule, a transaction is not allowed to read a data item
+              until the last transaction that has written it is committed or
+              aborted, then such a schedule is called as a Cascadeless
+              Schedule.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span
+              ><strong>● Strict Schedule -</strong
+              ><span>
+                If in a schedule, a transaction is neither allowed to read nor
+                write a data item until the last transaction that has written it
+                is committed or aborted, then such a schedule is called as a
+                Strict Schedule</span
+              ></span
+            ></p
+          >
+        </div>
+      </div>
+
+      <div id="FileStructures" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">File Structures</div>
+        <div id="hero-content">
+          <p dir="ltr"
+            ><span><strong>● Primary Index:</strong> </span
+            ><span
+              >A primary index is an ordered file, records of fixed length with
+              two fields. First field is the same as the primary key as a data
+              file and the second field is a pointer to the data block, where
+              the key is available. The average number of block accesses using
+              index = </span
+            ><span>log2Bi + 1</span
+            ><span>, where Bi = number of index blocks.&nbsp;</span></p
+          >
+          <p dir="ltr"
+            ><strong>● Clustering Index:</strong
+            ><span>
+              Clustering index is created on data file whose records are
+              physically ordered on a non-key field (called Clustering
+              field).&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><strong>● Secondary Index:</strong
+            ><span>
+              Secondary index provides secondary means of accessing a file for
+              which primary access already exists.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr">&nbsp;</p>
+        </div>
+      </div>
+
+      <div id="BTrees" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">B Trees</div>
+        <div id="hero-content">
+          <p dir="ltr"
+            ><span
+              >At every level , we have Key and Data Pointer and data pointer
+              points to either block or record.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span><span>&nbsp;</span></span></p
+          >
+          <p dir="ltr"><strong>Properties of B-Trees:&nbsp;</strong></p>
+          <p dir="ltr"
+            ><span
+              >Root of B-tree can have children between 2 and P, where P is
+              Order of tree.</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span><span>&nbsp;</span></span></p
+          >
+          <p dir="ltr"><strong>Order of tree &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            ><span
+              >Maximum number of children a node can have. Internal node can
+              have children between &lceil; P/2 &rceil; and P Internal node can
+              have keys between &lceil; P/2 &rceil; &ndash; 1 and P-1.
+            </span></p
+          >
+          <p dir="ltr"><strong>B+Trees :-</strong></p>
+          <p dir="ltr"
+            ><span
+              >In B+ trees, the structure of leaf and non-leaf are different, so
+              their order is. Order of non-leaf will be higher as compared to
+              leaf nodes.&nbsp;</span
+            ></p
+          >
+          <p dir="ltr"
+            ><span
+              >Searching time will be less in B+ trees, since it doesn&rsquo;t
+              have record pointers in non-leaf because of which depth will
+              decrease.</span
+            ></p
+          >
+          <p><span>&nbsp;</span></p>
+        </div>
+      </div>
+
+      <div id="SQL" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">SQL</div>
+        <div id="hero-content">
+          <p dir="ltr"><strong>DDL:</strong>&nbsp;</p>
+          <p dir="ltr"
+            >DDL is short name of Data Definition Language, which deals with
+            database schemas and descriptions, of how the data should reside in
+            the database.&nbsp;</p
+          >
+          <p dir="ltr"
+            >●<strong> CREATE - </strong>to create a database and its objects
+            like (table, index, views, store procedure, function, and
+            triggers)&nbsp;</p
+          >
+          <p dir="ltr"
+            >● <strong>ALTER - </strong>alters the structure of the existing
+            database&nbsp;</p
+          >
+          <p dir="ltr"
+            ><strong>● DROP -</strong> delete objects from the database&nbsp;</p
+          >
+          <p dir="ltr"
+            ><strong>● TRUNCATE</strong> - remove all records from a table,
+            including all spaces allocated for the records are removed&nbsp;</p
+          >
+          <p dir="ltr"><strong>● RENAME</strong> - rename an object</p>
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>DML:</strong>&nbsp;</p>
+          <p dir="ltr"
+            >DML is short name of Data Manipulation Language which deals with
+            data manipulation and includes most common SQL statements such
+            SELECT, INSERT, UPDATE, DELETE, etc., and it is used to store,
+            modify, retrieve, delete and update data in a database.&nbsp;</p
+          >
+          <p dir="ltr"
+            ><strong>● SELECT -</strong> retrieve data from a database&nbsp;</p
+          >
+          <p dir="ltr"
+            ><strong>● INSERT - </strong>insert data into a table&nbsp;</p
+          >
+          <p dir="ltr"
+            ><strong>● UPDATE -</strong> updates existing data within a
+            table&nbsp;</p
+          >
+          <p dir="ltr"
+            ><strong>● DELETE</strong> - Delete all records from a database
+            table&nbsp;</p
+          >
+          <p dir="ltr"
+            ><strong>● MERGE</strong> - UPSERT operation (insert or
+            update)&nbsp;</p
+          >
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>DCL:</strong></p>
+          <p dir="ltr"
+            >DCL is short name of Data Control Language which includes commands
+            such as GRANT and mostly concerned with rights, permissions and
+            other controls of the database system.&nbsp;</p
+          >
+          <p dir="ltr"
+            ><strong>● GRANT</strong><strong> -</strong> allow users access
+            privileges to the database&nbsp;</p
+          >
+          <p dir="ltr"
+            ><strong>● REVOKE -</strong> withdraw users access privileges given
+            by using the GRANT command</p
+          >
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>TCL:</strong></p>
+          <p dir="ltr"
+            >TCL is short name of Transaction Control Language which deals with
+            a transaction within a database.&nbsp;</p
+          >
+          <p dir="ltr"
+            ><strong>● COMMIT -</strong> commits a Transaction&nbsp;</p
+          >
+          <p dir="ltr"
+            ><strong>● ROLLBACK -</strong> rollback a transaction in case of any
+            error occurs&nbsp;</p
+          >
+          <p dir="ltr"
+            ><strong>● SAVEPOINT </strong><strong>-</strong> to roll back the
+            transaction making points within groups&nbsp;</p
+          >
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>SQL:&nbsp;</strong></p>
+          <p dir="ltr"
+            >SQL is a standard language for storing, manipulating and retrieving
+            data in databases.&nbsp;</p
+          >
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>SELECT:&nbsp;</strong></p>
+          <p dir="ltr"
+            >The SELECT statement is used to select data from a
+            database.&nbsp;</p
+          >
+          <p dir="ltr"><strong>Syntax -&nbsp;</strong></p>
+          <p dir="ltr">● SELECT column1, column2, ... FROM table_name;&nbsp;</p>
+          <p dir="ltr"
+            >● Here, column1, column2, ... are the field names of the table you
+            want to select data from. If you want to select all the fields
+            available in the table, use the following syntax:&nbsp;</p
+          >
+          <p dir="ltr">● SELECT * FROM table_name;&nbsp;</p>
+          <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
+          <p dir="ltr">● SELECT CustomerName, City&nbsp;</p>
+          <p dir="ltr">FROM Customers</p>
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>SELECT DISTINCT:&nbsp;</strong></p>
+          <p dir="ltr"
+            >The SELECT DISTINCT statement is used to return only distinct
+            (different) values. Syntax &ndash;&nbsp;</p
+          >
+          <p dir="ltr">● SELECT DISTINCT column1, column2, ...&nbsp;</p>
+          <p dir="ltr">FROM table_name;</p>
+          <p dir="ltr">&nbsp;Ex &ndash;&nbsp;</p>
+          <p dir="ltr">● SELECT DISTINCT Country&nbsp;</p>
+          <p dir="ltr">FROM Customers;&nbsp;</p>
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>WHERE:&nbsp;</strong></p>
+          <p dir="ltr">The WHERE clause is used to filter records.&nbsp;</p>
+          <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
+          <p dir="ltr">● SELECT column1, column2, ...&nbsp;</p>
+          <p dir="ltr">FROM table_name&nbsp;</p>
+          <p dir="ltr">WHERE condition;&nbsp;</p>
+          <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
+          <p dir="ltr">● SELECT *&nbsp;</p>
+          <p dir="ltr">FROM Customers&nbsp;</p>
+          <p dir="ltr">WHERE Country='Mexico';&nbsp;</p>
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>AND, OR and NOT:&nbsp;</strong></p>
+          <p dir="ltr"
+            >The WHERE clause can be combined with AND, OR, and NOT
+            operators.&nbsp;</p
+          >
+          <p dir="ltr"
+            >The AND and OR operators are used to filter records based on more
+            than one condition:&nbsp;</p
+          >
+          <p dir="ltr"
+            >● The AND operator displays a record if all the conditions
+            separated by AND are TRUE.&nbsp;</p
+          >
+          <p dir="ltr"
+            >● The OR operator displays a record if any of the conditions
+            separated by OR is TRUE.&nbsp;</p
+          >
+          <p dir="ltr"
+            >The NOT operator displays a record if the condition(s) is NOT
+            TRUE</p
+          >
+          <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
+          <p dir="ltr">● SELECT column1, column2, &hellip;</p>
+          <p dir="ltr">&nbsp;&nbsp;FROM table_name&nbsp;</p>
+          <p dir="ltr"
+            >&nbsp;&nbsp;WHERE condition1 AND condition2 AND condition3
+            ...;&nbsp;</p
+          >
+          <p dir="ltr">● SELECT column1, column2, ...&nbsp;</p>
+          <p dir="ltr">&nbsp;&nbsp;&nbsp;FROM table_name&nbsp;</p>
+          <p dir="ltr"
+            >&nbsp;&nbsp;&nbsp;WHERE condition1 OR condition2 OR condition3
+            ...;&nbsp;</p
+          >
+          <p dir="ltr">● SELECT column1, column2, ...&nbsp;</p>
+          <p dir="ltr">&nbsp;&nbsp;&nbsp;FROM table_name&nbsp;</p>
+          <p dir="ltr">&nbsp;&nbsp;WHERE NOT condition;&nbsp;</p>
+          <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >● SELECT * FROM Customers WHERE Country='Germany' AND
+            City='Berlin';&nbsp;</p
+          >
+          <p dir="ltr"
+            >● SELECT * FROM Customers WHERE Country='Germany' AND
+            (City='Berlin' OR City='M&uuml;nchen')</p
+          >
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>ORDER BY:&nbsp;</strong></p>
+          <p dir="ltr"
+            >The ORDER BY keyword is used to sort the result-set in ascending or
+            descending order. The ORDER BY keyword sorts the records in
+            ascending order by default. To sort the records in descending order,
+            use the DESC keyword.&nbsp;</p
+          >
+          <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
+          <p dir="ltr">● SELECT column1, column2, ...&nbsp;</p>
+          <p dir="ltr">FROM table_name&nbsp;</p>
+          <p dir="ltr">ORDER BY column1, column2, ... ASC|DESC;</p>
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
+          <p dir="ltr">● SELECT * FROM Customers ORDER BY Country;&nbsp;</p>
+          <p dir="ltr"
+            >● SELECT * FROM Customers ORDER BY Country ASC, CustomerName
+            DESC;&nbsp;</p
+          >
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>INSERT INTO:&nbsp;</strong></p>
+          <p dir="ltr"
+            >The INSERT INTO statement is used to insert new records in a
+            table.&nbsp;</p
+          >
+          <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >● INSERT INTO table_name (column1, column2, column3, ...) VALUES
+            (value1, value2, value3, ...);&nbsp;</p
+          >
+          <p dir="ltr"
+            >● INSERT INTO table_name VALUES (value1, value2, value3,
+            ...);&nbsp;</p
+          >
+          <p dir="ltr"
+            >*In the second syntax, make sure the order of the values is in the
+            same order as the columns in the table.&nbsp;</p
+          >
+          <p dir="ltr"><strong>Ex &ndash; </strong></p>
+          <p dir="ltr"
+            >● INSERT INTO Customers (CustomerName, ContactName, Address, City,
+            PostalCode, &nbsp; Country)&nbsp;</p
+          >
+          <p dir="ltr"
+            >VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger',
+            '4006', 'Norway');&nbsp;</p
+          >
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>NULL Value:&nbsp;</strong></p>
+          <p dir="ltr"
+            >It is not possible to test for NULL values with comparison
+            operators, such as =, &lt;, or &lt;&gt;.&nbsp;</p
+          >
+          <p dir="ltr"
+            >We will have to use the IS NULL and IS NOT NULL operators
+            instead.&nbsp;</p
+          >
+          <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
+          <p dir="ltr">● SELECT column_names&nbsp;</p>
+          <p dir="ltr">FROM table_name&nbsp;</p>
+          <p dir="ltr">WHERE column_name IS NULL;&nbsp;</p>
+          <p dir="ltr">● SELECT column_names&nbsp;</p>
+          <p dir="ltr">FROM table_name&nbsp;</p>
+          <p dir="ltr">WHERE column_name IS NOT NULL;</p>
+          <p dir="ltr"><strong>&nbsp;Ex &ndash;</strong></p>
+          <p dir="ltr"
+            >&nbsp;● SELECT CustomerName, ContactName, Address FROM Customers
+            WHERE Address IS NULL;</p
+          >
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>UPDATE:&nbsp;</strong></p>
+          <p dir="ltr"
+            >The UPDATE statement is used to modify the existing records in a
+            table.&nbsp;</p
+          >
+          <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >● UPDATE table_name SET column1 = value1, column2 = value2, ...
+            WHERE condition;</p
+          >
+          <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >● UPDATE Customers SET ContactName = 'Alfred Schmidt', City=
+            'Frankfurt' WHERE CustomerID = 1</p
+          >
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>DELETE:&nbsp;</strong></p>
+          <p dir="ltr"
+            >The DELETE statement is used to delete existing records in a
+            table.&nbsp;</p
+          >
+          <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
+          <p dir="ltr">● DELETE FROM table_name WHERE condition;&nbsp;</p>
+          <p dir="ltr"
+            >● DELETE FROM table_name; In 2nd syntax, all rows are deleted. The
+            table structure, attributes, and indexes will be intact&nbsp;</p
+          >
+          <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >● DELETE FROM Customers WHERE CustomerName='Alfreds
+            Futterkiste';</p
+          >
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>SELECT TOP:&nbsp;</strong></p>
+          <p dir="ltr"
+            >The SELECT TOP clause is used to specify the number of records to
+            return.&nbsp;</p
+          >
+          <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >● SELECT TOP number|percent column_name(s) FROM table_name WHERE
+            condition;&nbsp;</p
+          >
+          <p dir="ltr"
+            >● SELECT column_name(s) FROM table_name WHERE condition LIMIT
+            number;&nbsp;</p
+          >
+          <p dir="ltr"
+            >● SELECT column_name(s) FROM table_name ORDER BY column_name(s)
+            FETCH FIRST number ROWS ONLY;&nbsp;
+          </p>
+          <p dir="ltr"
+            >● SELECT column_name(s) FROM table_name WHERE ROWNUM &lt;=
+            number;&nbsp;</p
+          >
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"
+            >*In case the interviewer asks other than the TOP, rest are also
+            correct. (Diff. DB Systems)&nbsp;
+          </p>
+          <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
+          <p dir="ltr">● SELECT TOP 3 * FROM Customers;</p>
+          <p dir="ltr">● SELECT * FROM Customers LIMIT 3;</p>
+          <p dir="ltr">● SELECT * FROM Customers FETCH FIRST 3 ROWS ONLY;</p>
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>Aggregate Functions:&nbsp;</strong></p>
+          <p dir="ltr"><strong>MIN():&nbsp;</strong></p>
+          <p dir="ltr"
+            >The MIN() function returns the smallest value of the selected
+            column.&nbsp;</p
+          >
+          <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >● SELECT MIN(column_name) FROM table_name WHERE condition;&nbsp;</p
+          >
+          <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >● SELECT MIN(Price) AS SmallestPrice FROM Products;&nbsp;</p
+          >
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>MAX():&nbsp;</strong></p>
+          <p dir="ltr"
+            >The MAX() function returns the largest value of the selected
+            column.&nbsp;</p
+          >
+          <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >&nbsp;● SELECT MAX(column_name) FROM table_name WHERE
+            condition;&nbsp;</p
+          >
+          <p dir="ltr"><strong>Ex &ndash;</strong></p>
+          <p dir="ltr"
+            >&nbsp;● SELECT MAX(Price) AS LargestPrice FROM Products;</p
+          >
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>COUNT():&nbsp;</strong></p>
+          <p dir="ltr"
+            >The COUNT() function returns the number of rows that matches a
+            specified criterion.&nbsp;</p
+          >
+          <p dir="ltr"><strong>Syntax &ndash;</strong></p>
+          <p dir="ltr"
+            >&nbsp;● SELECT COUNT(column_name) FROM table_name WHERE
+            condition;&nbsp;</p
+          >
+          <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
+          <p dir="ltr">&nbsp;● SELECT COUNT(ProductID) FROM Products;&nbsp;</p>
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>AVG():&nbsp;</strong></p>
+          <p dir="ltr"
+            >The AVG() function returns the average value of a numeric
+            column.&nbsp;</p
+          >
+          <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >● SELECT AVG(column_name) FROM table_name WHERE condition;&nbsp;</p
+          >
+          <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
+          <p dir="ltr">● SELECT AVG(Price) FROM Products;&nbsp;</p>
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>SUM():&nbsp;</strong></p>
+          <p dir="ltr"
+            >The SUM() function returns the total sum of a numeric
+            column.&nbsp;</p
+          >
+          <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >● SELECT SUM(column_name) FROM table_name WHERE condition;&nbsp;</p
+          >
+          <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
+          <p dir="ltr">● SELECT SUM(Quantity) FROM OrderDetails;&nbsp;</p>
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>LIKE Operator:&nbsp;</strong></p>
+          <p dir="ltr"
+            >The LIKE operator is used in a WHERE clause to search for a
+            specified pattern in a column.&nbsp;
+          </p>
+          <p dir="ltr"
+            >There are two wildcards often used in conjunction with the LIKE
+            operator:&nbsp;</p
+          >
+          <p dir="ltr"
+            >● The percent sign (%) represents zero, one, or multiple
+            characters&nbsp;</p
+          >
+          <p dir="ltr"
+            >● The underscore sign (_) represents one, single character</p
+          >
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>Syntax &ndash;</strong></p>
+          <p dir="ltr">&nbsp;SELECT column1, column2, ...&nbsp;</p>
+          <p dir="ltr">FROM table_name&nbsp;</p>
+          <p dir="ltr">WHERE columnN LIKE pattern;</p>
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>IN:&nbsp;</strong></p>
+          <p dir="ltr"
+            >The IN operator allows you to specify multiple values in a WHERE
+            clause. The IN operator is a shorthand for multiple OR
+            conditions.&nbsp;</p
+          >
+          <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >● SELECT column_name(s) FROM table_name WHERE column_name IN
+            (value1, value2, ...); ● SELECT column_name(s) FROM table_name WHERE
+            column_name IN (SELECT STATEMENT);&nbsp;</p
+          >
+          <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >● SELECT * FROM Customers WHERE Country IN ('Germany', 'France',
+            'UK');&nbsp;</p
+          >
+          <p dir="ltr"
+            >● SELECT * FROM Customers WHERE Country IN (SELECT Country FROM
+            Suppliers);&nbsp;</p
+          >
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>BETWEEN:&nbsp;</strong></p>
+          <p dir="ltr"
+            >The BETWEEN operator selects values within a given range. The
+            values can be numbers, text, or dates.</p
+          >
+          <p dir="ltr"
+            >The BETWEEN operator is inclusive: begin and end values are
+            included.</p
+          >
+          <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >● SELECT column_name(s) FROM table_name WHERE column_name BETWEEN
+            value1 AND value2;</p
+          >
+          <p dir="ltr"><strong>&nbsp;Ex &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >● SELECT * FROM Products WHERE Price BETWEEN 10 AND 20;&nbsp;</p
+          >
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>JOINS:&nbsp;</strong></p>
+          <p dir="ltr"
+            >&nbsp;A JOIN clause is used to combine rows from two or more
+            tables, based on a related column between them.&nbsp;</p
+          >
+          <p dir="ltr"><strong>INNER JOIN:&nbsp;</strong></p>
+          <p dir="ltr"
+            >The INNER JOIN keyword selects records that have matching values in
+            both tables.</p
+          >
+          <img
+            src="https://blog.codinghorror.com/content/images/uploads/2007/10/6a0120a85dcdae970b012877702708970c-pi.png"
+            alt="" />
+          <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >● SELECT column_name(s) FROM table1 INNER JOIN table2 ON
+            table1.column_name = table2.column_name;&nbsp;</p
+          >
+          <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >● SELECT Orders.OrderID, Customers.CustomerName FROM Orders INNER
+            JOIN Customers ON Orders.CustomerID = Customers.CustomerID;</p
+          >
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>LEFT (OUTER) JOIN:&nbsp;</strong></p>
+          <p dir="ltr"
+            >The LEFT JOIN keyword returns all records from the left table
+            (table1), and the matching records from the right table
+            (table2).&nbsp;</p
+          >
+          <p dir="ltr"
+            >The result is 0 records from the right side, if there is no
+            match.&nbsp;</p
+          >
+          <img src="https://i.stack.imgur.com/VkAT5.png" alt="" />
+          <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >● SELECT column_name(s) FROM table1 LEFT JOIN table2 ON
+            table1.column_name = table2.column_name;&nbsp;</p
+          >
+          <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >● SELECT Customers.CustomerName, Orders.OrderID FROM Customers LEFT
+            JOIN Orders ON Customers.CustomerID = Orders.CustomerID ORDER BY
+            Customers.CustomerName;&nbsp;</p
+          >
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>RIGHT (OUTER) JOIN:&nbsp;</strong></p>
+          <p dir="ltr"
+            >The RIGHT JOIN keyword returns all records from the right table
+            (table2), and the matching records from the left table (table1). The
+            result is 0 records from the left side, if there is no match.</p
+          >
+          <img
+            src="https://media.geeksforgeeks.org/wp-content/uploads/20220515095048/join.jpg"
+            alt="" />
+          <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >● SELECT column_name(s) FROM table1 RIGHT JOIN table2 ON
+            table1.column_name = table2.column_name;&nbsp;</p
+          >
+          <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >● SELECT Orders.OrderID, Employees.LastName, Employees.FirstName
+            FROM Orders RIGHT JOIN Employees ON Orders.EmployeeID =
+            Employees.EmployeeID ORDER BY Orders.OrderID;&nbsp;</p
+          >
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>FULL (OUTER) JOIN:&nbsp;</strong></p>
+          <p dir="ltr"
+            >The FULL OUTER JOIN keyword returns all records when there is a
+            match in left (table1) or right (table2) table records.&nbsp;</p
+          >
+          <img src="https://i.stack.imgur.com/3Ll1h.png" alt="" />
+          <p dir="ltr"><strong>Syntax:</strong></p>
+          <p dir="ltr"
+            >● SELECT column_name(s) FROM table1 FULL OUTER JOIN table2 ON
+            table1.column_name = table2.column_name WHERE condition;&nbsp;</p
+          >
+          <p dir="ltr"><strong>Ex &ndash;</strong></p>
+          <p dir="ltr"
+            >● SELECT Customers.CustomerName, Orders.OrderID FROM Customers FULL
+            OUTER JOIN Orders ON Customers.CustomerID=Orders.CustomerID ORDER BY
+            Customers.CustomerName;</p
+          >
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>&nbsp;UNION:</strong></p>
+          <p dir="ltr"
+            >&nbsp;The UNION operator is used to combine the result-set of two
+            or more SELECT statements.</p
+          >
+          <p dir="ltr"
+            >&nbsp;● Every SELECT statement within UNION must have the same
+            number of columns&nbsp;</p
+          >
+          <p dir="ltr">&nbsp;● The columns must also have similar data types</p>
+          <p dir="ltr"
+            >&nbsp;● The columns in every SELECT statement must also be in the
+            same order The UNION operator selects only distinct values by
+            default.&nbsp;</p
+          >
+          <p dir="ltr">To allow duplicate values, use UNION ALL&nbsp;</p>
+          <p dir="ltr"><strong>Syntax &ndash;</strong></p>
+          <p dir="ltr"
+            >● SELECT column_name(s) FROM table1 UNION SELECT column_name(s)
+            FROM table2;&nbsp;</p
+          >
+          <p dir="ltr"
+            >● SELECT column_name(s) FROM table1 UNION ALL SELECT column_name(s)
+            FROM table2;&nbsp;</p
+          >
+          <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >● SELECT City FROM Customers UNION SELECT City FROM Suppliers ORDER
+            BY City;&nbsp;</p
+          >
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>GROUP BY:&nbsp;</strong></p>
+          <p dir="ltr"
+            >The GROUP BY statement groups rows that have the same values into
+            summary rows, like "find the number of customers in each
+            country".&nbsp;</p
+          >
+          <p dir="ltr"
+            >The GROUP BY statement is often used with aggregate functions
+            (COUNT(), MAX(), MIN(), SUM(), AVG()) to group the result-set by one
+            or more columns.&nbsp;</p
+          >
+          <p dir="ltr"><strong>Syntax &ndash;</strong></p>
+          <p dir="ltr"
+            >&nbsp;● SELECT column_name(s) FROM table_name WHERE condition GROUP
+            BY column_name(s) ORDER BY column_name(s);&nbsp;</p
+          >
+          <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >● SELECT COUNT(CustomerID), Country FROM Customers GROUP BY Country
+            ORDER BY COUNT(CustomerID) DESC;&nbsp;</p
+          >
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>HAVING:&nbsp;</strong></p>
+          <p dir="ltr"
+            >The HAVING clause was added to SQL because the WHERE keyword cannot
+            be used with aggregate functions. *WHERE is given priority over
+            HAVING.&nbsp;</p
+          >
+          <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >● SELECT column_name(s) FROM table_name WHERE condition GROUP BY
+            column_name(s) HAVING condition ORDER BY column_name(s);&nbsp;</p
+          >
+          <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >● SELECT COUNT(CustomerID), Country FROM Customers GROUP BY Country
+            HAVING COUNT(CustomerID) &gt; 5;&nbsp;</p
+          >
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>CREATE DATABASE:&nbsp;</strong></p>
+          <p dir="ltr"
+            >The CREATE DATABASE statement is used to create a new SQL
+            database.</p
+          >
+          <p dir="ltr"><strong>&nbsp;Syntax &ndash;&nbsp;</strong></p>
+          <p dir="ltr">● CREATE DATABASE databasename;&nbsp;</p>
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>DROP DATABASE:&nbsp;</strong></p>
+          <p dir="ltr"
+            >The DROP DATABASE statement is used to drop an existing SQL
+            database.&nbsp;</p
+          >
+          <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
+          <p dir="ltr">● DROP DATABASE databasename;&nbsp;</p>
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>CREATE TABLE:&nbsp;</strong></p>
+          <p dir="ltr"
+            >The CREATE TABLE statement is used to create a new table in a
+            database.&nbsp;</p
+          >
+          <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
+          <p dir="ltr"
+            >● CREATE TABLE table_name ( column1 datatype, column2 datatype,
+            column3 datatype, .... );</p
+          >
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>&nbsp;DROP TABLE:&nbsp;</strong></p>
+          <p dir="ltr"
+            >The DROP TABLE statement is used to drop an existing table in a
+            database.&nbsp;</p
+          >
+          <p dir="ltr"><strong>Syntax &ndash;</strong></p>
+          <p dir="ltr">&nbsp;&nbsp;● DROP TABLE table_name;&nbsp;</p>
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>TRUNCATE TABLE:&nbsp;</strong></p>
+          <p dir="ltr"
+            >The TRUNCATE TABLE statement is used to delete the data inside a
+            table, but not the table itself.
+          </p>
+          <p dir="ltr"><strong>&nbsp;Syntax &ndash;&nbsp;</strong></p>
+          <p dir="ltr">● TRUNCATE TABLE table_name;&nbsp;</p>
+          <p dir="ltr">&nbsp;</p>
+          <p dir="ltr"><strong>ALTER TABLE:&nbsp;</strong></p>
+          <p dir="ltr"
+            >The ALTER TABLE statement is used to add, delete, or modify columns
+            in an existing table.&nbsp;</p
+          >
+          <p dir="ltr"
+            >The ALTER TABLE statement is also used to add and drop various
+            constraints on an existing table.
+          </p>
+          <p dir="ltr"
+            ><strong>Syntax &ndash;&nbsp;</strong>● ALTER TABLE table_name ADD
+            column_name datatype;&nbsp;</p
+          >
+          <p dir="ltr"
+            >● ALTER TABLE table_name DROP COLUMN column_name;&nbsp;</p
+          >
+          <p dir="ltr"
+            >● ALTER TABLE table_name MODIFY COLUMN column_name
+            datatype;&nbsp;</p
+          >
+          <p dir="ltr"
+            ><strong>Ex &ndash;&nbsp;</strong>● ALTER TABLE Customers ADD Email
+            varchar(255);&nbsp;</p
+          >
+          <p dir="ltr">● ALTER TABLE Customers DROP COLUMN Email;&nbsp;</p>
+          <p dir="ltr">● ALTER TABLE Persons ALTER COLUMN DateOfBirth year</p>
+          <p>&nbsp;</p>
+        </div>
+      </div>
+    </div>
+    <!-- Subjects End -->
+
+    <!-- Footer Start -->
+    <div
+      class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5"
+      style="margin-top: 90px">
+      <div class="container mt-5 pt-5">
+        <div class="row">
+          <div class="col-md-6 mb-5">
+            <a href="../index.html" class="navbar-brand">
+              <h1 class="mt-n2 text-uppercase text-white"
+                ><i class="fa fa-book-reader mr-3"></i>PlacePrep</h1
+              >
+            </a>
+            <p class="m-0"
+              >Accusam nonumy clita sed rebum kasd eirmod elitr. Ipsum ea lorem
+              at et diam est, tempor rebum ipsum sit ea tempor stet et
+              consetetur dolores. Justo stet diam ipsum lorem vero clita diam</p
+            >
           </div>
-        </div>
-      </button>
-
-
-    </div>
-    <div id="Account" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">What is Database</div>
-      <div id="hero-content">
-        <p>A database is a collection of related data which represents some aspect of the real world. A database system
-          is designed to be built and populated with data for a certain task. </p>
-      </div>
-
-    </div>
-
-    <div id="Replenish" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">DBMS</div>
-      <div id="hero-content">
-        <p><strong>Database Management System (DBMS)</strong> is a software for storing and retrieving users' data while
-          considering appropriate security measures. It consists of a group of programs which manipulate the database.
-          The DBMS accepts the request for data from an application and instructs the operating system to provide the
-          specific data. In large systems, a DBMS helps users and other third-party software to store and retrieve data.
-        </p>
-        <p>Database management systems were developed to handle the following difficulties of typical File-processing
-          systems supported by conventional operating systems.
-          <br />
-          <br />
-          1. Data redundancy and inconsistency
-          <br />
-          2. Difficulty in accessing data
-          <br />
-          3. Data isolation – multiple files and formats
-          <br />
-          4. Integrity problems
-          <br />
-          5. Atomicity of updates
-          <br />
-          6. Concurrent access by multiple users
-          <br />
-          7. Security problems
-          <br />
-        </p>
-      </div>
-    </div>
-    <div id="Same-Day" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">RDBMS</div>
-      <div id="hero-content">
-        <p>A<strong> relational database management system (RDBMS)</strong> is a collection of programs and capabilities
-          that enable IT teams and others to create, update, administer and otherwise interact with a relational
-          database. RDBMSes store data in the form of tables, with most commercial relational database management
-          systems using Structured Query Language (SQL) to access the database. However, since SQL was invented after
-          the initial development of the relational model, it is not necessary for RDBMS use.</p>
-        <p>The RDBMS is the most popular database system among organizations across the world. It provides a dependable
-          method of storing and retrieving large amounts of data while offering a combination of system performance and
-          ease of implementation.</p>
-      </div>
-    </div>
-
-    <div id="Orders" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">ER diagram</div>
-      <div id="hero-content">
-        <p>● ER diagram or Entity Relationship diagram is a conceptual model that gives the graphical representation of
-          the logical structure of the database.
-          <br />
-          ● It shows all the constraints and relationships that exist among the different components.
-          <br />
-          ● An ER diagram is mainly composed of following three components- Entity Sets, Attributes and Relationship
-          Set.
-          <br />
-          ● Roll_no is a primary key that can identify each entity uniquely
-          <br />
-          ● Thus, by using a student's roll number, a student can be identified uniquely.
-          <br />
-        </p>
-        <img src="https://static.javatpoint.com/dbms/images/dbms-er-model-concept.png" alt="">
-      </div>
-    </div>
-
-    <div id="Subscriptions" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">Entity Set</div>
-      <div id="hero-content">
-        <p><b>Entity Set:</b> An entity set is a set of the same type of entities.
-          <br />
-          <br />
-          ●<b> Strong Entity Set:</b>
-          <br />
-          A strong entity set is an entity set that contains sufficient attributes to uniquely identify all its
-          entities.
-          <br />
-          In other words, a primary key exists for a strong entity set. o Primary key of a strong entity set is
-          represented by underlining it.
-          <br />
-          <br />
-          ● <b> Weak Entity Set:</b> <br />
-          A weak entity set is an entity set that does not contain sufficient attributes to uniquely identify its
-          entities. o In other words, a primary key does not exist for a weak entity set. o However, it contains a
-          partial key called a discriminator.
-          <br />
-          Discriminator can identify a group of entities from the entity set. o
-          <br />
-        </p>
-      </div>
-    </div>
-
-    <div id="Reservations" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">Relationship</div>
-      <div id="hero-content">
-        <p><span>A<strong> relationship</strong> is defined as an association among
-            several entities.&nbsp;</span></p>
-        <p><span><span>&nbsp;</span></span></p>
-        <p><span>●</span><strong> Unary Relationship Set -</strong><span> Unary relationship set is a
-            relationship set where only one&nbsp; &nbsp; entity set participates in a relationship set.&nbsp;</span></p>
-        <p><span>●<strong>Binary Relationship Set</strong> - </span><span>Binary relationship set is a
-            relationship set where two entity sets participate in a relationship set.&nbsp;</span></p>
-        <p><span>● <strong>Ternary Relationship Set</strong> - </span><span>Ternary relationship set is a
-            relationship set where three entity sets participate in a relationship set.&nbsp;</span></p>
-        <p><span><span>● <strong>N-ary Relationship
-                Set</strong> - </span><span>N-ary relationship set is a relationship set where &lsquo;n&rsquo; entity
-              sets participate in a relationship set.</span></span></p>
-      </div>
-    </div>
-
-    <div id="CardinalityConstraint" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">Cardinality Constraint</div>
-      <div id="hero-content">
-        <p dir="ltr"><span><strong>Cardinality</strong> constraint defines the maximum number of relationship instances
-            in which an &nbsp; entity can participate.</span></p>
-        <p dir="ltr"><span><span>&nbsp;</span></span></p>
-        <p dir="ltr"><span>● <strong>One-to-One Cardinality</strong> -</span><span> An entity in set A can be associated
-            with at most one entity in set B. An entity in set B can be associated with at most one entity in set
-            A.</span></p>
-        <p dir="ltr"><span>● <strong>One-to-Many Cardinality</strong> -</span><span> An entity in set A can be
-            associated with any number (zero or more) of entities in set B. An entity in set B can be associated with at
-            most one entity in set A.&nbsp;</span></p>
-        <p dir="ltr"><span>●<strong> Many-to-One Cardinality</strong> - </span><span>An entity in set A can be
-            associated with at most one entity in set B. An entity in set B can be associated with any number of
-            entities in set A.&nbsp;</span></p>
-        <p dir="ltr"><span><span>●<strong> Many-to-Many Cardinality</strong> -</span><span> An entity in set A can be
-              associated with any number (zero or more) of entities in set B. An entity in set B can be associated with
-              any number (zero or more) of entities in set A. </span></span></p>
-      </div>
-    </div>
-
-    <div id="Attributes" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">Attributes</div>
-      <div id="hero-content">
-        <p dir="ltr"><strong>Attributes</strong> are the descriptive properties which are owned by each entity of an
-          Entity Set.&nbsp;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>Types of Attributes:&nbsp;</strong></p>
-        <p dir="ltr">● <strong>Simple Attributes </strong>- Simple attributes are those attributes which cannot be
-          divided further. Ex. Age&nbsp;</p>
-        <p dir="ltr">● <strong>Composite Attributes</strong> - Composite attributes are those attributes which are
-          composed of many other simple attributes. Ex. Name, Address&nbsp;</p>
-        <p dir="ltr">●<strong> Multi Valued Attributes</strong> - Multi valued attributes are those attributes which can
-          take more than one value for a given entity from an entity set. Ex. Mobile No, Email ID&nbsp;</p>
-        <p dir="ltr">● <strong>Derived Attributes</strong> - Derived attributes are those attributes which can be
-          derived from other attribute(s). Ex. Age can be derived from DOB.&nbsp;</p>
-        <p dir="ltr">● <strong>Key Attributes</strong> - Key attributes are those attributes which can identify an
-          entity uniquely in an entity set. Ex. Roll No.</p>
-        <p>&nbsp;</p>
-      </div>
-    </div>
-
-    <div id="Constraints" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">Constraints</div>
-      <div id="hero-content">
-        <p dir="ltr"><span><strong>Relational constraints</strong> are the restrictions imposed on the database contents
-            and operations. They ensure the correctness of data in the database.&nbsp;</span></p>
-        <p dir="ltr"><span><span>&nbsp;</span></span></p>
-        <p dir="ltr"><span>● <strong>Domain Constraint</strong> -</span><span> Domain constraint defines the domain or
-            set of values for an attribute. It specifies that the value taken by the attribute must be the atomic value
-            from its domain.&nbsp;</span></p>
-        <p dir="ltr"><span>● <strong>Tuple Uniqueness Constraint</strong> -</span><span> Tuple Uniqueness constraint
-            specifies that all the tuples must be necessarily unique in any relation.&nbsp;</span></p>
-        <p dir="ltr"><span>● <strong>Key Constraint</strong> -</span><span> All the values of the primary key must be
-            unique. The value of the primary key must not be null.&nbsp;</span></p>
-        <p dir="ltr"><span>●<strong> Entity Integrity Constraint</strong> -</span><span> Entity integrity constraint
-            specifies that no attribute of primary key must contain a null value in any relation.&nbsp;</span></p>
-        <p dir="ltr"><span>● <strong>Referential Integrity Constraint</strong> -</span><span> It specifies that all the
-            values taken by the foreign key must either be available in the relation of the primary key or be
-            null.</span></p>
-        <p><span>&nbsp;</span></p>
-      </div>
-    </div>
-
-    <div id="ClosureAttributeSet" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">Closure of an Attribute Set</div>
-      <div id="hero-content">
-        <p dir="ltr">The set of all those attributes which can be functionally determined from an attribute set is
-          called a <strong>closure of that attribute set</strong>. Keys: A key is a set of attributes that can identify
-          each tuple uniquely in the given relation.&nbsp;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>Types of Keys:</strong></p>
-        <p dir="ltr">●<strong> Super Key</strong> - A superkey is a set of attributes that can identify each tuple
-          uniquely in the given relation. A super key may consist of any number of attributes.&nbsp;</p>
-        <p dir="ltr">● <strong>Candidate Key</strong> - A set of minimal attribute(s) that can identify each tuple
-          uniquely in the given relation is called a candidate key.&nbsp;</p>
-        <p dir="ltr">●<strong> Primary Key</strong> - A primary key is a candidate key that the database designer
-          selects while designing the database. Primary Keys are unique and NOT NULL.</p>
-        <img src="https://www.gatevidyalay.com/wp-content/uploads/2018/04/Super-Key-Candidate-Key-Primary-Key.png"
-          alt="">
-        <p dir="ltr">● <strong>Alternate Key</strong> - Candidate keys that are left unimplemented or unused after&nbsp;
-          &nbsp; implementing the primary key are called as alternate keys.&nbsp;</p>
-        <p dir="ltr">● <strong>Foreign Key</strong> - An attribute &lsquo;X&rsquo; is called as a foreign key to some
-          other attribute &lsquo;Y&rsquo; when its values are dependent on the values of attribute &lsquo;Y&rsquo;. The
-          relation in which attribute &lsquo;Y&rsquo; is present is called as the referenced relation. The relation in
-          which attribute &lsquo;X&rsquo; is present is called as the referencing relation.&nbsp;</p>
-        <p dir="ltr">● <strong>Composite Key</strong> - A primary key composed of multiple attributes and not just a
-          single attribute is called a composite key.&nbsp;</p>
-        <p dir="ltr">● <strong>Unique Key</strong> - It is unique for all the records of the table. Once assigned, its
-          value cannot be changed i.e. it is non-updatable. It may have a NULL value.</p>
-        <p>&nbsp;</p>
-      </div>
-    </div>
-
-    <div id="FunctionalDependency" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">Functional Dependency</div>
-      <div id="hero-content">
-        <p dir="ltr"><span>In any relation, a <strong>functional dependency</strong> &alpha; &rarr; &beta; holds if- Two
-            tuples having same value of attribute &alpha; also have same value for attribute &beta;.&nbsp;</span></p>
-        <p dir="ltr"><span><span>&nbsp;</span></span></p>
-        <p dir="ltr"><strong>Types of Functional Dependency:&nbsp;</strong></p>
-        <p dir="ltr"><span>● <strong>Trivial Functional Dependencies</strong> &ndash;</span><span>&nbsp;</span></p>
-        <p dir="ltr"><span>A functional dependency X &rarr; Y is said to be trivial if and only if Y &sube; X. o Thus,
-            if RHS of a functional dependency is a subset of LHS, then it is called a trivial functional
-            dependency.&nbsp;</span></p>
-        <p dir="ltr"><span>● <strong>Non-Trivial Functional Dependencies</strong> &ndash;&nbsp;</span></p>
-        <p dir="ltr"><span>A functional dependency X &rarr; Y is said to be non-trivial if and only if Y &nsub; X. o
-            Thus, if there exists at least one attribute in the RHS of a functional dependency that is not a part of
-            LHS, then it is called a non-trivial functional dependency.</span></p>
-        <p><span>&nbsp;</span></p>
-      </div>
-    </div>
-
-    <div id="DecompositionRelation" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">Decomposition of a Relation</div>
-      <div id="hero-content">
-        <p dir="ltr"><span>The process of breaking up or dividing a single relation into two or more sub relations is
-            called the<strong> decomposition of a relation.&nbsp;</strong></span></p>
-        <p dir="ltr"><span><span>&nbsp;</span></span></p>
-        <p dir="ltr"><strong>Properties of Decomposition:&nbsp;</strong></p>
-        <p dir="ltr"><span>● <strong>Lossless Decomposition</strong> -</span><span> Lossless decomposition
-            ensures&nbsp;</span></p>
-        <p dir="ltr"><span>No information is lost from the original relation during decomposition. o When the sub
-            relations are joined back, the same relation is obtained that was decomposed.&nbsp;</span></p>
-        <p dir="ltr"><span>● <strong>Dependency Preservation</strong> -</span><span> Dependency preservation
-            ensures&nbsp;</span></p>
-        <p dir="ltr"><span>None of the functional dependencies that hold on the original relation are lost. o The sub
-            relations still hold or satisfy the functional dependencies of the original relation.</span></p>
-        <p dir="ltr"><span><span>&nbsp;</span></span></p>
-        <p dir="ltr"><strong>Types of Decomposition:&nbsp;</strong></p>
-        <p dir="ltr"><span>● <strong>Lossless Join Decomposition:</strong></span></p>
-        <p dir="ltr"><span>o Consider there is a relation R which is decomposed into sub relations R1, R2, &hellip;.,
-            Rn. o This decomposition is called lossless join decomposition when the join of the sub relations results in
-            the same relation R that was decomposed.&nbsp;</span></p>
-        <p dir="ltr"><span>o For lossless join decomposition, we always have- R1 ⋈ R2 ⋈ R3 &hellip;&hellip;. ⋈ Rn = R
-            where ⋈ is a natural join operator&nbsp;</span></p>
-        <p dir="ltr"><span>● <strong>Lossy Join Decomposition:</strong></span><strong>&nbsp;</strong></p>
-        <p dir="ltr"><span>o Consider there is a relation R which is decomposed into sub relations R1, R2, &hellip;.,
-            Rn.&nbsp;</span></p>
-        <p dir="ltr"><span>o This decomposition is called lossy join decomposition when the join of the sub&nbsp;</span>
-        </p>
-        <p dir="ltr"><span>relations does not result in the same relation R that was decomposed.&nbsp;</span></p>
-        <p dir="ltr"><span>o For lossy join decomposition, we always have- R1 ⋈ R2 ⋈ R3 &hellip;&hellip;. ⋈ Rn &sup; R
-            where ⋈ is a natural join operator&nbsp;</span></p>
-        <p><span>&nbsp;</span></p>
-      </div>
-    </div>
-
-    <div id="Normalization" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">Normalization</div>
-      <div id="hero-content">
-        <p dir="ltr"><span>In DBMS, database normalization is a process of making the database consistent
-            by-&nbsp;</span></p>
-        <p dir="ltr"><strong>● Reducing the redundancies&nbsp;</strong></p>
-        <p dir="ltr"><span>●<strong> Ensuring the integrity of data through lossless decomposition</strong></span></p>
-        <p dir="ltr"><span><span>&nbsp;</span></span></p>
-        <p dir="ltr"><strong>Normal Forms:&nbsp;</strong></p>
-        <p dir="ltr"><span>● <strong>First Normal Form (1NF) -</strong></span><span> A given relation is called in First
-            Normal Form (1NF) if&nbsp; &nbsp; each cell of the table contains only an atomic value i.e. if the attribute
-            of every tuple is either single valued or a null value.&nbsp;</span></p>
-        <p dir="ltr"><span>● <strong>Second Normal Form (2NF) </strong></span><span><strong>-</strong> A given relation
-            is called in Second Normal Form (2NF) if and only if&nbsp;</span></p>
-        <p dir="ltr"><span>o Relation already exists in 1NF.&nbsp;</span></p>
-        <p dir="ltr"><span>o No partial dependency exists in the relation. A &rarr; B is called a partial dependency if
-            and only if- A is a subset of some candidate key and B is a non-prime attribute.&nbsp;</span></p>
-        <p dir="ltr"><span>● <strong>Third Normal Form (3NF) -</strong></span><span> A given relation is called in Third
-            Normal Form (3NF) if and only if&nbsp;</span></p>
-        <p dir="ltr"><span>o Relation already exists in 2NF.&nbsp;</span></p>
-        <p dir="ltr"><span>o No transitive dependency exists for non-prime attributes. A &rarr; B is called a transitive
-            dependency if and only if- A is not a super key and B is a non-prime attribute.&nbsp;</span></p>
-        <p dir="ltr"><span>● <strong>Boyce-Codd Normal Form -</strong></span><span> A given relation is called in BCNF
-            if and only if&nbsp;</span></p>
-        <p dir="ltr"><span>o Relation already exists in 3NF.&nbsp;</span></p>
-        <p dir="ltr"><span>o For each non-trivial functional dependency &lsquo;A &rarr; B&rsquo;, A is a super key of
-            the relation</span></p>
-        <p><span>&nbsp;</span></p>
-        <img src="https://www.gatevidyalay.com/wp-content/uploads/2018/06/Normal-Forms-in-DBMS-Point-01.png" alt="">
-      </div>
-    </div>
-
-    <div id="Transaction" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">Transaction</div>
-      <div id="hero-content">
-        <p dir="ltr"><strong>Transaction</strong> is a single logical unit of work formed by a set of operations.&nbsp;
-        </p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><span style="text-decoration: underline;"><strong>Operations in Transaction:&nbsp;</strong></span>
-        </p>
-        <p dir="ltr"><strong>● Read Operation -</strong> Read(A) instruction will read the value of &lsquo;A&rsquo; from
-          the database and will store it in the buffer in main memory.&nbsp;</p>
-        <p dir="ltr"><strong>● Write Operation &ndash;</strong> Write(A) will write the updated value of &lsquo;A&rsquo;
-          from the buffer to the database.&nbsp;</p>
-        <p dir="ltr"><strong>Transaction States:&nbsp;</strong></p>
-        <img src="https://www.gatevidyalay.com/wp-content/uploads/2018/05/Transaction-States-in-DBMS.png" alt="">
-        <p dir="ltr"><strong>● Active State &ndash;&nbsp;</strong></p>
-        <p dir="ltr">o This is the first state in the life cycle of a transaction.&nbsp;</p>
-        <p dir="ltr">o A transaction is called in an active state as long as its instructions are getting executed.</p>
-        <p dir="ltr">o All the changes made by the transaction now are stored in the buffer in main memory.&nbsp;</p>
-        <p dir="ltr"><strong>● Partially Committed State &ndash;&nbsp;</strong></p>
-        <p dir="ltr">o After the last instruction of the transaction has been executed, it enters into a partially
-          committed state.&nbsp;</p>
-        <p dir="ltr">o After entering this state, the transaction is considered to be partially committed.&nbsp;</p>
-        <p dir="ltr">o It is not considered fully committed because all the changes made by the transaction are still
-          stored in the buffer in main memory.&nbsp;</p>
-        <p dir="ltr"><strong>● Committed State &ndash;</strong>&nbsp;</p>
-        <p dir="ltr">o After all the changes made by the transaction have been successfully stored into the database, it
-          enters into a committed state.&nbsp;</p>
-        <p dir="ltr">o Now, the transaction is considered to be fully committed.&nbsp;</p>
-        <p dir="ltr"><strong>● Failed State &ndash;</strong></p>
-        <p dir="ltr">o When a transaction is getting executed in the active state or partially committed state and some
-          failure occurs due to which it becomes impossible to continue the execution, it enters into a failed state</p>
-        <p dir="ltr"><strong>● Aborted State &ndash;&nbsp;</strong></p>
-        <p dir="ltr">o After the transaction has failed and entered into a failed state, all the changes made by it have
-          to be undone.&nbsp;</p>
-        <p dir="ltr">o To undo the changes made by the transaction, it becomes necessary to roll back the
-          transaction.&nbsp;</p>
-        <p dir="ltr">o After the transaction has rolled back completely, it enters into an aborted state.&nbsp;</p>
-        <p dir="ltr"><strong>● Terminated State &ndash;</strong>&nbsp;</p>
-        <p dir="ltr">o This is the last state in the life cycle of a transaction.&nbsp;</p>
-        <p dir="ltr">o After entering the committed state or aborted state, the transaction finally enters into a
-          terminated state where its life cycle finally comes to an end.</p>
-        <p>&nbsp;</p>
-      </div>
-    </div>
-
-    <div id="ACID" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">ACID Properties</div>
-      <div id="hero-content">
-        <p dir="ltr"><span>To ensure the consistency of the database, certain properties are followed by all the
-            transactions occurring in the system. These properties are called as <span
-              style="text-decoration: underline;"><strong>ACID Properties of a transaction.&nbsp;</strong></span></span>
-        </p>
-        <p dir="ltr"><span><strong><em>● Atomicity &ndash;</em></strong>&nbsp;</span></p>
-        <p dir="ltr"><span>o This property ensures that either the transaction occurs completely or it does not occur at
-            all. o In other words, it ensures that no transaction occurs partially.&nbsp;</span></p>
-        <p dir="ltr"><strong><em>● Consistency &ndash;</em></strong></p>
-        <p dir="ltr"><span>o This property ensures that integrity constraints are maintained.&nbsp;</span></p>
-        <p dir="ltr"><span>o In other words, it ensures that the database remains consistent before and after the
-            transaction.&nbsp;</span></p>
-        <p dir="ltr"><strong><em>● Isolation &ndash;</em></strong><span>&nbsp;</span></p>
-        <p dir="ltr"><span>o This property ensures that multiple transactions can occur simultaneously without causing
-            any inconsistency.&nbsp;</span></p>
-        <p dir="ltr"><span>o The resultant state of the system after executing all the transactions is the same as the
-            state that would be achieved if the transactions were executed serially one after the other.&nbsp;</span>
-        </p>
-        <p dir="ltr"><strong><em>● Durability &ndash;</em></strong><span>&nbsp;</span></p>
-        <p dir="ltr"><span>o This property ensures that all the changes made by a transaction after its successful
-            execution are written successfully to the disk.&nbsp;</span></p>
-        <p dir="ltr"><span>o It also ensures that these changes exist permanently and are never lost even if there
-            occurs a failure of any kind. </span></p>
-        <p><span>&nbsp;</span></p>
-      </div>
-    </div>
-    <div id="Schedules" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">Schedules</div>
-      <div id="hero-content">
-        <p dir="ltr">&nbsp;The order in which the operations of multiple transactions appear for execution is called as
-          a <strong>schedule</strong>.</p>
-        <img src="https://www.gatevidyalay.com/wp-content/uploads/2018/05/Types-of-Schedules-in-DBMS.png" alt="">
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>● Serial Schedules &ndash;&nbsp;</strong></p>
-        <p dir="ltr">o All the transactions execute serially one after the other. o When one transaction executes, no
-          other transaction is allowed to execute.&nbsp;</p>
-        <p dir="ltr">o Serial schedules are always- Consistent, Recoverable, Cascadeless and Strict.&nbsp;</p>
-        <p dir="ltr"><strong>● Non-Serial Schedules &ndash;</strong>&nbsp;</p>
-        <p dir="ltr">o Multiple transactions execute concurrently. o Operations of all the transactions are inter leaved
-          or mixed with each other.&nbsp;</p>
-        <p dir="ltr">o Non-serial schedules are not always- Consistent, Recoverable, Cascadeless and Strict.</p>
-        <p>&nbsp;</p>
-      </div>
-    </div>
-
-    <div id="Serializability" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">Serializability</div>
-      <div id="hero-content">
-        <p dir="ltr"><span>● Some non-serial schedules may lead to inconsistency of the database.&nbsp;</span></p>
-        <p dir="ltr"><span>● <strong>Serializability</strong> is a concept that helps to identify which non-serial
-            schedules are correct and will maintain the consistency of the database.&nbsp;</span></p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><span><strong><em>● Serializable Schedules &ndash;</em></strong>&nbsp;</span></p>
-        <p dir="ltr"><span>o If a given non-serial schedule of &lsquo;n&rsquo; transactions is equivalent to some serial
-            schedule of &lsquo;n&rsquo; transactions, then it is called as a serializable schedule.&nbsp;</span></p>
-        <p dir="ltr"><span>o Serializable schedules are always- Consistent, Recoverable, Cascadeless and Strict</span>
-        </p>
-        <p dir="ltr"><span><span>&nbsp;</span></span></p>
-        <p dir="ltr"><strong><span>Types of Serializability &ndash;&nbsp;</span></strong></p>
-        <p dir="ltr"><strong>● Conflict Serializability -</strong><span> If a given non-serial schedule can be converted
-            into a serial schedule by swapping its non-conflicting operations, then it is called a conflict serializable
-            schedule.&nbsp;</span></p>
-        <p dir="ltr"><strong>● View Serializability -</strong><span> If a given schedule is found to be viewed as
-            equivalent to some serial schedule, then it is called a view serializable schedule.</span></p>
-        <p dir="ltr"><span><span>&nbsp;</span></span></p>
-        <p dir="ltr"><strong><span>Non-Serializable Schedules &ndash;&nbsp;</span></strong></p>
-        <p dir="ltr"><span>● A non-serial schedule which is not serializable is called a non-serializable
-            schedule.&nbsp;</span></p>
-        <p dir="ltr"><span>● A non-serializable schedule is not guaranteed to produce the same effect as produced by
-            some serial schedule on any consistent database.&nbsp;</span></p>
-        <p dir="ltr"><span><strong>● Non-serializable schedules-</strong> may or may not be consistent, may or may not
-            be recoverable.&nbsp;</span></p>
-        <p dir="ltr"><strong>● Irrecoverable Schedules &ndash;</strong><span> If in a schedule,&nbsp;</span></p>
-        <p dir="ltr"><span>o A transaction performs a dirty read operation from an uncommitted transaction&nbsp;</span>
-        </p>
-        <p dir="ltr"><span>o And commits before the transaction from which it has read the value then such a schedule is
-            known as an Irrecoverable Schedule.&nbsp;</span></p>
-        <p dir="ltr"><strong>● Recoverable Schedules &ndash;</strong><span> If in a schedule,&nbsp;</span></p>
-        <p dir="ltr"><span>o A transaction performs a dirty read operation from an uncommitted transaction</span></p>
-        <p dir="ltr"><span>o And its commit operation is delayed till the uncommitted transaction either commits or roll
-            backs</span></p>
-        <p dir="ltr"><span>then such a schedule is known as a Recoverable Schedule.&nbsp;</span></p>
-        <p dir="ltr"><span><span>&nbsp;</span></span></p>
-        <p dir="ltr"><strong>Types of Recoverable Schedules &ndash;&nbsp;</strong></p>
-        <p dir="ltr"><strong>● Cascading Schedule -</strong><span> If in a schedule, failure of one transaction causes
-            several other &nbsp; dependent transactions to rollback or abort, then such a schedule is called as a
-            Cascading Schedule or Cascading Rollback or Cascading Abort.&nbsp;</span></p>
-        <p dir="ltr"><strong>● Cascadeless Schedule -</strong><span> If in a schedule, a transaction is not allowed to
-            read a data item until the last transaction that has written it is committed or aborted, then such a
-            schedule is called as a Cascadeless Schedule.&nbsp;</span></p>
-        <p dir="ltr"><span><strong>● Strict Schedule -</strong><span> If in a schedule, a transaction is neither allowed
-              to read nor write a data item until the last transaction that has written it is committed or aborted, then
-              such a schedule is called as a Strict Schedule</span></span></p>
-      </div>
-    </div>
-
-    <div id="FileStructures" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">File Structures</div>
-      <div id="hero-content">
-        <p dir="ltr"><span><strong>● Primary Index:</strong> </span><span>A primary index is an ordered file, records of
-            fixed length with two fields. First field is the same as the primary key as a data file and the second field
-            is a pointer to the data block, where the key is available. The average number of block accesses using index
-            = </span><span>log2Bi + 1</span><span>, where Bi = number of index blocks.&nbsp;</span></p>
-        <p dir="ltr"><strong>● Clustering Index:</strong><span> Clustering index is created on data file whose records
-            are physically ordered on a non-key field (called Clustering field).&nbsp;</span></p>
-        <p dir="ltr"><strong>● Secondary Index:</strong><span> Secondary index provides secondary means of accessing a
-            file for which primary access already exists.&nbsp;</span></p>
-        <p dir="ltr">&nbsp;</p>
-      </div>
-    </div>
-
-    <div id="BTrees" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">B Trees</div>
-      <div id="hero-content">
-        <p dir="ltr"><span>At every level , we have Key and Data Pointer and data pointer points to either block or
-            record.&nbsp;</span></p>
-        <p dir="ltr"><span><span>&nbsp;</span></span></p>
-        <p dir="ltr"><strong>Properties of B-Trees:&nbsp;</strong></p>
-        <p dir="ltr"><span>Root of B-tree can have children between 2 and P, where P is Order of tree.</span></p>
-        <p dir="ltr"><span><span>&nbsp;</span></span></p>
-        <p dir="ltr"><strong>Order of tree &ndash;&nbsp;</strong></p>
-        <p dir="ltr"><span>Maximum number of children a node can have. Internal node can have children between &lceil;
-            P/2 &rceil; and P Internal node can have keys between &lceil; P/2 &rceil; &ndash; 1 and P-1. </span></p>
-        <p dir="ltr"><strong>B+Trees :-</strong></p>
-        <p dir="ltr"><span>In B+ trees, the structure of leaf and non-leaf are different, so their order is. Order of
-            non-leaf will be higher as compared to leaf nodes.&nbsp;</span></p>
-        <p dir="ltr"><span>Searching time will be less in B+ trees, since it doesn&rsquo;t have record pointers in
-            non-leaf because of which depth will decrease.</span></p>
-        <p><span>&nbsp;</span></p>
-      </div>
-    </div>
-
-    <div id="SQL" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">SQL</div>
-      <div id="hero-content">
-        <p dir="ltr"><strong>DDL:</strong>&nbsp;</p>
-        <p dir="ltr">DDL is short name of Data Definition Language, which deals with database schemas and descriptions,
-          of how the data should reside in the database.&nbsp;</p>
-        <p dir="ltr">●<strong> CREATE - </strong>to create a database and its objects like (table, index, views, store
-          procedure, function, and triggers)&nbsp;</p>
-        <p dir="ltr">● <strong>ALTER - </strong>alters the structure of the existing database&nbsp;</p>
-        <p dir="ltr"><strong>● DROP -</strong> delete objects from the database&nbsp;</p>
-        <p dir="ltr"><strong>● TRUNCATE</strong> - remove all records from a table, including all spaces allocated for
-          the records are removed&nbsp;</p>
-        <p dir="ltr"><strong>● RENAME</strong> - rename an object</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>DML:</strong>&nbsp;</p>
-        <p dir="ltr">DML is short name of Data Manipulation Language which deals with data manipulation and includes
-          most common SQL statements such SELECT, INSERT, UPDATE, DELETE, etc., and it is used to store, modify,
-          retrieve, delete and update data in a database.&nbsp;</p>
-        <p dir="ltr"><strong>● SELECT -</strong> retrieve data from a database&nbsp;</p>
-        <p dir="ltr"><strong>● INSERT - </strong>insert data into a table&nbsp;</p>
-        <p dir="ltr"><strong>● UPDATE -</strong> updates existing data within a table&nbsp;</p>
-        <p dir="ltr"><strong>● DELETE</strong> - Delete all records from a database table&nbsp;</p>
-        <p dir="ltr"><strong>● MERGE</strong> - UPSERT operation (insert or update)&nbsp;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>DCL:</strong></p>
-        <p dir="ltr">DCL is short name of Data Control Language which includes commands such as GRANT and mostly
-          concerned with rights, permissions and other controls of the database system.&nbsp;</p>
-        <p dir="ltr"><strong>● GRANT</strong><strong> -</strong> allow users access privileges to the database&nbsp;</p>
-        <p dir="ltr"><strong>● REVOKE -</strong> withdraw users access privileges given by using the GRANT command</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>TCL:</strong></p>
-        <p dir="ltr">TCL is short name of Transaction Control Language which deals with a transaction within a
-          database.&nbsp;</p>
-        <p dir="ltr"><strong>● COMMIT -</strong> commits a Transaction&nbsp;</p>
-        <p dir="ltr"><strong>● ROLLBACK -</strong> rollback a transaction in case of any error occurs&nbsp;</p>
-        <p dir="ltr"><strong>● SAVEPOINT </strong><strong>-</strong> to roll back the transaction making points within
-          groups&nbsp;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>SQL:&nbsp;</strong></p>
-        <p dir="ltr">SQL is a standard language for storing, manipulating and retrieving data in databases.&nbsp;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>SELECT:&nbsp;</strong></p>
-        <p dir="ltr">The SELECT statement is used to select data from a database.&nbsp;</p>
-        <p dir="ltr"><strong>Syntax -&nbsp;</strong></p>
-        <p dir="ltr">● SELECT column1, column2, ... FROM table_name;&nbsp;</p>
-        <p dir="ltr">● Here, column1, column2, ... are the field names of the table you want to select data from. If you
-          want to select all the fields available in the table, use the following syntax:&nbsp;</p>
-        <p dir="ltr">● SELECT * FROM table_name;&nbsp;</p>
-        <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT CustomerName, City&nbsp;</p>
-        <p dir="ltr">FROM Customers</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>SELECT DISTINCT:&nbsp;</strong></p>
-        <p dir="ltr">The SELECT DISTINCT statement is used to return only distinct (different) values. Syntax
-          &ndash;&nbsp;</p>
-        <p dir="ltr">● SELECT DISTINCT column1, column2, ...&nbsp;</p>
-        <p dir="ltr">FROM table_name;</p>
-        <p dir="ltr">&nbsp;Ex &ndash;&nbsp;</p>
-        <p dir="ltr">● SELECT DISTINCT Country&nbsp;</p>
-        <p dir="ltr">FROM Customers;&nbsp;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>WHERE:&nbsp;</strong></p>
-        <p dir="ltr">The WHERE clause is used to filter records.&nbsp;</p>
-        <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT column1, column2, ...&nbsp;</p>
-        <p dir="ltr">FROM table_name&nbsp;</p>
-        <p dir="ltr">WHERE condition;&nbsp;</p>
-        <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT *&nbsp;</p>
-        <p dir="ltr">FROM Customers&nbsp;</p>
-        <p dir="ltr">WHERE Country='Mexico';&nbsp;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>AND, OR and NOT:&nbsp;</strong></p>
-        <p dir="ltr">The WHERE clause can be combined with AND, OR, and NOT operators.&nbsp;</p>
-        <p dir="ltr">The AND and OR operators are used to filter records based on more than one condition:&nbsp;</p>
-        <p dir="ltr">● The AND operator displays a record if all the conditions separated by AND are TRUE.&nbsp;</p>
-        <p dir="ltr">● The OR operator displays a record if any of the conditions separated by OR is TRUE.&nbsp;</p>
-        <p dir="ltr">The NOT operator displays a record if the condition(s) is NOT TRUE</p>
-        <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT column1, column2, &hellip;</p>
-        <p dir="ltr">&nbsp;&nbsp;FROM table_name&nbsp;</p>
-        <p dir="ltr">&nbsp;&nbsp;WHERE condition1 AND condition2 AND condition3 ...;&nbsp;</p>
-        <p dir="ltr">● SELECT column1, column2, ...&nbsp;</p>
-        <p dir="ltr">&nbsp;&nbsp;&nbsp;FROM table_name&nbsp;</p>
-        <p dir="ltr">&nbsp;&nbsp;&nbsp;WHERE condition1 OR condition2 OR condition3 ...;&nbsp;</p>
-        <p dir="ltr">● SELECT column1, column2, ...&nbsp;</p>
-        <p dir="ltr">&nbsp;&nbsp;&nbsp;FROM table_name&nbsp;</p>
-        <p dir="ltr">&nbsp;&nbsp;WHERE NOT condition;&nbsp;</p>
-        <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT * FROM Customers WHERE Country='Germany' AND City='Berlin';&nbsp;</p>
-        <p dir="ltr">● SELECT * FROM Customers WHERE Country='Germany' AND (City='Berlin' OR City='M&uuml;nchen')</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>ORDER BY:&nbsp;</strong></p>
-        <p dir="ltr">The ORDER BY keyword is used to sort the result-set in ascending or descending order. The ORDER BY
-          keyword sorts the records in ascending order by default. To sort the records in descending order, use the DESC
-          keyword.&nbsp;</p>
-        <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT column1, column2, ...&nbsp;</p>
-        <p dir="ltr">FROM table_name&nbsp;</p>
-        <p dir="ltr">ORDER BY column1, column2, ... ASC|DESC;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT * FROM Customers ORDER BY Country;&nbsp;</p>
-        <p dir="ltr">● SELECT * FROM Customers ORDER BY Country ASC, CustomerName DESC;&nbsp;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>INSERT INTO:&nbsp;</strong></p>
-        <p dir="ltr">The INSERT INTO statement is used to insert new records in a table.&nbsp;</p>
-        <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3,
-          ...);&nbsp;</p>
-        <p dir="ltr">● INSERT INTO table_name VALUES (value1, value2, value3, ...);&nbsp;</p>
-        <p dir="ltr">*In the second syntax, make sure the order of the values is in the same order as the columns in the
-          table.&nbsp;</p>
-        <p dir="ltr"><strong>Ex &ndash; </strong></p>
-        <p dir="ltr">● INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, &nbsp;
-          Country)&nbsp;</p>
-        <p dir="ltr">VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');&nbsp;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>NULL Value:&nbsp;</strong></p>
-        <p dir="ltr">It is not possible to test for NULL values with comparison operators, such as =, &lt;, or
-          &lt;&gt;.&nbsp;</p>
-        <p dir="ltr">We will have to use the IS NULL and IS NOT NULL operators instead.&nbsp;</p>
-        <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT column_names&nbsp;</p>
-        <p dir="ltr">FROM table_name&nbsp;</p>
-        <p dir="ltr">WHERE column_name IS NULL;&nbsp;</p>
-        <p dir="ltr">● SELECT column_names&nbsp;</p>
-        <p dir="ltr">FROM table_name&nbsp;</p>
-        <p dir="ltr">WHERE column_name IS NOT NULL;</p>
-        <p dir="ltr"><strong>&nbsp;Ex &ndash;</strong></p>
-        <p dir="ltr">&nbsp;● SELECT CustomerName, ContactName, Address FROM Customers WHERE Address IS NULL;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>UPDATE:&nbsp;</strong></p>
-        <p dir="ltr">The UPDATE statement is used to modify the existing records in a table.&nbsp;</p>
-        <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition;</p>
-        <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● UPDATE Customers SET ContactName = 'Alfred Schmidt', City= 'Frankfurt' WHERE CustomerID = 1</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>DELETE:&nbsp;</strong></p>
-        <p dir="ltr">The DELETE statement is used to delete existing records in a table.&nbsp;</p>
-        <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● DELETE FROM table_name WHERE condition;&nbsp;</p>
-        <p dir="ltr">● DELETE FROM table_name; In 2nd syntax, all rows are deleted. The table structure, attributes, and
-          indexes will be intact&nbsp;</p>
-        <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>SELECT TOP:&nbsp;</strong></p>
-        <p dir="ltr">The SELECT TOP clause is used to specify the number of records to return.&nbsp;</p>
-        <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT TOP number|percent column_name(s) FROM table_name WHERE condition;&nbsp;</p>
-        <p dir="ltr">● SELECT column_name(s) FROM table_name WHERE condition LIMIT number;&nbsp;</p>
-        <p dir="ltr">● SELECT column_name(s) FROM table_name ORDER BY column_name(s) FETCH FIRST number ROWS ONLY;&nbsp;
-        </p>
-        <p dir="ltr">● SELECT column_name(s) FROM table_name WHERE ROWNUM &lt;= number;&nbsp;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr">*In case the interviewer asks other than the TOP, rest are also correct. (Diff. DB Systems)&nbsp;
-        </p>
-        <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT TOP 3 * FROM Customers;</p>
-        <p dir="ltr">● SELECT * FROM Customers LIMIT 3;</p>
-        <p dir="ltr">● SELECT * FROM Customers FETCH FIRST 3 ROWS ONLY;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>Aggregate Functions:&nbsp;</strong></p>
-        <p dir="ltr"><strong>MIN():&nbsp;</strong></p>
-        <p dir="ltr">The MIN() function returns the smallest value of the selected column.&nbsp;</p>
-        <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT MIN(column_name) FROM table_name WHERE condition;&nbsp;</p>
-        <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT MIN(Price) AS SmallestPrice FROM Products;&nbsp;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>MAX():&nbsp;</strong></p>
-        <p dir="ltr">The MAX() function returns the largest value of the selected column.&nbsp;</p>
-        <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
-        <p dir="ltr">&nbsp;● SELECT MAX(column_name) FROM table_name WHERE condition;&nbsp;</p>
-        <p dir="ltr"><strong>Ex &ndash;</strong></p>
-        <p dir="ltr">&nbsp;● SELECT MAX(Price) AS LargestPrice FROM Products;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>COUNT():&nbsp;</strong></p>
-        <p dir="ltr">The COUNT() function returns the number of rows that matches a specified criterion.&nbsp;</p>
-        <p dir="ltr"><strong>Syntax &ndash;</strong></p>
-        <p dir="ltr">&nbsp;● SELECT COUNT(column_name) FROM table_name WHERE condition;&nbsp;</p>
-        <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
-        <p dir="ltr">&nbsp;● SELECT COUNT(ProductID) FROM Products;&nbsp;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>AVG():&nbsp;</strong></p>
-        <p dir="ltr">The AVG() function returns the average value of a numeric column.&nbsp;</p>
-        <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT AVG(column_name) FROM table_name WHERE condition;&nbsp;</p>
-        <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT AVG(Price) FROM Products;&nbsp;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>SUM():&nbsp;</strong></p>
-        <p dir="ltr">The SUM() function returns the total sum of a numeric column.&nbsp;</p>
-        <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT SUM(column_name) FROM table_name WHERE condition;&nbsp;</p>
-        <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT SUM(Quantity) FROM OrderDetails;&nbsp;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>LIKE Operator:&nbsp;</strong></p>
-        <p dir="ltr">The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.&nbsp;
-        </p>
-        <p dir="ltr">There are two wildcards often used in conjunction with the LIKE operator:&nbsp;</p>
-        <p dir="ltr">● The percent sign (%) represents zero, one, or multiple characters&nbsp;</p>
-        <p dir="ltr">● The underscore sign (_) represents one, single character</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>Syntax &ndash;</strong></p>
-        <p dir="ltr">&nbsp;SELECT column1, column2, ...&nbsp;</p>
-        <p dir="ltr">FROM table_name&nbsp;</p>
-        <p dir="ltr">WHERE columnN LIKE pattern;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>IN:&nbsp;</strong></p>
-        <p dir="ltr">The IN operator allows you to specify multiple values in a WHERE clause. The IN operator is a
-          shorthand for multiple OR conditions.&nbsp;</p>
-        <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT column_name(s) FROM table_name WHERE column_name IN (value1, value2, ...); ● SELECT
-          column_name(s) FROM table_name WHERE column_name IN (SELECT STATEMENT);&nbsp;</p>
-        <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT * FROM Customers WHERE Country IN ('Germany', 'France', 'UK');&nbsp;</p>
-        <p dir="ltr">● SELECT * FROM Customers WHERE Country IN (SELECT Country FROM Suppliers);&nbsp;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>BETWEEN:&nbsp;</strong></p>
-        <p dir="ltr">The BETWEEN operator selects values within a given range. The values can be numbers, text, or
-          dates.</p>
-        <p dir="ltr">The BETWEEN operator is inclusive: begin and end values are included.</p>
-        <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT column_name(s) FROM table_name WHERE column_name BETWEEN value1 AND value2;</p>
-        <p dir="ltr"><strong>&nbsp;Ex &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT * FROM Products WHERE Price BETWEEN 10 AND 20;&nbsp;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>JOINS:&nbsp;</strong></p>
-        <p dir="ltr">&nbsp;A JOIN clause is used to combine rows from two or more tables, based on a related column
-          between them.&nbsp;</p>
-        <p dir="ltr"><strong>INNER JOIN:&nbsp;</strong></p>
-        <p dir="ltr">The INNER JOIN keyword selects records that have matching values in both tables.</p>
-        <img
-          src="https://blog.codinghorror.com/content/images/uploads/2007/10/6a0120a85dcdae970b012877702708970c-pi.png"
-          alt="">
-        <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT column_name(s) FROM table1 INNER JOIN table2 ON table1.column_name =
-          table2.column_name;&nbsp;</p>
-        <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT Orders.OrderID, Customers.CustomerName FROM Orders INNER JOIN Customers ON
-          Orders.CustomerID = Customers.CustomerID;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>LEFT (OUTER) JOIN:&nbsp;</strong></p>
-        <p dir="ltr">The LEFT JOIN keyword returns all records from the left table (table1), and the matching records
-          from the right table (table2).&nbsp;</p>
-        <p dir="ltr">The result is 0 records from the right side, if there is no match.&nbsp;</p>
-        <img src="https://i.stack.imgur.com/VkAT5.png" alt="">
-        <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT column_name(s) FROM table1 LEFT JOIN table2 ON table1.column_name =
-          table2.column_name;&nbsp;</p>
-        <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT Customers.CustomerName, Orders.OrderID FROM Customers LEFT JOIN Orders ON
-          Customers.CustomerID = Orders.CustomerID ORDER BY Customers.CustomerName;&nbsp;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>RIGHT (OUTER) JOIN:&nbsp;</strong></p>
-        <p dir="ltr">The RIGHT JOIN keyword returns all records from the right table (table2), and the matching records
-          from the left table (table1). The result is 0 records from the left side, if there is no match.</p>
-        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20220515095048/join.jpg" alt="">
-        <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT column_name(s) FROM table1 RIGHT JOIN table2 ON table1.column_name =
-          table2.column_name;&nbsp;</p>
-        <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT Orders.OrderID, Employees.LastName, Employees.FirstName FROM Orders RIGHT JOIN Employees
-          ON Orders.EmployeeID = Employees.EmployeeID ORDER BY Orders.OrderID;&nbsp;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>FULL (OUTER) JOIN:&nbsp;</strong></p>
-        <p dir="ltr">The FULL OUTER JOIN keyword returns all records when there is a match in left (table1) or right
-          (table2) table records.&nbsp;</p>
-        <img src="https://i.stack.imgur.com/3Ll1h.png" alt="">
-        <p dir="ltr"><strong>Syntax:</strong></p>
-        <p dir="ltr">● SELECT column_name(s) FROM table1 FULL OUTER JOIN table2 ON table1.column_name =
-          table2.column_name WHERE condition;&nbsp;</p>
-        <p dir="ltr"><strong>Ex &ndash;</strong></p>
-        <p dir="ltr">● SELECT Customers.CustomerName, Orders.OrderID FROM Customers FULL OUTER JOIN Orders ON
-          Customers.CustomerID=Orders.CustomerID ORDER BY Customers.CustomerName;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>&nbsp;UNION:</strong></p>
-        <p dir="ltr">&nbsp;The UNION operator is used to combine the result-set of two or more SELECT statements.</p>
-        <p dir="ltr">&nbsp;● Every SELECT statement within UNION must have the same number of columns&nbsp;</p>
-        <p dir="ltr">&nbsp;● The columns must also have similar data types</p>
-        <p dir="ltr">&nbsp;● The columns in every SELECT statement must also be in the same order The UNION operator
-          selects only distinct values by default.&nbsp;</p>
-        <p dir="ltr">To allow duplicate values, use UNION ALL&nbsp;</p>
-        <p dir="ltr"><strong>Syntax &ndash;</strong></p>
-        <p dir="ltr">● SELECT column_name(s) FROM table1 UNION SELECT column_name(s) FROM table2;&nbsp;</p>
-        <p dir="ltr">● SELECT column_name(s) FROM table1 UNION ALL SELECT column_name(s) FROM table2;&nbsp;</p>
-        <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT City FROM Customers UNION SELECT City FROM Suppliers ORDER BY City;&nbsp;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>GROUP BY:&nbsp;</strong></p>
-        <p dir="ltr">The GROUP BY statement groups rows that have the same values into summary rows, like "find the
-          number of customers in each country".&nbsp;</p>
-        <p dir="ltr">The GROUP BY statement is often used with aggregate functions (COUNT(), MAX(), MIN(), SUM(), AVG())
-          to group the result-set by one or more columns.&nbsp;</p>
-        <p dir="ltr"><strong>Syntax &ndash;</strong></p>
-        <p dir="ltr">&nbsp;● SELECT column_name(s) FROM table_name WHERE condition GROUP BY column_name(s) ORDER BY
-          column_name(s);&nbsp;</p>
-        <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT COUNT(CustomerID), Country FROM Customers GROUP BY Country ORDER BY COUNT(CustomerID)
-          DESC;&nbsp;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>HAVING:&nbsp;</strong></p>
-        <p dir="ltr">The HAVING clause was added to SQL because the WHERE keyword cannot be used with aggregate
-          functions. *WHERE is given priority over HAVING.&nbsp;</p>
-        <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT column_name(s) FROM table_name WHERE condition GROUP BY column_name(s) HAVING condition
-          ORDER BY column_name(s);&nbsp;</p>
-        <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● SELECT COUNT(CustomerID), Country FROM Customers GROUP BY Country HAVING COUNT(CustomerID) &gt;
-          5;&nbsp;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>CREATE DATABASE:&nbsp;</strong></p>
-        <p dir="ltr">The CREATE DATABASE statement is used to create a new SQL database.</p>
-        <p dir="ltr"><strong>&nbsp;Syntax &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● CREATE DATABASE databasename;&nbsp;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>DROP DATABASE:&nbsp;</strong></p>
-        <p dir="ltr">The DROP DATABASE statement is used to drop an existing SQL database.&nbsp;</p>
-        <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● DROP DATABASE databasename;&nbsp;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>CREATE TABLE:&nbsp;</strong></p>
-        <p dir="ltr">The CREATE TABLE statement is used to create a new table in a database.&nbsp;</p>
-        <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● CREATE TABLE table_name ( column1 datatype, column2 datatype, column3 datatype, .... );</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>&nbsp;DROP TABLE:&nbsp;</strong></p>
-        <p dir="ltr">The DROP TABLE statement is used to drop an existing table in a database.&nbsp;</p>
-        <p dir="ltr"><strong>Syntax &ndash;</strong></p>
-        <p dir="ltr">&nbsp;&nbsp;● DROP TABLE table_name;&nbsp;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>TRUNCATE TABLE:&nbsp;</strong></p>
-        <p dir="ltr">The TRUNCATE TABLE statement is used to delete the data inside a table, but not the table itself.
-        </p>
-        <p dir="ltr"><strong>&nbsp;Syntax &ndash;&nbsp;</strong></p>
-        <p dir="ltr">● TRUNCATE TABLE table_name;&nbsp;</p>
-        <p dir="ltr">&nbsp;</p>
-        <p dir="ltr"><strong>ALTER TABLE:&nbsp;</strong></p>
-        <p dir="ltr">The ALTER TABLE statement is used to add, delete, or modify columns in an existing table.&nbsp;</p>
-        <p dir="ltr">The ALTER TABLE statement is also used to add and drop various constraints on an existing table.
-        </p>
-        <p dir="ltr"><strong>Syntax &ndash;&nbsp;</strong>● ALTER TABLE table_name ADD column_name datatype;&nbsp;</p>
-        <p dir="ltr">● ALTER TABLE table_name DROP COLUMN column_name;&nbsp;</p>
-        <p dir="ltr">● ALTER TABLE table_name MODIFY COLUMN column_name datatype;&nbsp;</p>
-        <p dir="ltr"><strong>Ex &ndash;&nbsp;</strong>● ALTER TABLE Customers ADD Email varchar(255);&nbsp;</p>
-        <p dir="ltr">● ALTER TABLE Customers DROP COLUMN Email;&nbsp;</p>
-        <p dir="ltr">● ALTER TABLE Persons ALTER COLUMN DateOfBirth year</p>
-        <p>&nbsp;</p>
-      </div>
-    </div>
-  </div>
-  <!-- Subjects End -->
-
-  <!-- Footer Start -->
-  <div class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style="margin-top: 90px">
-    <div class="container mt-5 pt-5">
-      <div class="row">
-        <div class="col-md-6 mb-5">
-          <a href="../index.html" class="navbar-brand">
-            <h1 class="mt-n2 text-uppercase text-white"><i class="fa fa-book-reader mr-3"></i>PlacePrep</h1>
-          </a>
-          <p class="m-0">Accusam nonumy clita sed rebum kasd eirmod elitr. Ipsum ea lorem
-            at et diam est, tempor rebum ipsum sit ea tempor stet et
-            consetetur dolores. Justo stet diam ipsum lorem vero clita diam</p>
-        </div>
-        <div class="col-md-6 mb-5">
-          <h3 class="text-white mb-4">Newsletter</h3>
-          <div class="w-100">
-            <div class="input-group">
-              <input type="text" class="form-control border-light" style="padding: 30px"
-                placeholder="Your Email Address" />
-              <div class="input-group-append">
-                <button class="btn btn-primary px-4">Sign Up</button>
+          <div class="col-md-6 mb-5">
+            <h3 class="text-white mb-4">Newsletter</h3>
+            <div class="w-100">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control border-light"
+                  style="padding: 30px"
+                  placeholder="Your Email Address" />
+                <div class="input-group-append">
+                  <button class="btn btn-primary px-4">Sign Up</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 mb-5">
-          <h3 class="text-white mb-4">Get In Touch</h3>
-          <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street,Pune,
-            Maharashtra
-          </p>
-          <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-          <p><i class="fa fa-envelope mr-2"></i>placeprep@gmail.com</p>
-          <div class="d-flex justify-content-start mt-4">
-            <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-twitter"></i></a>
-            <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-facebook-f"></i></a>
-            <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-linkedin-in"></i></a>
-            <a class="text-white" href="#"><i class="fab fa-2x fa-instagram"></i></a>
+        <div class="row">
+          <div class="col-md-4 mb-5">
+            <h3 class="text-white mb-4">Get In Touch</h3>
+            <p
+              ><i class="fa fa-map-marker-alt mr-2"></i>123 Street,Pune,
+              Maharashtra
+            </p>
+            <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+            <p><i class="fa fa-envelope mr-2"></i>placeprep@gmail.com</p>
+            <div class="d-flex justify-content-start mt-4">
+              <a class="text-white mr-4" href="#"
+                ><i class="fab fa-2x fa-twitter"></i
+              ></a>
+              <a class="text-white mr-4" href="#"
+                ><i class="fab fa-2x fa-facebook-f"></i
+              ></a>
+              <a class="text-white mr-4" href="#"
+                ><i class="fab fa-2x fa-linkedin-in"></i
+              ></a>
+              <a class="text-white" href="#"
+                ><i class="fab fa-2x fa-instagram"></i
+              ></a>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4 mb-5">
-          <h3 class="text-white mb-4">Our Subjects</h3>
-          <div class="d-flex flex-column justify-content-start">
-            <a class="text-white-50 mb-2" href="../AllStudy/STUDY MATERIAL/DSA/dsa.html"><i
-                class="fa fa-angle-right mr-2"></i>Dsa</a>
-            <a class="text-white-50 mb-2" href="../AllStudy/STUDY MATERIAL/OOPS/oops.html"><i
-                class="fa fa-angle-right mr-2"></i>OOPs</a>
-            <a class="text-white-50 mb-2" href="../AllStudy/STUDY MATERIAL/DBMS/dbms.html"><i
-                class="fa fa-angle-right mr-2"></i>DBMS</a>
-            <a class="text-white-50 mb-2" href="../AllStudy/Logical Reasoning/logical.html"><i
-                class="fa fa-angle-right mr-2"></i>Research</a>
-            <a class="text-white-50" href="../AllStudy/STUDY MATERIAL/OSA/osa.html"><i
-                class="fa fa-angle-right mr-2"></i>OSA</a>
+          <div class="col-md-4 mb-5">
+            <h3 class="text-white mb-4">Our Subjects</h3>
+            <div class="d-flex flex-column justify-content-start">
+              <a
+                class="text-white-50 mb-2"
+                href="../AllStudy/STUDY MATERIAL/DSA/dsa.html"
+                ><i class="fa fa-angle-right mr-2"></i>Dsa</a
+              >
+              <a
+                class="text-white-50 mb-2"
+                href="../AllStudy/STUDY MATERIAL/OOPS/oops.html"
+                ><i class="fa fa-angle-right mr-2"></i>OOPs</a
+              >
+              <a
+                class="text-white-50 mb-2"
+                href="../AllStudy/STUDY MATERIAL/DBMS/dbms.html"
+                ><i class="fa fa-angle-right mr-2"></i>DBMS</a
+              >
+              <a
+                class="text-white-50 mb-2"
+                href="../AllStudy/Logical Reasoning/logical.html"
+                ><i class="fa fa-angle-right mr-2"></i>Research</a
+              >
+              <a
+                class="text-white-50"
+                href="../AllStudy/STUDY MATERIAL/OSA/osa.html"
+                ><i class="fa fa-angle-right mr-2"></i>OSA</a
+              >
+            </div>
           </div>
-        </div>
-        <div class="col-md-4 mb-5">
-          <h3 class="text-white mb-4">Quick Links</h3>
-          <div class="d-flex flex-column justify-content-start">
-            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Privacy Policy</a>
-            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms & Condition</a>
-            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Regular FAQs</a>
-            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Help & Support</a>
-            <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Contact</a>
+          <div class="col-md-4 mb-5">
+            <h3 class="text-white mb-4">Quick Links</h3>
+            <div class="d-flex flex-column justify-content-start">
+              <a class="text-white-50 mb-2" href="#"
+                ><i class="fa fa-angle-right mr-2"></i>Privacy Policy</a
+              >
+              <a class="text-white-50 mb-2" href="#"
+                ><i class="fa fa-angle-right mr-2"></i>Terms & Condition</a
+              >
+              <a class="text-white-50 mb-2" href="#"
+                ><i class="fa fa-angle-right mr-2"></i>Regular FAQs</a
+              >
+              <a class="text-white-50 mb-2" href="#"
+                ><i class="fa fa-angle-right mr-2"></i>Help & Support</a
+              >
+              <a class="text-white-50" href="#"
+                ><i class="fa fa-angle-right mr-2"></i>Contact</a
+              >
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container-fluid bg-dark text-white-50 border-top py-4"
-    style="border-color: rgba(256, 256, 256, 0.1) !important">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
-          <p class="m-0">Copyright &copy; <a class="text-white" href="#"> PlacePrep</a>.
-            All Rights Reserved.
-          </p>
+    <div
+      class="container-fluid bg-dark text-white-50 border-top py-4"
+      style="border-color: rgba(256, 256, 256, 0.1) !important">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+            <p class="m-0"
+              >Copyright &copy; <a class="text-white" href="#"> PlacePrep</a>.
+              All Rights Reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-right"> </div>
         </div>
-        <div class="col-md-6 text-center text-md-right"> </div>
       </div>
     </div>
-  </div>
-  <!-- Footer End -->
+    <!-- Footer End -->
 
-  <!-- Back to Top -->
-  <a href="#" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"><i
-      class="fa fa-angle-double-up"></i></a>
+    <!-- Back to Top -->
+    <a
+      href="#"
+      class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"
+      ><i class="fa fa-angle-double-up"></i
+    ></a>
 
-  <!-- JavaScript Libraries -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-  <script src="../../../HomePage/lib/easing/easing.min.js"></script>
-  <script src="../../../HomePage/lib/waypoints/waypoints.min.js"></script>
-  <script src="../../../HomePage/lib/counterup/counterup.min.js"></script>
-  <script src="../../../HomePage/lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
-  <!-- Javascript -->
-  <script src="../../../HomePage/js/main.js"></script>
-  <script src="dbms.js"></script>
-</body>
-
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../HomePage/lib/easing/easing.min.js"></script>
+    <script src="../../../HomePage/lib/waypoints/waypoints.min.js"></script>
+    <script src="../../../HomePage/lib/counterup/counterup.min.js"></script>
+    <script src="../../../HomePage/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <!-- Javascript -->
+    <script src="../../../HomePage/js/main.js"></script>
+    <script src="dbms.js"></script>
+  </body>
 </html>

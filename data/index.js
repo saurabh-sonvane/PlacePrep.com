@@ -1,5 +1,5 @@
 
-let url = `https://placeprepbackend.onrender.com/:3000/mcq`;
+let url = `https://placeprepbackend.onrender.com/mcq`;
 
 class mcq {
     constructor(question, optionA, optionB, optionC, optionD, multipleAnswers, answerA, answerB, answerC, answerD, category) {

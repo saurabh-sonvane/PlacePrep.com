@@ -1,807 +1,1088 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>PlacePrep - Interview Prepration Made Easy</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Content" name="keywords" />
+    <meta content="Content" name="description" />
 
-<head>
-  <meta charset="utf-8" />
-  <title>PlacePrep - Interview Prepration Made Easy</title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <meta content="Content" name="keywords" />
-  <meta content="Content" name="description" />
+    <!-- Favicon -->
+    <link href="/HomePage/img/favicon.ico" rel="icon" />
 
-  <!-- Favicon -->
-  <link href="/HomePage/img/favicon.ico" rel="icon" />
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet" />
 
-  <!-- Google Web Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
-    rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet" />
 
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
+    <!-- Libraries Stylesheet -->
+    <link
+      href="/HomePage/lib/owlcarousel/assets/owl.carousel.min.css"
+      rel="stylesheet" />
 
-  <!-- Libraries Stylesheet -->
-  <link href="/HomePage/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../../HomePage/css/style.css" rel="stylesheet" />
 
-  <!-- Customized Bootstrap Stylesheet -->
-  <link href="../../HomePage/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="logical.css" />
+    <style>
+      .table .thead-dark th {
+        color: #fff;
+        background-color: #343a40;
+        border-color: #454d55;
+      }
+    </style>
+  </head>
 
-  <link rel="stylesheet" href="logical.css" />
-  <style>
-    .table .thead-dark th {
-      color: #fff;
-      background-color: #343a40;
-      border-color: #454d55;
-    }
-  </style>
-</head>
-
-<body>
-  <!-- Topbar Start -->
-  <div class="container-fluid bg-dark">
-    <div class="row py-2 px-lg-5">
-      <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
-        <div class="d-inline-flex align-items-center text-white">
-          <small><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</small>
-          <small class="px-3">|</small>
-          <small><i class="fa fa-envelope mr-2"></i>placeprep@gmail.com</small>
+  <body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark">
+      <div class="row py-2 px-lg-5">
+        <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+          <div class="d-inline-flex align-items-center text-white">
+            <small><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</small>
+            <small class="px-3">|</small>
+            <small
+              ><i class="fa fa-envelope mr-2"></i>placeprep@gmail.com</small
+            >
+          </div>
         </div>
-      </div>
-      <div class="col-lg-6 text-center text-lg-right">
-        <div class="d-inline-flex align-items-center">
-          <a class="text-white px-2" href="">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a class="text-white px-2" href="">
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a class="text-white px-2" href="">
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-          <a class="text-white px-2" href="">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a class="text-white pl-2" href="">
-            <i class="fab fa-youtube"></i>
-          </a>
+        <div class="col-lg-6 text-center text-lg-right">
+          <div class="d-inline-flex align-items-center">
+            <a class="text-white px-2" href="">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="text-white px-2" href="">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="text-white px-2" href="">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a class="text-white px-2" href="">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a class="text-white pl-2" href="">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- Topbar End -->
+    <!-- Topbar End -->
 
-  <!-- Navbar Start -->
-  <div class="container-fluid p-0">
-    <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
-      <a href="../../../HomePage/index.html" class="navbar-brand ml-lg-3">
-        <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-book-reader mr-3"></i>PlacePrep</h1>
-      </a>
-      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
-        <div class="navbar-nav mx-auto py-0">
-          <a href="../../HomePage/index.html" class="nav-item nav-link">Home</a>
-          <a href="../../HomePage/about.html" class="nav-item nav-link">About</a>
-          <a href="../../HomePage/course.html" class="nav-item nav-link active">Subjects</a>
-          <a href="../../QuizPage/QuizPage.html" class="nav-item nav-link">Quiz</a>
-          <a href="../../chatBot/chatbot.html" class="nav-item nav-link">Chat-Bot</a>
-          <a href="../../ranking/ranking.html" class="nav-item nav-link ">Rankings</a>
-          <div class="nav-item dropdown">
-            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-            <div class="dropdown-menu m-0">
-              <!-- <a href="../detail.html" class="dropdown-item">Subject Detail</a> -->
-              <a href="../../HomePage/feature.html" class="dropdown-item">Our Features</a>
-              <a href="../../HomePage/team.html" class="dropdown-item">Mentors</a>
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+      <nav
+        class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="../../../HomePage/index.html" class="navbar-brand ml-lg-3">
+          <h1 class="m-0 text-uppercase text-primary"
+            ><i class="fa fa-book-reader mr-3"></i>PlacePrep</h1
+          >
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between px-lg-3"
+          id="navbarCollapse">
+          <div class="navbar-nav mx-auto py-0">
+            <a href="../../HomePage/index.html" class="nav-item nav-link"
+              >Home</a
+            >
+            <a href="../../HomePage/about.html" class="nav-item nav-link"
+              >About</a
+            >
+            <a
+              href="../../HomePage/course.html"
+              class="nav-item nav-link active"
+              >Subjects</a
+            >
+            <a href="../../QuizPage/QuizPage.html" class="nav-item nav-link"
+              >Quiz</a
+            >
+            <a href="../../chatBot/chatbot.html" class="nav-item nav-link"
+              >Chat-Bot</a
+            >
+            <a href="../../ranking/ranking.html" class="nav-item nav-link"
+              >Rankings</a
+            >
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                >Pages</a
+              >
+              <div class="dropdown-menu m-0">
+                <!-- <a href="../detail.html" class="dropdown-item">Subject Detail</a> -->
+                <a href="../../HomePage/feature.html" class="dropdown-item"
+                  >Our Features</a
+                >
+                <a href="../../HomePage/team.html" class="dropdown-item"
+                  >Mentors</a
+                >
+              </div>
+            </div>
+            <!-- <a href="../../HomePage/contact.html" class="nav-item nav-link">Contact</a> -->
+          </div>
+          <a
+            class="btn btn-primary py-2 px-4 d-none d-lg-block join-us-btn"
+            href="../../login/loginSignup.html"
+            target="_blank"
+            >Join Us</a
+          >
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div
+      class="jumbotron jumbotron-fluid page-header position-relative overlay-bottom"
+      style="margin-bottom: 30px">
+      <div class="container text-center py-5">
+        <h1 class="text-white display-1">LOGICAL REASONING</h1>
+        <div class="d-inline-flex text-white mb-5">
+          <p class="m-0 text-uppercase"
+            ><a class="text-white" href="../">Home</a></p
+          >
+          <i class="fa fa-angle-double-right pt-1 px-3"></i>
+          <p class="m-0 text-uppercase">Subjects</p>
+          <i class="fa fa-angle-double-right pt-1 px-3"></i>
+          <p class="m-0 text-uppercase">Logical Reasoning</p>
+        </div>
+      </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Subjects Start -->
+    <div id="tab-menu-div">
+      <div class="tab">
+        <!-- sidebar buttons  -->
+        <button
+          id="firsttab"
+          class="tablinks"
+          onclick="openTab(event, 'Account1')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p"
+                ><span style="font-size: large; font-weight: bold"
+                  >Verbal Reasoning</span
+                ></p
+              >
             </div>
           </div>
-          <a href="../../HomePage/contact.html" class="nav-item nav-link">Contact</a>
-        </div>
-        <a class="btn btn-primary py-2 px-4 d-none d-lg-block join-us-btn" href="../../login/loginSignup.html"
-          target="_blank">Join Us</a>
-      </div>
-    </nav>
-  </div>
-  <!-- Navbar End -->
-
-  <!-- Header Start -->
-  <div class="jumbotron jumbotron-fluid page-header position-relative overlay-bottom" style="margin-bottom: 30px">
-    <div class="container text-center py-5">
-      <h1 class="text-white display-1">LOGICAL REASONING</h1>
-      <div class="d-inline-flex text-white mb-5">
-        <p class="m-0 text-uppercase"><a class="text-white" href="../">Home</a></p>
-        <i class="fa fa-angle-double-right pt-1 px-3"></i>
-        <p class="m-0 text-uppercase">Subjects</p>
-        <i class="fa fa-angle-double-right pt-1 px-3"></i>
-        <p class="m-0 text-uppercase">Logical Reasoning</p>
-      </div>
-    </div>
-  </div>
-  <!-- Header End -->
-
-  <!-- Subjects Start -->
-  <div id="tab-menu-div">
-    <div class="tab">
-
-      <!-- sidebar buttons  -->
-      <button id="firsttab" class="tablinks" onclick="openTab(event, 'Account1')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p"><span style="font-size: large; font-weight: bold;">Verbal
-                Reasoning</span></p>
+        </button>
+        <button
+          id="firsttab"
+          class="tablinks"
+          onclick="openTab(event, 'Account')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">1.Number Series</p>
+            </div>
           </div>
-        </div>
-      </button>
-      <button id="firsttab" class="tablinks" onclick="openTab(event, 'Account')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p">1.Number Series</p>
-          </div>
-        </div>
-      </button>
+        </button>
 
-      <button class="tablinks" onclick="openTab(event, 'Replenish')">
-        <div class="tab-button">
-          <div class=" ">
-            <p class="font-payment-tab-button-p">2.Letter Series</p>
+        <button class="tablinks" onclick="openTab(event, 'Replenish')">
+          <div class="tab-button">
+            <div class=" ">
+              <p class="font-payment-tab-button-p">2.Letter Series</p>
+            </div>
           </div>
-        </div>
-      </button>
+        </button>
 
-      <button class="tablinks" onclick="openTab(event, 'Same-Day')">
-        <div class="tab-button">
-          <div class=" ">
-            <p class="font-payment-tab-button-p">3.Logical Problems</p>
+        <button class="tablinks" onclick="openTab(event, 'Same-Day')">
+          <div class="tab-button">
+            <div class=" ">
+              <p class="font-payment-tab-button-p">3.Logical Problems</p>
+            </div>
           </div>
-        </div>
-      </button>
+        </button>
 
-      <button class="tablinks" onclick="openTab(event, 'Orders')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p">4.Blood Relations</p>
+        <button class="tablinks" onclick="openTab(event, 'Orders')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">4.Blood Relations</p>
+            </div>
           </div>
-        </div>
-      </button>
+        </button>
 
-      <button class="tablinks" onclick="openTab(event, 'Reservations')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p"><span style="font-size: large;font-weight: bold;">Non-Verbal
-                Reasoning</span></p>
+        <button class="tablinks" onclick="openTab(event, 'Reservations')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p"
+                ><span style="font-size: large; font-weight: bold"
+                  >Non-Verbal Reasoning</span
+                ></p
+              >
+            </div>
           </div>
-        </div>
-      </button>
-      <button class="tablinks" onclick="openTab(event, 'Reservations')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p">1.Image Series</p>
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'Reservations')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">1.Image Series</p>
+            </div>
           </div>
-        </div>
-      </button>
-      <button class="tablinks" onclick="openTab(event, 'shapes')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p">2.Construction of Shapes </p>
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'shapes')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">2.Construction of Shapes </p>
+            </div>
           </div>
-        </div>
-      </button>
-      <button class="tablinks" onclick="openTab(event, 'Ruledetection')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p">3.Rule Detection </p>
+        </button>
+        <button class="tablinks" onclick="openTab(event, 'Ruledetection')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">3.Rule Detection </p>
+            </div>
           </div>
-        </div>
-      </button>
+        </button>
 
-      <!-- main data   -->
-    </div>
-    <div id="Account1" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">Intro</div>
-      <div id="hero-content">
-        <!-- fill  -->
-        <h3>Logical Reasoning :-</h3>
-        <p>There are two types:-
-          1. Verbal Reasoning
-          2. Non-Verbal Reasoning
-        </p>
-        <h3>1. Verbal Reasoning :- </h3>
-        <p>Logical reasoning (verbal reasoning) refers to the ability of a candidate to understand and logically work
-          through concepts and problems expressed in words. It checks the ability to extract and work with the meaning,
-          information, and implications from the bulk of the text. The logic is expressed verbally, and you have to
-          understand the logic before solving the questions.</p>
-        <h3>2. Non-Verbal Reasoning :- </h3>
-        <p>Logical reasoning (non-verbal reasoning) refers to the ability of a candidate to understand and logically
-          work through concepts and problems expressed in the form of images, diagrams, etc. It checks the ability to
-          extract and work with the meaning, information, and implications from the given images or diagrams. Here, the
-          logics are expressed non-verbally, and you have to understand the logic before solving them.</p>
+        <!-- main data   -->
+      </div>
+      <div id="Account1" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">Intro</div>
+        <div id="hero-content">
+          <!-- fill  -->
+          <h3>Logical Reasoning :-</h3>
+          <p
+            >There are two types:- 1. Verbal Reasoning 2. Non-Verbal Reasoning
+          </p>
+          <h3>1. Verbal Reasoning :- </h3>
+          <p
+            >Logical reasoning (verbal reasoning) refers to the ability of a
+            candidate to understand and logically work through concepts and
+            problems expressed in words. It checks the ability to extract and
+            work with the meaning, information, and implications from the bulk
+            of the text. The logic is expressed verbally, and you have to
+            understand the logic before solving the questions.</p
+          >
+          <h3>2. Non-Verbal Reasoning :- </h3>
+          <p
+            >Logical reasoning (non-verbal reasoning) refers to the ability of a
+            candidate to understand and logically work through concepts and
+            problems expressed in the form of images, diagrams, etc. It checks
+            the ability to extract and work with the meaning, information, and
+            implications from the given images or diagrams. Here, the logics are
+            expressed non-verbally, and you have to understand the logic before
+            solving them.</p
+          >
+        </div>
+      </div>
+      <div id="Account" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">1.Number Series</div>
+        <div id="hero-content">
+          <!-- fill  -->
+          <h3
+            >This type of reasoning questions consists of a number series with
+            one or more terms missing.</h3
+          >
+
+          <h2><u>QUESTIONS</u></h2>
+          <h3
+            >Q1. Look at the series, 46, 44, 40, 38, 34, _, which number should
+            come next?</h3
+          >
+          <ol type="A">
+            <li>30</li>
+            <li>36</li>
+            <li>31</li>
+            <li>32</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER:</u></span
+            >32</p
+          >
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>EXPLAINATION:</u></span
+            >We can see that it is an alternating number subtraction series;
+            first 2 is subtracted then 4 is subtracted and then 2 is subtracted
+            again and so on; 46 - 2 = 44<br />
+            44 - 4 = 40<br />
+            40 - 2 = 38<br />
+            38 - 4 = 34<br />
+            34 - 2 = 32 (option C)<br />
+          </p>
+          <hr />
+
+          <h3
+            >Q2. Look at this series: 31, 29, 24, 22, 17, ... What number should
+            come next?</h3
+          >
+          <ol type="A">
+            <li>15</li>
+            <li>14</li>
+            <li>19</li>
+            <li>12</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER:</u></span
+            >15</p
+          >
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>EXPLAINATION:</u></span
+            >This is a simple alternating subtraction series, which subtracts 2,
+            then 5.
+          </p>
+          <hr />
+
+          <h3
+            >Q3. Look at this series: 8, 43, 11, 41, __, 39, 17, ... What number
+            should fill in the blank?</h3
+          >
+          <ol type="A">
+            <li>8</li>
+            <li>14</li>
+            <li>98</li>
+            <li>12</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER:</u></span
+            >14</p
+          >
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>EXPLAINATION:</u></span
+            >This is a simple alternating addition and subtraction series. The
+            first series begins with 8 and adds 3; the second begins with 43 and
+            subtracts 2.
+          </p>
+          <hr />
+
+          <h3
+            >Q4. Look at this series: F2, __, D8, C16, B32, ... What number
+            should fill the blank?</h3
+          >
+          <ol type="A">
+            <li>A16</li>
+            <li>G4</li>
+            <li>E4</li>
+            <li>E2</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER : </u></span>E4</p
+          >
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>EXPLAINATION : </u></span>
+            The letters decrease by 1; the numbers are multiplied by 2.
+          </p>
+          <hr />
+
+          <h3
+            >Q5. Look at this series: V, VIII, XI, XIV, __, XX, ... What number
+            should fill the blank?</h3
+          >
+          <ol type="A">
+            <li>IX</li>
+            <li>XXIII</li>
+            <li>XV</li>
+            <li>XVII</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER : </u></span
+            >XVII</p
+          >
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>EXPLAINATION : </u></span>
+            This is a simple addition series; each number is 3 more than the
+            previous number.
+          </p>
+          <hr />
+        </div>
       </div>
 
-    </div>
-    <div id="Account" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">1.Number Series</div>
-      <div id="hero-content">
-        <!-- fill  -->
-        <h3>This type of reasoning questions consists of a number series with one or more terms missing.</h3>
+      <div id="Replenish" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">Letter Series</div>
+        <div id="hero-content">
+          <!-- fill  -->
 
+          <h3>Q1. RQP, ONM, _, IHG, FED, find the missing letters.</h3>
+          <ol type="A">
+            <li>CDE</li>
+            <li>LKI</li>
+            <li>LKJ</li>
+            <li>BAC</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER : </u></span>C</p
+          >
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>EXPLAINATION : </u></span
+            >The series consists of letters in reverse alphabetical order.
+            Therefore, the missing letters are LKJ.
+          </p>
+          <hr />
 
-        <h2><u>QUESTIONS</u></h2>
-        <h3>Q1. Look at the series, 46, 44, 40, 38, 34, _, which number should come next?</h3>
-        <ol type="A">
-          <li>30</li>
-          <li>36</li>
-          <li>31</li>
-          <li>32</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER:</u></span>32</p>
-        <p><span style="color: rgb(31, 217, 31);"><u>EXPLAINATION:</u></span>We can see that it is an alternating number
-          subtraction series; first 2 is subtracted then 4 is subtracted and then 2 is subtracted again and so on;
-          46 - 2 = 44<br>
-          44 - 4 = 40<br>
-          40 - 2 = 38<br>
-          38 - 4 = 34<br>
-          34 - 2 = 32 (option C)<br>
-        </p>
-        <hr>
+          <h3>Q2. CMM, EOO, GQQ, _____, KUU</h3>
+          <ol type="A">
+            <li>GRR</li>
+            <li>GSS</li>
+            <li>ISS</li>
+            <li>ITT</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER : </u></span>ISS</p
+          >
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>EXPLAINATION : </u></span>
+            The first letters are in alphabetical order with a letter skipped in
+            between each segment: C, E, G, I, K. The second and third letters
+            are repeated; they are also in order with a skipped letter: M, O, Q,
+            S, U.
+          </p>
+          <hr />
 
+          <h3>Q3. QAR, RAS, SAT, TAU, _____</h3>
+          <ol type="A">
+            <li>UAV</li>
+            <li>UAT</li>
+            <li>TAS</li>
+            <li>TAT</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER : </u></span>UAV</p
+          >
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>EXPLAINATION : </u></span>
+            In this series, the third letter is repeated as the first letter of
+            the next segment. The middle letter, A, remains static. The third
+            letters are in alphabetical order, beginning with R.
+          </p>
+          <hr />
 
-        <h3>Q2. Look at this series: 31, 29, 24, 22, 17, ... What number should come next?</h3>
-        <ol type="A">
-          <li>15</li>
-          <li>14</li>
-          <li>19</li>
-          <li>12</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER:</u></span>15</p>
-        <p><span style="color: rgb(31, 217, 31);"><u>EXPLAINATION:</u></span>This is a simple alternating subtraction
-          series, which subtracts 2, then 5.
-        </p>
-        <hr>
+          <h3>Q5. JAK, KBL, LCM, MDN, _____</h3>
+          <ol type="A">
+            <li>OEP</li>
+            <li>NEO</li>
+            <li>MEN</li>
+            <li>PFQ</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER : </u></span>NEO</p
+          >
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>EXPLAINATION : </u></span>
+            This is an alternating series in alphabetical order. The middle
+            letters follow the order ABCDE. The first and third letters are
+            alphabetical beginning with J. The third letter is repeated as a
+            first letter in each subsequent three-letter segment.
+          </p>
+          <hr />
 
-
-        <h3>Q3. Look at this series: 8, 43, 11, 41, __, 39, 17, ... What number should fill in the blank?</h3>
-        <ol type="A">
-          <li>8</li>
-          <li>14</li>
-          <li>98</li>
-          <li>12</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER:</u></span>14</p>
-        <p><span style="color: rgb(31, 217, 31);"><u>EXPLAINATION:</u></span>This is a simple alternating addition and
-          subtraction series. The first series begins with 8 and adds 3; the second begins with 43 and subtracts 2.
-        </p>
-        <hr>
-
-
-        <h3>Q4. Look at this series: F2, __, D8, C16, B32, ... What number should fill the blank?</h3>
-        <ol type="A">
-          <li>A16</li>
-          <li>G4</li>
-          <li>E4</li>
-          <li>E2</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER : </u></span>E4</p>
-        <p><span style="color: rgb(31, 217, 31);"><u>EXPLAINATION : </u></span> The letters decrease by 1; the numbers
-          are multiplied by 2.
-        </p>
-        <hr>
-
-        <h3>Q5. Look at this series: V, VIII, XI, XIV, __, XX, ... What number should fill the blank?</h3>
-        <ol type="A">
-          <li>IX</li>
-          <li>XXIII</li>
-          <li>XV</li>
-          <li>XVII</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER : </u></span>XVII</p>
-        <p><span style="color: rgb(31, 217, 31);"><u>EXPLAINATION : </u></span> This is a simple addition series; each
-          number is 3 more than the previous number.
-        </p>
-        <hr>
-      </div>
-
-    </div>
-
-    <div id="Replenish" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">Letter Series</div>
-      <div id="hero-content">
-        <!-- fill  -->
-
-        <h3>Q1. RQP, ONM, _, IHG, FED, find the missing letters.</h3>
-        <ol type="A">
-          <li>CDE</li>
-          <li>LKI</li>
-          <li>LKJ</li>
-          <li>BAC</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER : </u></span>C</p>
-        <p><span style="color: rgb(31, 217, 31);"><u>EXPLAINATION : </u></span>The series consists of letters in reverse
-          alphabetical order. Therefore, the missing letters are LKJ.
-        </p>
-        <hr>
-
-
-        <h3>Q2. CMM, EOO, GQQ, _____, KUU</h3>
-        <ol type="A">
-          <li>GRR</li>
-          <li>GSS</li>
-          <li>ISS</li>
-          <li>ITT</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER : </u></span>ISS</p>
-        <p><span style="color: rgb(31, 217, 31);"><u>EXPLAINATION : </u></span> The first letters are in alphabetical
-          order with a letter skipped in between each segment: C, E, G, I, K. The second and third letters are repeated;
-          they are also in order with a skipped letter: M, O, Q, S, U.
-        </p>
-        <hr>
-
-
-        <h3>Q3. QAR, RAS, SAT, TAU, _____</h3>
-        <ol type="A">
-          <li>UAV</li>
-          <li>UAT</li>
-          <li>TAS</li>
-          <li>TAT</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER : </u></span>UAV</p>
-        <p><span style="color: rgb(31, 217, 31);"><u>EXPLAINATION : </u></span> In this series, the third letter is
-          repeated as the first letter of the next segment. The middle letter, A, remains static. The third letters are
-          in alphabetical order, beginning with R.
-        </p>
-        <hr>
-
-
-        <h3>Q5. JAK, KBL, LCM, MDN, _____</h3>
-        <ol type="A">
-          <li>OEP</li>
-          <li>NEO</li>
-          <li>MEN</li>
-          <li>PFQ</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER : </u></span>NEO</p>
-        <p><span style="color: rgb(31, 217, 31);"><u>EXPLAINATION : </u></span> This is an alternating series in
-          alphabetical order. The middle letters follow the order ABCDE. The first and third letters are alphabetical
-          beginning with J. The third letter is repeated as a first letter in each subsequent three-letter segment.
-        </p>
-        <hr>
-
-
-        <h3>Q5. Look at this series: V, VIII, XI, XIV, __, XX, ... What number should fill the blank?</h3>
-        <ol type="A">
-          <li>IX</li>
-          <li>XXIII</li>
-          <li>XV</li>
-          <li>XVII</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER : </u></span>XVII</p>
-        <p><span style="color: rgb(31, 217, 31);"><u>EXPLAINATION : </u></span> This is a simple addition series; each
-          number is 3 more than the previous number.
-        </p>
-        <hr>
-
-      </div>
-    </div>
-    <div id="Same-Day" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">Logical Problems</div>
-      <div id="hero-content">
-        <!-- fill  -->
-        <h3>Each problem consists of three statements. Based on the first two statements, the third statement may be
-          true, false, or uncertain.</h3>
-        <hr>
-        <br>
-        <h3>Q1)
-          1 Mara runs faster than Gail.<br>
-          2 Lily runs faster than Mara.<br>
-          3 Gail runs faster than Lily.<br>
-          If the first two statements are true, the third statement is<br>
-        </h3>
-        <ol type="A">
-          <li>False</li>
-          <li>True</li>
-          <li>Uncertain</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER : </u></span>False</p>
-        <p><span style="color: rgb(31, 217, 31);"><u>EXPLAINATION : </u></span> We know from the first two statements
-          that Lily runs fastest. Therefore, the third statement must be false.
-        </p>
-        <hr>
-
-        <h3>Q2)I. Tom weighs less than Peter.<br>
-          II. Tom weighs more than John.<br>
-          III. Out of these three boys, John weighs the least.<br>
-          If the first two statements are true, the third statement is<br>
-        </h3>
-        <ol type="A">
-          <li>False</li>
-          <li>True</li>
-          <li>Uncertain</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER : </u></span>true</p>
-        <p><span style="color: rgb(31, 217, 31);"><u>EXPLAINATION : </u></span> From the first two statements, it is
-          clear that Peter weighs the most and John weighs the least.
-        </p>
-        <hr>
-
-        <h3>Q3)
-          I. All chickens are birds.<br>
-          II. Some chickens are hens.<br>
-          III. Male birds do not lay eggs.<br>
-          If all the above statements are true, which of the following statements must be true?<br>
-          1. Hens are birds.<br>
-          2. All birds lay eggs.<br>
-          3. Some chickens are not hens.<br>
-          <br>
-        </h3>
-        <ol type="A">
-          <li>1 and 2 only</li>
-          <li>2 and 3 only</li>
-          <li> 3 only</li>
-          <li>1 and 3 only</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER : </u></span>1 and 3 only</p>
-        <p><span style="color: rgb(31, 217, 31);"><u>EXPLAINATION : </u></span> The second statement is not true as only
-          female birds lay eggs. The first statement is true as hens are chickens and all chickens are birds. The third
-          statement is also true as some chickens are hens, then some must not be hens.
-        </p>
-        <hr>
-
-        <h3>Q4.
-          The temperature on Monday was lower than on Tuesday.<br>
-          The temperature on Wednesday was lower than on Tuesday.<br>
-          The temperature on Monday was higher than on Wednesday<br>
-          If the first two statements are true, the third statement is<br>
-        </h3>
-        <ol type="A">
-          <li>False</li>
-          <li>True</li>
-          <li>Uncertain</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER : </u></span>uncertain</p>
-        <p><span style="color: rgb(31, 217, 31);"><u>EXPLAINATION : </u></span> We know from the first two statements
-          that Tuesday had the highest temperature, but we cannot know whether Monday's temperature was higher than
-          Tuesday's.
-        </p>
-        <hr>
-
-        <h3>Q5)
-          Martina is sitting in the desk behind Jerome.<br>
-          Jerome is sitting in the desk behind Bryant.<br>
-          Bryant is sitting in the desk behind Martina.<br>
-          If the first two statements are true, the third statement is<br>
-        </h3>
-        <ol type="A">
-          <li>False</li>
-          <li>True</li>
-          <li>Uncertain</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER : </u></span>False</p>
-        <p><span style="color: rgb(31, 217, 31);"><u>EXPLAINATION : </u></span> Given the information in the first two
-          statements, Bryant is sitting in front of both Jerome and Martina, so the third statement must be false.
-        </p>
-        <hr>
-      </div>
-    </div>
-
-    <div id="Orders" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">Blood Relations</div>
-      <div id="hero-content">
-        <!-- fill  -->
-        <h3>Q1. Pointing to a photograph, a lady tells Sohan, "I am the only daughter of this woman, and her son is your
-          maternal uncle." How is the lady related to Sohan's father?</h3>
-        <img src="https://www.eazyprep.com/wp-content/uploads/2020/07/Table.jpg" alt="" width="300px">
-        <ol type="A">
-          <li>Wife</li>
-          <li>Sister-in-law</li>
-          <li>Sister</li>
-          <li>None of these</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER : </u></span> Wife</p>
-        <p><span style="color: rgb(31, 217, 31);"><u>EXPLAINATION : </u></span>The lady's brother is Sohan's maternal
-          uncle. So, the lady is Sohan's mother and wife of his father.
-        </p>
-        <hr>
-        <h3>Q2. Pointing to a woman, a man said, "Her father is the only son of my father." How is the man related to
-          the woman?</h3>
-        <ol type="A">
-          <li>Brother</li>
-          <li>Grandfather</li>
-          <li>Father</li>
-          <li>Son</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER : </u></span> Father</p>
-        <p><span style="color: rgb(31, 217, 31);"><u>EXPLAINATION : </u></span>Only son of my father = the man himself.
-          Therefore, the man is the father of this woman.
-        </p>
-        <hr>
-        <h3>Q3. Rahul's father is the only son of Rohan's Father. How is Rohan's wife related to Rahul?</h3>
-        <ol type="A">
-          <li>Mother</li>
-          <li>Aunt</li>
-          <li>Grandmother</li>
-          <li>Sister</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER : </u></span> Mother</p>
-        <p><span style="color: rgb(31, 217, 31);"><u>EXPLAINATION : </u></span>The only son of Rohan's father is Rohan
-          himself. So, Rohan is Rahul's father, and Rohan's wife is the mother of Rahul.
-        </p>
-        <hr>
-        <h3>Q4. P and Q are the married couple. X and Y are sisters. X is the sister of P. How is Y related to Q?</h3>
-        <ol type="A">
-          <li>Sister</li>
-          <li>Sister-in-law</li>
-          <li>Cousin</li>
-          <li>Daughter-in-law</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER : </u></span> Sister-in-law</p>
-        <p><span style="color: rgb(31, 217, 31);"><u>EXPLAINATION : </u></span>P and Q are husband and wife. X and Y are
-          sisters and X is the sister of P. It shows Y is the sister of P, so Y is the sister-in-law of Q.
-        </p>
-        <hr>
-        <h3>Q5. A is B's brother. C is B's father. D is C's father. E is D's father. How is A related to D?</h3>
-        <ol type="A">
-          <li>Grandson</li>
-          <li>Sister-in-law</li>
-          <li>Son</li>
-          <li>Grandfather</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER : </u></span> A</p>
-        <p><span style="color: rgb(31, 217, 31);"><u>EXPLAINATION : </u></span>A and B are brothers and C is B's father,
-          so A is the son of C. Now, D is C's father, so A is the grandson of D.
-        </p>
-        <hr>
-      </div>
-
-    </div>
-
-    <div id="Reservations" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">Image Series</div>
-      <div id="hero-content">
-        <!-- fill  -->
-        <h3>Q1.Which answer figure will continue the same series as established by the problem figures?<br>Problem
-          figures;</h3>
-        <img src="./images/image10.png" alt="">
-        <h3>Answer figures</h3>
-        <img src="./images/image1.png" alt="">
-
-        <ol type="A">
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER : </u></span>C</p>
-        <hr>
-        <h3>Q2.Which answer figure will continue the same series as established by the problem figures?<br>Problem
-          figures;</h3>
-        <img src="./images/image2.png" alt="">
-        <h3>Answer figures</h3>
-        <img src="./images/image4.png" alt="">
-
-        <ol type="A">
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER : </u></span>A</p>
-        <hr>
-        <h3>Q3.Which answer figure will continue the same series as established by the problem figures?<br>Problem
-          figures;</h3>
-        <img src="./images/image6.png" alt="">
-        <h3>Answer figures</h3>
-        <img src="./images/image12.png" alt="">
-
-        <ol type="A">
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER : </u></span>B</p>
-        <hr>
-        <h3>Q4.Which answer figure will continue the same series as established by the problem figures?<br>Problem
-          figures;</h3>
-        <img src="./images/image7.png" alt="">
-        <h3>Answer figures</h3>
-        <img src="./images/image5.png" alt="">
-
-        <ol type="A">
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER : </u></span>D</p>
-        <hr>
-        <h3>Q5.Which answer figure will continue the same series as established by the problem figures?<br>Problem
-          figures;</h3>
-        <img src="./images/image8.png" alt="">
-        <h3>Answer figures</h3>
-        <img src="./images/image3.png" alt="">
-
-        <ol type="A">
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-          <li>5</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER : </u></span>A</p>
-        <hr>
-      </div>
-    </div>
-    <div id="shapes" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">Construction of Shapes </div>
-      <div id="hero-content">
-        <!-- fill  -->
-        <h3>Q1.Select three figures out of the following five figures which when fitted into each other would form a
-          square.</h3>
-        <img src="./images/image9.png" alt="">
-        <ol type="A">
-          <li>1, 3, 4</li>
-          <li>1,3, 5</li>
-          <li>1, 2, 3</li>
-          <li>3, 4, 5
-          </li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER : </u></span>A</p>
-        <hr>
-        <h3>Q2.Select three figures out of the following five figures which when fitted into each other would form a
-          square.</h3>
-        <img src="./images/image15.png" alt="">
-        <ol type="A">
-          <li>3, 4, 2</li>
-          <li>3, 4, 1</li>
-          <li>2, 3, 4</li>
-          <li>3, 4, 5</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER : </u></span>D</p>
-        <hr>
-        <h3>Q3.Select three figures out of the following five figures which when fitted into each other would form a
-          triangle.</h3>
-        <img src="./images/image11.png" alt="">
-        <ol type="A">
-          <li>2, 3, 5</li>
-          <li>1, 2, 4</li>
-          <li>2, 4, 5</li>
-          <li>2, 3, 4</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER : </u></span>A</p>
-        <hr>
-        <h3>Q4.Select three figures out of the following five figures which when fitted into each other would form a
-          triangle.</h3>
-        <img src="./images/image14.png" alt="">
-        <ol type="A">
-          <li>2, 3, 5</li>
-          <li>1, 2, 4</li>
-          <li>2, 4, 5</li>
-          <li>3, 4, 5</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER : </u></span>D</p>
-        <hr>
-        <h3>Q5.Select three figures out of the following five figures which when fitted into each other would form a
-          hexagon.</h3>
-        <img src="./images/image13.png" alt="">
-        <ol type="A">
-          <li>1, 2, 4</li>
-          <li>2, 4, 5</li>
-          <li>3, 4, 5</li>
-          <li>All figures</li>
-        </ol>
-        <p><span style="color: rgb(31, 217, 31);"><u>ANSWER : </u></span>D</p>
-        <hr>
-      </div>
-    </div>
-    <div id="Ruledetection" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">Rule Detection </div>
-      <div id="hero-content">
-        <!-- fill  -->
-      </div>
-    </div>
-  </div>
-  <!-- Subjects End -->
-
-  <!-- Footer Start -->
-  <div class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5" style="margin-top: 90px">
-    <div class="container mt-5 pt-5">
-      <div class="row">
-        <div class="col-md-6 mb-5">
-          <a href="index.html" class="navbar-brand">
-            <h1 class="mt-n2 text-uppercase text-white"><i class="fa fa-book-reader mr-3"></i>PlacePrep</h1>
-          </a>
-          <p class="m-0">Accusam nonumy clita sed rebum kasd eirmod elitr. Ipsum ea lorem
-            at et diam est, tempor rebum ipsum sit ea tempor stet et
-            consetetur dolores. Justo stet diam ipsum lorem vero clita diam</p>
+          <h3
+            >Q5. Look at this series: V, VIII, XI, XIV, __, XX, ... What number
+            should fill the blank?</h3
+          >
+          <ol type="A">
+            <li>IX</li>
+            <li>XXIII</li>
+            <li>XV</li>
+            <li>XVII</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER : </u></span
+            >XVII</p
+          >
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>EXPLAINATION : </u></span>
+            This is a simple addition series; each number is 3 more than the
+            previous number.
+          </p>
+          <hr />
         </div>
-        <div class="col-md-6 mb-5">
-          <h3 class="text-white mb-4">Newsletter</h3>
-          <div class="w-100">
-            <div class="input-group">
-              <input type="text" class="form-control border-light" style="padding: 30px"
-                placeholder="Your Email Address" />
-              <div class="input-group-append">
-                <button class="btn btn-primary px-4">Sign Up</button>
+      </div>
+      <div id="Same-Day" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">Logical Problems</div>
+        <div id="hero-content">
+          <!-- fill  -->
+          <h3
+            >Each problem consists of three statements. Based on the first two
+            statements, the third statement may be true, false, or
+            uncertain.</h3
+          >
+          <hr />
+          <br />
+          <h3
+            >Q1) 1 Mara runs faster than Gail.<br />
+            2 Lily runs faster than Mara.<br />
+            3 Gail runs faster than Lily.<br />
+            If the first two statements are true, the third statement is<br />
+          </h3>
+          <ol type="A">
+            <li>False</li>
+            <li>True</li>
+            <li>Uncertain</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER : </u></span
+            >False</p
+          >
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>EXPLAINATION : </u></span>
+            We know from the first two statements that Lily runs fastest.
+            Therefore, the third statement must be false.
+          </p>
+          <hr />
+
+          <h3
+            >Q2)I. Tom weighs less than Peter.<br />
+            II. Tom weighs more than John.<br />
+            III. Out of these three boys, John weighs the least.<br />
+            If the first two statements are true, the third statement is<br />
+          </h3>
+          <ol type="A">
+            <li>False</li>
+            <li>True</li>
+            <li>Uncertain</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER : </u></span
+            >true</p
+          >
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>EXPLAINATION : </u></span>
+            From the first two statements, it is clear that Peter weighs the
+            most and John weighs the least.
+          </p>
+          <hr />
+
+          <h3
+            >Q3) I. All chickens are birds.<br />
+            II. Some chickens are hens.<br />
+            III. Male birds do not lay eggs.<br />
+            If all the above statements are true, which of the following
+            statements must be true?<br />
+            1. Hens are birds.<br />
+            2. All birds lay eggs.<br />
+            3. Some chickens are not hens.<br />
+            <br />
+          </h3>
+          <ol type="A">
+            <li>1 and 2 only</li>
+            <li>2 and 3 only</li>
+            <li> 3 only</li>
+            <li>1 and 3 only</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER : </u></span>1 and
+            3 only</p
+          >
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>EXPLAINATION : </u></span>
+            The second statement is not true as only female birds lay eggs. The
+            first statement is true as hens are chickens and all chickens are
+            birds. The third statement is also true as some chickens are hens,
+            then some must not be hens.
+          </p>
+          <hr />
+
+          <h3
+            >Q4. The temperature on Monday was lower than on Tuesday.<br />
+            The temperature on Wednesday was lower than on Tuesday.<br />
+            The temperature on Monday was higher than on Wednesday<br />
+            If the first two statements are true, the third statement is<br />
+          </h3>
+          <ol type="A">
+            <li>False</li>
+            <li>True</li>
+            <li>Uncertain</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER : </u></span
+            >uncertain</p
+          >
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>EXPLAINATION : </u></span>
+            We know from the first two statements that Tuesday had the highest
+            temperature, but we cannot know whether Monday's temperature was
+            higher than Tuesday's.
+          </p>
+          <hr />
+
+          <h3
+            >Q5) Martina is sitting in the desk behind Jerome.<br />
+            Jerome is sitting in the desk behind Bryant.<br />
+            Bryant is sitting in the desk behind Martina.<br />
+            If the first two statements are true, the third statement is<br />
+          </h3>
+          <ol type="A">
+            <li>False</li>
+            <li>True</li>
+            <li>Uncertain</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER : </u></span
+            >False</p
+          >
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>EXPLAINATION : </u></span>
+            Given the information in the first two statements, Bryant is sitting
+            in front of both Jerome and Martina, so the third statement must be
+            false.
+          </p>
+          <hr />
+        </div>
+      </div>
+
+      <div id="Orders" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">Blood Relations</div>
+        <div id="hero-content">
+          <!-- fill  -->
+          <h3
+            >Q1. Pointing to a photograph, a lady tells Sohan, "I am the only
+            daughter of this woman, and her son is your maternal uncle." How is
+            the lady related to Sohan's father?</h3
+          >
+          <img
+            src="https://www.eazyprep.com/wp-content/uploads/2020/07/Table.jpg"
+            alt=""
+            width="300px" />
+          <ol type="A">
+            <li>Wife</li>
+            <li>Sister-in-law</li>
+            <li>Sister</li>
+            <li>None of these</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER : </u></span>
+            Wife</p
+          >
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>EXPLAINATION : </u></span
+            >The lady's brother is Sohan's maternal uncle. So, the lady is
+            Sohan's mother and wife of his father.
+          </p>
+          <hr />
+          <h3
+            >Q2. Pointing to a woman, a man said, "Her father is the only son of
+            my father." How is the man related to the woman?</h3
+          >
+          <ol type="A">
+            <li>Brother</li>
+            <li>Grandfather</li>
+            <li>Father</li>
+            <li>Son</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER : </u></span>
+            Father</p
+          >
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>EXPLAINATION : </u></span
+            >Only son of my father = the man himself. Therefore, the man is the
+            father of this woman.
+          </p>
+          <hr />
+          <h3
+            >Q3. Rahul's father is the only son of Rohan's Father. How is
+            Rohan's wife related to Rahul?</h3
+          >
+          <ol type="A">
+            <li>Mother</li>
+            <li>Aunt</li>
+            <li>Grandmother</li>
+            <li>Sister</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER : </u></span>
+            Mother</p
+          >
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>EXPLAINATION : </u></span
+            >The only son of Rohan's father is Rohan himself. So, Rohan is
+            Rahul's father, and Rohan's wife is the mother of Rahul.
+          </p>
+          <hr />
+          <h3
+            >Q4. P and Q are the married couple. X and Y are sisters. X is the
+            sister of P. How is Y related to Q?</h3
+          >
+          <ol type="A">
+            <li>Sister</li>
+            <li>Sister-in-law</li>
+            <li>Cousin</li>
+            <li>Daughter-in-law</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER : </u></span>
+            Sister-in-law</p
+          >
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>EXPLAINATION : </u></span
+            >P and Q are husband and wife. X and Y are sisters and X is the
+            sister of P. It shows Y is the sister of P, so Y is the
+            sister-in-law of Q.
+          </p>
+          <hr />
+          <h3
+            >Q5. A is B's brother. C is B's father. D is C's father. E is D's
+            father. How is A related to D?</h3
+          >
+          <ol type="A">
+            <li>Grandson</li>
+            <li>Sister-in-law</li>
+            <li>Son</li>
+            <li>Grandfather</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER : </u></span> A</p
+          >
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>EXPLAINATION : </u></span
+            >A and B are brothers and C is B's father, so A is the son of C.
+            Now, D is C's father, so A is the grandson of D.
+          </p>
+          <hr />
+        </div>
+      </div>
+
+      <div id="Reservations" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">Image Series</div>
+        <div id="hero-content">
+          <!-- fill  -->
+          <h3
+            >Q1.Which answer figure will continue the same series as established
+            by the problem figures?<br />Problem figures;</h3
+          >
+          <img src="./images/image10.png" alt="" />
+          <h3>Answer figures</h3>
+          <img src="./images/image1.png" alt="" />
+
+          <ol type="A">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER : </u></span>C</p
+          >
+          <hr />
+          <h3
+            >Q2.Which answer figure will continue the same series as established
+            by the problem figures?<br />Problem figures;</h3
+          >
+          <img src="./images/image2.png" alt="" />
+          <h3>Answer figures</h3>
+          <img src="./images/image4.png" alt="" />
+
+          <ol type="A">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER : </u></span>A</p
+          >
+          <hr />
+          <h3
+            >Q3.Which answer figure will continue the same series as established
+            by the problem figures?<br />Problem figures;</h3
+          >
+          <img src="./images/image6.png" alt="" />
+          <h3>Answer figures</h3>
+          <img src="./images/image12.png" alt="" />
+
+          <ol type="A">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER : </u></span>B</p
+          >
+          <hr />
+          <h3
+            >Q4.Which answer figure will continue the same series as established
+            by the problem figures?<br />Problem figures;</h3
+          >
+          <img src="./images/image7.png" alt="" />
+          <h3>Answer figures</h3>
+          <img src="./images/image5.png" alt="" />
+
+          <ol type="A">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER : </u></span>D</p
+          >
+          <hr />
+          <h3
+            >Q5.Which answer figure will continue the same series as established
+            by the problem figures?<br />Problem figures;</h3
+          >
+          <img src="./images/image8.png" alt="" />
+          <h3>Answer figures</h3>
+          <img src="./images/image3.png" alt="" />
+
+          <ol type="A">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER : </u></span>A</p
+          >
+          <hr />
+        </div>
+      </div>
+      <div id="shapes" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">Construction of Shapes </div>
+        <div id="hero-content">
+          <!-- fill  -->
+          <h3
+            >Q1.Select three figures out of the following five figures which
+            when fitted into each other would form a square.</h3
+          >
+          <img src="./images/image9.png" alt="" />
+          <ol type="A">
+            <li>1, 3, 4</li>
+            <li>1,3, 5</li>
+            <li>1, 2, 3</li>
+            <li>3, 4, 5 </li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER : </u></span>A</p
+          >
+          <hr />
+          <h3
+            >Q2.Select three figures out of the following five figures which
+            when fitted into each other would form a square.</h3
+          >
+          <img src="./images/image15.png" alt="" />
+          <ol type="A">
+            <li>3, 4, 2</li>
+            <li>3, 4, 1</li>
+            <li>2, 3, 4</li>
+            <li>3, 4, 5</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER : </u></span>D</p
+          >
+          <hr />
+          <h3
+            >Q3.Select three figures out of the following five figures which
+            when fitted into each other would form a triangle.</h3
+          >
+          <img src="./images/image11.png" alt="" />
+          <ol type="A">
+            <li>2, 3, 5</li>
+            <li>1, 2, 4</li>
+            <li>2, 4, 5</li>
+            <li>2, 3, 4</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER : </u></span>A</p
+          >
+          <hr />
+          <h3
+            >Q4.Select three figures out of the following five figures which
+            when fitted into each other would form a triangle.</h3
+          >
+          <img src="./images/image14.png" alt="" />
+          <ol type="A">
+            <li>2, 3, 5</li>
+            <li>1, 2, 4</li>
+            <li>2, 4, 5</li>
+            <li>3, 4, 5</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER : </u></span>D</p
+          >
+          <hr />
+          <h3
+            >Q5.Select three figures out of the following five figures which
+            when fitted into each other would form a hexagon.</h3
+          >
+          <img src="./images/image13.png" alt="" />
+          <ol type="A">
+            <li>1, 2, 4</li>
+            <li>2, 4, 5</li>
+            <li>3, 4, 5</li>
+            <li>All figures</li>
+          </ol>
+          <p
+            ><span style="color: rgb(31, 217, 31)"><u>ANSWER : </u></span>D</p
+          >
+          <hr />
+        </div>
+      </div>
+      <div id="Ruledetection" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">Rule Detection </div>
+        <div id="hero-content">
+          <!-- fill  -->
+        </div>
+      </div>
+    </div>
+    <!-- Subjects End -->
+
+    <!-- Footer Start -->
+    <div
+      class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5"
+      style="margin-top: 90px">
+      <div class="container mt-5 pt-5">
+        <div class="row">
+          <div class="col-md-6 mb-5">
+            <a href="index.html" class="navbar-brand">
+              <h1 class="mt-n2 text-uppercase text-white"
+                ><i class="fa fa-book-reader mr-3"></i>PlacePrep</h1
+              >
+            </a>
+            <p class="m-0"
+              >Accusam nonumy clita sed rebum kasd eirmod elitr. Ipsum ea lorem
+              at et diam est, tempor rebum ipsum sit ea tempor stet et
+              consetetur dolores. Justo stet diam ipsum lorem vero clita diam</p
+            >
+          </div>
+          <div class="col-md-6 mb-5">
+            <h3 class="text-white mb-4">Newsletter</h3>
+            <div class="w-100">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control border-light"
+                  style="padding: 30px"
+                  placeholder="Your Email Address" />
+                <div class="input-group-append">
+                  <button class="btn btn-primary px-4">Sign Up</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 mb-5">
-          <h3 class="text-white mb-4">Get In Touch</h3>
-          <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street,Pune,
-            Maharashtra
-          </p>
-          <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-          <p><i class="fa fa-envelope mr-2"></i>placeprep@gmail.com</p>
-          <div class="d-flex justify-content-start mt-4">
-            <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-twitter"></i></a>
-            <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-facebook-f"></i></a>
-            <a class="text-white mr-4" href="#"><i class="fab fa-2x fa-linkedin-in"></i></a>
-            <a class="text-white" href="#"><i class="fab fa-2x fa-instagram"></i></a>
+        <div class="row">
+          <div class="col-md-4 mb-5">
+            <h3 class="text-white mb-4">Get In Touch</h3>
+            <p
+              ><i class="fa fa-map-marker-alt mr-2"></i>123 Street,Pune,
+              Maharashtra
+            </p>
+            <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+            <p><i class="fa fa-envelope mr-2"></i>placeprep@gmail.com</p>
+            <div class="d-flex justify-content-start mt-4">
+              <a class="text-white mr-4" href="#"
+                ><i class="fab fa-2x fa-twitter"></i
+              ></a>
+              <a class="text-white mr-4" href="#"
+                ><i class="fab fa-2x fa-facebook-f"></i
+              ></a>
+              <a class="text-white mr-4" href="#"
+                ><i class="fab fa-2x fa-linkedin-in"></i
+              ></a>
+              <a class="text-white" href="#"
+                ><i class="fab fa-2x fa-instagram"></i
+              ></a>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4 mb-5">
-          <h3 class="text-white mb-4">Our Subjects</h3>
-          <div class="d-flex flex-column justify-content-start">
-            <a class="text-white-50 mb-2" href="../AllStudy/STUDY MATERIAL/DSA/dsa.html"><i
-                class="fa fa-angle-right mr-2"></i>Dsa</a>
-            <a class="text-white-50 mb-2" href="../AllStudy/STUDY MATERIAL/OOPS/oops.html"><i
-                class="fa fa-angle-right mr-2"></i>OOPs</a>
-            <a class="text-white-50 mb-2" href="../AllStudy/STUDY MATERIAL/DBMS/dbms.html"><i
-                class="fa fa-angle-right mr-2"></i>DBMS</a>
-            <a class="text-white-50 mb-2" href="../AllStudy/Logical Reasoning/logical.html"><i
-                class="fa fa-angle-right mr-2"></i>Research</a>
-            <a class="text-white-50" href="../AllStudy/STUDY MATERIAL/OSA/osa.html"><i
-                class="fa fa-angle-right mr-2"></i>OSA</a>
+          <div class="col-md-4 mb-5">
+            <h3 class="text-white mb-4">Our Subjects</h3>
+            <div class="d-flex flex-column justify-content-start">
+              <a
+                class="text-white-50 mb-2"
+                href="../AllStudy/STUDY MATERIAL/DSA/dsa.html"
+                ><i class="fa fa-angle-right mr-2"></i>Dsa</a
+              >
+              <a
+                class="text-white-50 mb-2"
+                href="../AllStudy/STUDY MATERIAL/OOPS/oops.html"
+                ><i class="fa fa-angle-right mr-2"></i>OOPs</a
+              >
+              <a
+                class="text-white-50 mb-2"
+                href="../AllStudy/STUDY MATERIAL/DBMS/dbms.html"
+                ><i class="fa fa-angle-right mr-2"></i>DBMS</a
+              >
+              <a
+                class="text-white-50 mb-2"
+                href="../AllStudy/Logical Reasoning/logical.html"
+                ><i class="fa fa-angle-right mr-2"></i>Research</a
+              >
+              <a
+                class="text-white-50"
+                href="../AllStudy/STUDY MATERIAL/OSA/osa.html"
+                ><i class="fa fa-angle-right mr-2"></i>OSA</a
+              >
+            </div>
           </div>
-        </div>
-        <div class="col-md-4 mb-5">
-          <h3 class="text-white mb-4">Quick Links</h3>
-          <div class="d-flex flex-column justify-content-start">
-            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Privacy Policy</a>
-            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Terms & Condition</a>
-            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Regular FAQs</a>
-            <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Help & Support</a>
-            <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Contact</a>
+          <div class="col-md-4 mb-5">
+            <h3 class="text-white mb-4">Quick Links</h3>
+            <div class="d-flex flex-column justify-content-start">
+              <a class="text-white-50 mb-2" href="#"
+                ><i class="fa fa-angle-right mr-2"></i>Privacy Policy</a
+              >
+              <a class="text-white-50 mb-2" href="#"
+                ><i class="fa fa-angle-right mr-2"></i>Terms & Condition</a
+              >
+              <a class="text-white-50 mb-2" href="#"
+                ><i class="fa fa-angle-right mr-2"></i>Regular FAQs</a
+              >
+              <a class="text-white-50 mb-2" href="#"
+                ><i class="fa fa-angle-right mr-2"></i>Help & Support</a
+              >
+              <a class="text-white-50" href="#"
+                ><i class="fa fa-angle-right mr-2"></i>Contact</a
+              >
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container-fluid bg-dark text-white-50 border-top py-4"
-    style="border-color: rgba(256, 256, 256, 0.1) !important">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
-          <p class="m-0">Copyright &copy; <a class="text-white" href="#"> PlacePrep</a>.
-            All Rights Reserved.
-          </p>
+    <div
+      class="container-fluid bg-dark text-white-50 border-top py-4"
+      style="border-color: rgba(256, 256, 256, 0.1) !important">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+            <p class="m-0"
+              >Copyright &copy; <a class="text-white" href="#"> PlacePrep</a>.
+              All Rights Reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-right"> </div>
         </div>
-        <div class="col-md-6 text-center text-md-right"> </div>
       </div>
     </div>
-  </div>
-  <!-- Footer End -->
+    <!-- Footer End -->
 
-  <!-- Back to Top -->
-  <a href="#" class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"><i
-      class="fa fa-angle-double-up"></i></a>
+    <!-- Back to Top -->
+    <a
+      href="#"
+      class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"
+      ><i class="fa fa-angle-double-up"></i
+    ></a>
 
-  <!-- JavaScript Libraries -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-  <script src="../../HomePage/lib/easing/easing.min.js"></script>
-  <script src="../../HomePage/lib/waypoints/waypoints.min.js"></script>
-  <script src="../../HomePage/lib/counterup/counterup.min.js"></script>
-  <script src="../../HomePage/lib/owlcarousel/owl.carousel.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
-  <!-- Javascript -->
-  <script src="../../HomePage/js/main.js"></script>
-  <script src="logical.js"></script>
-</body>
-
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="../../HomePage/lib/easing/easing.min.js"></script>
+    <script src="../../HomePage/lib/waypoints/waypoints.min.js"></script>
+    <script src="../../HomePage/lib/counterup/counterup.min.js"></script>
+    <script src="../../HomePage/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <!-- Javascript -->
+    <script src="../../HomePage/js/main.js"></script>
+    <script src="logical.js"></script>
+  </body>
 </html>

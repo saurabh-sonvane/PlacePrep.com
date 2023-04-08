@@ -38,7 +38,9 @@
           <div class="d-inline-flex align-items-center text-white">
             <small><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</small>
             <small class="px-3">|</small>
-            <small><i class="fa fa-envelope mr-2"></i>placeprep@gmail.com</small>
+            <small
+              ><i class="fa fa-envelope mr-2"></i>placeprep@gmail.com</small
+            >
           </div>
         </div>
         <div class="col-lg-6 text-center text-lg-right">
@@ -86,7 +88,7 @@
           <div class="navbar-nav mx-auto py-0">
             <a href="../HomePage/index.html" class="nav-item nav-link">Home</a>
             <a href="../HomePage/about.html" class="nav-item nav-link">About</a>
-            <a href="../HomePage/course.html" class="nav-item nav-link "
+            <a href="../HomePage/course.html" class="nav-item nav-link"
               >Subjects</a
             >
             <a href="../QuizPage/QuizPage.html" class="nav-item nav-link active"
@@ -95,7 +97,7 @@
             <a href="../chatBot/chatbot.html" class="nav-item nav-link"
               >Chat-Bot</a
             >
-            <a href="../ranking/ranking.html" class="nav-item nav-link "
+            <a href="../ranking/ranking.html" class="nav-item nav-link"
               >Rankings</a
             >
             <div class="nav-item dropdown">
@@ -107,8 +109,12 @@
               >
               <div class="dropdown-menu m-0">
                 <!-- <a href="detail.html" class="dropdown-item">Subject Detail</a> -->
-                <a href="../HomePage/feature.html" class="dropdown-item">Our Features</a>
-                <a href="../HomePage/team.html" class="dropdown-item">Mentors</a>
+                <a href="../HomePage/feature.html" class="dropdown-item"
+                  >Our Features</a
+                >
+                <a href="../HomePage/team.html" class="dropdown-item"
+                  >Mentors</a
+                >
               </div>
             </div>
             <!-- <a href="../HomePage/contact.html" class="nav-item nav-link"
@@ -375,7 +381,12 @@
               >
             </a>
             <p class="m-0"
-              >PlacePrep is the ultimate coding interview preparation website that helps you ace your coding interviews with confidence. Our platform offers comprehensive resources, experienced instructors, personalized learning paths, and real-world scenarios to help you succeed in the tech industry. Join us today and start your journey towards your dream job!</p
+              >PlacePrep is the ultimate coding interview preparation website
+              that helps you ace your coding interviews with confidence. Our
+              platform offers comprehensive resources, experienced instructors,
+              personalized learning paths, and real-world scenarios to help you
+              succeed in the tech industry. Join us today and start your journey
+              towards your dream job!</p
             >
           </div>
           <div class="col-md-6 mb-5">
@@ -421,19 +432,29 @@
           <div class="col-md-4 mb-5">
             <h3 class="text-white mb-4">Our Subjects</h3>
             <div class="d-flex flex-column justify-content-start">
-              <a class="text-white-50 mb-2" href="../AllStudy/STUDY MATERIAL/DSA/dsa.html"
+              <a
+                class="text-white-50 mb-2"
+                href="../AllStudy/STUDY MATERIAL/DSA/dsa.html"
                 ><i class="fa fa-angle-right mr-2"></i>Dsa</a
               >
-              <a class="text-white-50 mb-2" href="../AllStudy/STUDY MATERIAL/OOPS/oops.html"
+              <a
+                class="text-white-50 mb-2"
+                href="../AllStudy/STUDY MATERIAL/OOPS/oops.html"
                 ><i class="fa fa-angle-right mr-2"></i>OOPs</a
               >
-              <a class="text-white-50 mb-2" href="../AllStudy/STUDY MATERIAL/DBMS/dbms.html"
+              <a
+                class="text-white-50 mb-2"
+                href="../AllStudy/STUDY MATERIAL/DBMS/dbms.html"
                 ><i class="fa fa-angle-right mr-2"></i>DBMS</a
               >
-              <a class="text-white-50 mb-2" href="../AllStudy/Logical Reasoning/logical.html"
+              <a
+                class="text-white-50 mb-2"
+                href="../AllStudy/Logical Reasoning/logical.html"
                 ><i class="fa fa-angle-right mr-2"></i>Research</a
               >
-              <a class="text-white-50" href="../AllStudy/STUDY MATERIAL/OSA/osa.html"
+              <a
+                class="text-white-50"
+                href="../AllStudy/STUDY MATERIAL/OSA/osa.html"
                 ><i class="fa fa-angle-right mr-2"></i>OSA</a
               >
             </div>
@@ -504,18 +525,18 @@
           location.href = "./quiz/quiz.html";
         });
       });
-      let joinNowBtn = document.querySelector(".join-us-btn");
-    let user = JSON.parse(localStorage.getItem('user'));
+      // let joinNowBtn = document.querySelector(".join-us-btn");
+      // let user = JSON.parse(localStorage.getItem("user"));
 
-    let loc = "../login/loginSignup.html";
-    console.log('xxx', user);
-    if (user) {
-        loc = "../UserProfile/userProfile.html";
-        joinNowBtn.textContent = 'Profile'
-    }
-    joinNowBtn.addEventListener('click', function () {
-        location.href = loc;
-    })
+      // let loc = "/login/loginSignup.html";
+      // console.log("xxx", user);
+      // if (user) {
+      //   loc = "/UserProfile/userProfile.html";
+      //   joinNowBtn.textContent = "Profile";
+      // }
+      // joinNowBtn.addEventListener("click", function () {
+      //   location.href = loc;
+      // });
     </script>
   </body>
 </html>
