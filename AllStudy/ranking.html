@@ -44,7 +44,9 @@
           <div class="d-inline-flex align-items-center text-white">
             <small><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</small>
             <small class="px-3">|</small>
-            <small><i class="fa fa-envelope mr-2"></i>placeprep@gmail.com</small>
+            <small
+              ><i class="fa fa-envelope mr-2"></i>placeprep@gmail.com</small
+            >
           </div>
         </div>
         <div class="col-lg-6 text-center text-lg-right">
@@ -92,12 +94,18 @@
           <div class="navbar-nav mx-auto py-0">
             <a href="../HomePage/index.html" class="nav-item nav-link">Home</a>
             <a href="../HomePage/about.html" class="nav-item nav-link">About</a>
-            <a href="../HomePage/course.html" class="nav-item nav-link">Subjects</a>
+            <a href="../HomePage/course.html" class="nav-item nav-link"
+              >Subjects</a
+            >
             <a href="../QuizPage/QuizPage.html" class="nav-item nav-link"
               >Quiz</a
             >
-            <a href="../chatBot/chatbot.html" class="nav-item nav-link">Chat-Bot</a>
-            <a href="../ranking/ranking.html" class="nav-item nav-link active">Rankings</a>
+            <a href="../chatBot/chatbot.html" class="nav-item nav-link"
+              >Chat-Bot</a
+            >
+            <a href="../ranking/ranking.html" class="nav-item nav-link active"
+              >Rankings</a
+            >
             <div class="nav-item dropdown">
               <a
                 href="#"
@@ -107,8 +115,12 @@
               >
               <div class="dropdown-menu m-0">
                 <!-- <a href="detail.html" class="dropdown-item">Subject Detail</a> -->
-                <a href="../HomePage/feature.html" class="dropdown-item">Our Features</a>
-                <a href="../HomePage/team.html" class="dropdown-item">Mentors</a>
+                <a href="../HomePage/feature.html" class="dropdown-item"
+                  >Our Features</a
+                >
+                <a href="../HomePage/team.html" class="dropdown-item"
+                  >Mentors</a
+                >
               </div>
             </div>
             <!-- <a href="../HomePage/contact.html" class="nav-item nav-link">Contact</a> -->
@@ -139,49 +151,130 @@
     <!-- Header End -->
 
     <!-- Subjects Start -->
-    <main class="page__main">
-        <div class="block--background">
-            <div class="chatbot__overview">
-                <ul class="chatlist">
-                    <li class="bot__output bot__output--standard">Hey, I'm Suru!</li>
-                    <li class="bot__output bot__output--standard">I will guide you through Placeprep!</li>
-                    <li class="bot__output bot__output--standard">
-                        <span class="bot__output--second-sentence">You can ask me a bunch of things!</span>
-                        <ul>
-                            <li class="input__nested-list">Something <span class="bot__command">about</span> Placeprep</li>
-                            <li class="input__nested-list">what do you want to learn?
-                                <ul >
-                                    <li class="input__nested-list"><span class="bot__command">Coding Languages</span></li>
-                                    <li class="input__nested-list"><span class="bot__command">Logical Reasoning</span></li>
-                                    <li class="input__nested-list"><span class="bot__command">Verbal Ability</span></li>
-                                    <li class="input__nested-list"><span class="bot__command">DBMS</span></li>
-                                    <li class="input__nested-list"><span class="bot__command">DSA</span></li>
-                                    <li class="input__nested-list"><span class="bot__command">OOPS</span></li>
-                                    <li class="input__nested-list"><span class="bot__command">OSA</span></li>
-                                    
-                                </ul>
-                            </li>
-                            
-                            <li class="input__nested-list">copy paste mcq from Placeprep test to know correct answer  </li>
-                            
-                            <li class="input__nested-list">Maybe I could <span class="bot__command">help</span> (for
-                                more instructions)</li>
-                            <li class="input__nested-list">Note:  Type <span class="bot__command">commands</span> which is in blue color.</li>
-                        </ul>
-                      
-                    </li>
-                </ul>
-            </div>
-            <div class="chatbox-area">
-                <form action="" id="chatform">
-                    <textarea placeholder="Talk to me!" class="chatbox" name="chatbox" resize: "none"
-                        minlength="2"></textarea>
-                    <input class="submit-button" type="submit" value="send">
-                </form>
-            </div>
-            <div class="block--background"></div>
+    <div class="parent">
+      <div style="display: flex; flex-direction: column; gap: 3%; width: 30%">
+        <div class="firstchild">
+          <img
+            src="https://img.freepik.com/premium-vector/businessman-avatar-cartoon-character-profile_18591-50581.jpg"
+            class="userimg"
+            alt="img" />
+          <h3 id="name">Full Name</h3>
+          <p id="prof">Full Stack Developer</p>
+          <p id="coll">College Name</p>
+          <p id="cit">City</p>
+          <button id="mcq">Add MCQs</button>
+        </div>
+        <div class="secondchild">
+          <div>
+            <img
+              src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+              alt="github"
+              id="git" />
+            <a id="github" href="https://github.com/s17200" target="_blank"
+              >Github</a
+            >
+          </div>
+          <hr />
+          <div>
+            <img
+              src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200x200-min.png"
+              alt="geeksforgeeks"
+              id="geek" />
+            <a
+              id="geeksforgeeks"
+              href="https://github.com/s17200"
+              target="_blank"
+              >geeksforgeeks</a
+            >
+          </div>
+          <hr />
+          <div>
+            <img
+              src="https://i.pinimg.com/originals/c5/d9/fc/c5d9fc1e18bcf039f464c2ab6cfb3eb6.jpg"
+              alt="CodeChef"
+              id="code" />
+            <a id="codef" href="https://github.com/s17200" target="_blank"
+              >CodeChef</a
+            >
+          </div>
+          <hr />
+          <div>
+            <img
+              src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/160_Hackerrank_logo_logos-512.png"
+              alt="HackerRank"
+              id="hack" />
+            <a id="HackerRank" href="https://github.com/s17200" target="_blank"
+              >HackerRank</a
+            >
+          </div>
+          <hr />
+          <div>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png"
+              alt="mail"
+              id="mail" />
+            <p id="Gmail">Gmail</p>
+          </div>
+          <hr />
+          <div>
+            <p style="font-weight: bold">Quiz Score</p>
+            <p id="score">1</p>
+          </div>
+          <hr />
+        </div>
+      </div>
 
-    </main>
+      <div class="thirdchild">
+        <div>
+          <form action="">
+            <label for="">Full Name</label><br />
+            <input
+              type="text"
+              id="na"
+              placeholder="Enter Your Full Name" /><br />
+            <label for="">Email</label><br />
+            <input
+              type="text"
+              id="email"
+              disabled
+              placeholder="Enter Your Email" /><br />
+            <label for="">Mobile</label><br />
+            <input
+              type="text"
+              id="mobile"
+              placeholder="Enter Your Mobile No" /><br />
+            <label for="">College</label><br />
+            <input
+              type="text"
+              id="college"
+              placeholder="Enter your College Name" /><br />
+            <label for="">City</label><br />
+            <input type="text" id="city" placeholder="Enter Your City" /><br />
+            <label for="">Github</label><br />
+            <input
+              type="text"
+              id="gi"
+              placeholder="Enter Your Github profile Link" /><br />
+            <label for="">Geeks for Geeks</label><br />
+            <input
+              type="text"
+              id="gfg"
+              placeholder="Enter Your Geeks for Geeks profile Link" /><br />
+            <label for="">CodeChef</label><br />
+            <input
+              type="text"
+              id="codechef"
+              placeholder="Enter Your CodeChef profile Link" /><br />
+            <label for="">HackerRank</label><br />
+            <input
+              type="text"
+              id="hacker"
+              placeholder="Enter Your HackerRank profile Link" /><br />
+            <input type="submit" name="" id="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
     <!-- Subjects End -->
 
     <!-- Footer Start -->
@@ -197,7 +290,12 @@
               >
             </a>
             <p class="m-0"
-              >PlacePrep is the ultimate coding interview preparation website that helps you ace your coding interviews with confidence. Our platform offers comprehensive resources, experienced instructors, personalized learning paths, and real-world scenarios to help you succeed in the tech industry. Join us today and start your journey towards your dream job!</p
+              >PlacePrep is the ultimate coding interview preparation website
+              that helps you ace your coding interviews with confidence. Our
+              platform offers comprehensive resources, experienced instructors,
+              personalized learning paths, and real-world scenarios to help you
+              succeed in the tech industry. Join us today and start your journey
+              towards your dream job!</p
             >
           </div>
           <div class="col-md-6 mb-5">
@@ -243,19 +341,29 @@
           <div class="col-md-4 mb-5">
             <h3 class="text-white mb-4">Our Subjects</h3>
             <div class="d-flex flex-column justify-content-start">
-              <a class="text-white-50 mb-2" href="../AllStudy/STUDY MATERIAL/DSA/dsa.html"
+              <a
+                class="text-white-50 mb-2"
+                href="../AllStudy/STUDY MATERIAL/DSA/dsa.html"
                 ><i class="fa fa-angle-right mr-2"></i>Dsa</a
               >
-              <a class="text-white-50 mb-2" href="../AllStudy/STUDY MATERIAL/OOPS/oops.html"
+              <a
+                class="text-white-50 mb-2"
+                href="../AllStudy/STUDY MATERIAL/OOPS/oops.html"
                 ><i class="fa fa-angle-right mr-2"></i>OOPs</a
               >
-              <a class="text-white-50 mb-2" href="../AllStudy/STUDY MATERIAL/DBMS/dbms.html"
+              <a
+                class="text-white-50 mb-2"
+                href="../AllStudy/STUDY MATERIAL/DBMS/dbms.html"
                 ><i class="fa fa-angle-right mr-2"></i>DBMS</a
               >
-              <a class="text-white-50 mb-2" href="../AllStudy/Logical Reasoning/logical.html"
+              <a
+                class="text-white-50 mb-2"
+                href="../AllStudy/Logical Reasoning/logical.html"
                 ><i class="fa fa-angle-right mr-2"></i>Research</a
               >
-              <a class="text-white-50" href="../AllStudy/STUDY MATERIAL/OSA/osa.html"
+              <a
+                class="text-white-50"
+                href="../AllStudy/STUDY MATERIAL/OSA/osa.html"
                 ><i class="fa fa-angle-right mr-2"></i>OSA</a
               >
             </div>
