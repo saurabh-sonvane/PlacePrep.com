@@ -9,7 +9,7 @@
     display: flex;
     /* border: 1px solid red; */
     margin: auto;
-    width: 80%;
+    width: 95%;
     height: 80%;
    margin: auto;
     padding: 60px;
@@ -99,10 +99,11 @@ a,#rank,#Gmail{
     width: 95%;
     border-radius: 10px;
     color: white;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: large;
-    background-color: #120f2d;
+    background-color: #337BDC;
     cursor: pointer;
+    border:none;
 }
 
 #mcq{
