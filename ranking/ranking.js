@@ -34,7 +34,7 @@ window.onload = async function () {
 async function getScores() {
     let user = JSON.parse(localStorage.getItem('user'));
     try {
-        const res = await fetch(`http://localhost:3000/users`, {
+        const res = await fetch(`https://placeprepbackend.onrender.com/users`, {
             headers: {
                 "Content-Type": "application/json",
             },

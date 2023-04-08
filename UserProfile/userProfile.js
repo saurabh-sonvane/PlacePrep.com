@@ -105,7 +105,7 @@ function fun(event) {
 async function updateUser({ body, id }) {
     console.log(body);
     try {
-        const res = await fetch(`http://localhost:3000/users/${id}`, {
+        const res = await fetch(`https://placeprepbackend.onrender.com/users/${id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json",
@@ -120,7 +120,7 @@ async function updateUser({ body, id }) {
 }
 async function getUser(id) {
     try {
-        const res = await fetch(`http://localhost:3000/users/${id}`, {
+        const res = await fetch(`https://placeprepbackend.onrender.com/users/${id}`, {
             headers: {
                 "Content-Type": "application/json",
             },
@@ -139,7 +139,7 @@ async function getUser(id) {
 async function getScores() {
     let user = JSON.parse(localStorage.getItem('user'));
     try {
-        const res = await fetch(`http://localhost:3000/users`, {
+        const res = await fetch(`https://placeprepbackend.onrender.com/users`, {
             headers: {
                 "Content-Type": "application/json",
             },

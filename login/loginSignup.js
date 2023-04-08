@@ -78,7 +78,7 @@ function verifyOtp(name, email, password) {
 async function addUser({ body }) {
     console.log(body);
     try {
-        const res = await fetch("http://localhost:3000/users", {
+        const res = await fetch(`https://placeprepbackend.onrender.com/:3000/users`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -92,7 +92,7 @@ async function addUser({ body }) {
 }
 async function getUser({ email, password }) {
     try {
-        const res = await fetch(`http://localhost:3000/users?email=${email}&password=${password}`, {
+        const res = await fetch(`https://placeprepbackend.onrender.com/users?email=${email}&password=${password}`, {
             headers: {
                 "Content-Type": "application/json",
             },
