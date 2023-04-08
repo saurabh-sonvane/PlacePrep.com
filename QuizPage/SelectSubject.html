@@ -86,11 +86,17 @@
           <div class="navbar-nav mx-auto py-0">
             <a href="../HomePage/index.html" class="nav-item nav-link">Home</a>
             <a href="../HomePage/about.html" class="nav-item nav-link">About</a>
-            <a href="../HomePage/course.html" class="nav-item nav-link active"
+            <a href="../HomePage/course.html" class="nav-item nav-link "
               >Subjects</a
             >
-            <a href="../QuizPage/QuizPage.html" class="nav-item nav-link"
+            <a href="../QuizPage/QuizPage.html" class="nav-item nav-link active"
               >Quiz</a
+            >
+            <a href="../chatBot/chatbot.html" class="nav-item nav-link"
+              >Chat-Bot</a
+            >
+            <a href="../ranking/ranking.html" class="nav-item nav-link "
+              >Rankings</a
             >
             <div class="nav-item dropdown">
               <a
@@ -105,9 +111,9 @@
                 <a href="../HomePage/team.html" class="dropdown-item">Mentors</a>
               </div>
             </div>
-            <a href="../HomePage/contact.html" class="nav-item nav-link"
+            <!-- <a href="../HomePage/contact.html" class="nav-item nav-link"
               >Contact</a
-            >
+            > -->
           </div>
           <a
             href=""
@@ -487,7 +493,7 @@
     <script src="../HomePage/lib/counterup/counterup.min.js"></script>
     <script src="../HomePage/lib/owlcarousel/owl.carousel.min.js"></script>
     <!-- Javascript -->
-    <script src="js/main.js"></script>
+    <script src="../HomePage/js/main.js"></script>
     <script>
       const subjects = document.querySelectorAll(".subject-grid>div");
       const subArray = ["python", "cpp", "java", "osa", "dsa", "oops"];
@@ -498,6 +504,18 @@
           location.href = "./quiz/quiz.html";
         });
       });
+      let joinNowBtn = document.querySelector(".join-us-btn");
+    let user = JSON.parse(localStorage.getItem('user'));
+
+    let loc = "../login/loginSignup.html";
+    console.log('xxx', user);
+    if (user) {
+        loc = "../UserProfile/userProfile.html";
+        joinNowBtn.textContent = 'Profile'
+    }
+    joinNowBtn.addEventListener('click', function () {
+        location.href = loc;
+    })
     </script>
   </body>
 </html>

@@ -29,6 +29,18 @@ window.onload = function () {
     if(mail.value=="sonvanesaurabh77@gmail.com" && data.password=="admin"){
             document.getElementById("mcq").style.display="block";
     }
+    let joinNowBtn = document.querySelector(".join-us-btn");
+    let user = JSON.parse(localStorage.getItem('user'));
+
+    let loc = "../login/loginSignup.html";
+    console.log('xxx', user);
+    if (user) {
+        loc = "../UserProfile/userProfile.html";
+        joinNowBtn.textContent = 'Profile'
+    }
+    joinNowBtn.addEventListener('click', function () {
+        location.href = loc;
+    })
 };
 
 
@@ -99,7 +111,7 @@ function fun(event) {
 async function updateUser({ body, id }) {
     console.log(body);
     try {
-        const res = await fetch(`http://localhost:3000/users/${id}`, {
+        const res = await fetch(`https://placeprepbackend.onrender.com/users/${id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json",
@@ -114,7 +126,7 @@ async function updateUser({ body, id }) {
 }
 async function getUser(id) {
     try {
-        const res = await fetch(`http://localhost:3000/users/${id}`, {
+        const res = await fetch(`https://placeprepbackend.onrender.com/users/${id}`, {
             headers: {
                 "Content-Type": "application/json",
             },
@@ -133,7 +145,7 @@ async function getUser(id) {
 async function getScores() {
     let user = JSON.parse(localStorage.getItem('user'));
     try {
-        const res = await fetch(`http://localhost:3000/users`, {
+        const res = await fetch(`https://placeprepbackend.onrender.com/users`, {
             headers: {
                 "Content-Type": "application/json",
             },

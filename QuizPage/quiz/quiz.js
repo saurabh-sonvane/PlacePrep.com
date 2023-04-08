@@ -183,7 +183,7 @@ function result() {
 }
 async function getQuestions({ category = "oops" }) {
     try {
-        const res = await fetch(`http://localhost:3000/mcq?category=${category}`, {
+        const res = await fetch(`https://placeprepbackend.onrender.com/mcq?category=${category}`, {
             headers: {
                 "Content-Type": "application/json",
             },
@@ -207,13 +207,14 @@ async function updateScore({ total, individual }) {
     }
     console.log(quizScores);
     try {
-        const res = await fetch(`http://localhost:3000/users/${user.id}`, {
+        const res = await fetch(`https://placeprepbackend.onrender.com/users/${user.id}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify(quizScores),
         });
+        getScores();
         console.log("res", res);
     } catch (error) {
         console.log("error", error);
@@ -223,7 +224,7 @@ async function getScores() {
     let user = JSON.parse(localStorage.getItem('user'));
     console.log("userSc", user);
     try {
-        const res = await fetch(`http://localhost:3000/users/${user.id}`, {
+        const res = await fetch(`https://placeprepbackend.onrender.com/users/${user.id}`, {
             headers: {
                 "Content-Type": "application/json",
             },

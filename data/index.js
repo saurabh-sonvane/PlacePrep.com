@@ -1,8 +1,8 @@
 
-let url = "http://localhost:3000/mcq";
+let url = `https://placeprepbackend.onrender.com/:3000/mcq`;
 
 class mcq {
-    constructor(question,optionA,optionB,optionC,optionD,multipleAnswers,answerA,answerB,answerC,answerD,category) {
+    constructor(question, optionA, optionB, optionC, optionD, multipleAnswers, answerA, answerB, answerC, answerD, category) {
         this.question = question;
         this.optionA = optionA;
         this.optionB = optionB;
@@ -13,11 +13,11 @@ class mcq {
         this.answerB = answerB;
         this.answerC = answerC;
         this.answerD = answerD;
-        this.category = category; 
+        this.category = category;
     }
 }
 
-document.querySelector("form").onsubmit = function() {
+document.querySelector("form").onsubmit = function () {
     event.preventDefault();
     create();
 }
@@ -53,19 +53,19 @@ document.querySelector("form").onsubmit = function() {
 // }
 
 function create() {
-    let question=document.querySelector("#Question").value;
-    let optionA=document.querySelector("#optionA").value;
-    let optionB=document.querySelector("#optionB").value;
-    let optionC=document.querySelector("#optionC").value;
-    let optionD=document.querySelector("#optionD").value;
-    let multipleAnswers=document.querySelector("#multiple").value;
-    let answerA=document.querySelector("#answerA").value;
-    let answerB=document.querySelector("#answerB").value;
-    let answerC=document.querySelector("#answerC").value;
-    let answerD=document.querySelector("#answerD").value;
-    let category=document.querySelector("#category").value;
-    
-    let Mcq = new mcq(question,optionA,optionB,optionC,optionD,multipleAnswers,answerA,answerB,answerC,answerD,category);
+    let question = document.querySelector("#Question").value;
+    let optionA = document.querySelector("#optionA").value;
+    let optionB = document.querySelector("#optionB").value;
+    let optionC = document.querySelector("#optionC").value;
+    let optionD = document.querySelector("#optionD").value;
+    let multipleAnswers = document.querySelector("#multiple").value;
+    let answerA = document.querySelector("#answerA").value;
+    let answerB = document.querySelector("#answerB").value;
+    let answerC = document.querySelector("#answerC").value;
+    let answerD = document.querySelector("#answerD").value;
+    let category = document.querySelector("#category").value;
+
+    let Mcq = new mcq(question, optionA, optionB, optionC, optionD, multipleAnswers, answerA, answerB, answerC, answerD, category);
     post(Mcq);
 }
 
@@ -76,10 +76,10 @@ async function post(Mcq) {
             method: "POST",
             body: JSON.stringify(Mcq),
             headers: {
-                "Content-Type" : "application/json"
+                "Content-Type": "application/json"
             }
         });
-    } catch(error) {
+    } catch (error) {
         console.log(error);
     }
 }

@@ -109,19 +109,22 @@
       "id": 26
     },
     {
-      "name": "saurabh",
-      "email": "sonvanesaurabh7@gmail.com",
+      "name": "Soumya Swaroop Sootar",
+      "email": "soumyaswaroopsootar@gmail.com",
       "password": "abc",
-      "totalScore": 0,
-      "quizScores": {},
+      "totalScore": 10,
+      "quizScores": {
+        "java": 9,
+        "cpp": 1
+      },
       "id": 27,
-      "college": "aa",
-      "mobile": "sd",
-      "city": "aaaaaa",
-      "github": "https://course.masaischool.com/dashboard",
-      "hackerRank": "aaaaaaaaaa",
-      "codeChef": "aaaaaa",
-      "gfg": "https://course.masaischool.com/dashboard"
+      "college": "CAET",
+      "mobile": "08144947243",
+      "city": "Bhubaneswar",
+      "github": "",
+      "hackerRank": "",
+      "codeChef": "",
+      "gfg": ""
     },
     {
       "name": "soumya",
