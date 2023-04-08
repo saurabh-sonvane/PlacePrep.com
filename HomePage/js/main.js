@@ -143,10 +143,10 @@ window.onload = function () {
     let joinNowBtn = document.querySelector(".join-us-btn");
     let user = JSON.parse(localStorage.getItem('user'));
 
-    let loc = "/login/loginSignup.html";
+    let loc = "../login/loginSignup.html";
     console.log('userInfo', user);
     if (user) {
-        loc = "/UserProfile/userProfile.html";
+        loc = "../UserProfile/userProfile.html";
         joinNowBtn.textContent = 'Profile'
     }
     joinNowBtn.addEventListener('click', function () {

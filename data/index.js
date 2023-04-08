@@ -1,6 +1,6 @@
 
 let url = `https://placeprepbackend.onrender.com/mcq`;
-
+let form=document.querySelector("form")
 class mcq {
     constructor(question, optionA, optionB, optionC, optionD, multipleAnswers, answerA, answerB, answerC, answerD, category) {
         this.question = question;
@@ -17,7 +17,7 @@ class mcq {
     }
 }
 
-document.querySelector("form").onsubmit = function () {
+form.onsubmit = function () {
     event.preventDefault();
     create();
 }
@@ -66,7 +66,12 @@ function create() {
     let category = document.querySelector("#category").value;
 
     let Mcq = new mcq(question, optionA, optionB, optionC, optionD, multipleAnswers, answerA, answerB, answerC, answerD, category);
-    post(Mcq);
+    if(question!="" && optionA!="" && optionB!="" && optionC!="" && optionD!="" && answerA!="" && answerB!="" && answerC!="" && answerD!="" && category!="" && multipleAnswers!=""){
+        post(Mcq);
+    }else{
+        alert("please Enter All details");
+    }
+    
 }
 
 async function post(Mcq) {
@@ -79,6 +84,7 @@ async function post(Mcq) {
                 "Content-Type": "application/json"
             }
         });
+        form.reset();
     } catch (error) {
         console.log(error);
     }

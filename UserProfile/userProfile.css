@@ -132,7 +132,7 @@ a,#rank,#Gmail{
     cursor: pointer;
     border: none;
     margin: auto;
-    display: block;
+    display: none;
 }
 
 #name{
