@@ -101,8 +101,9 @@ a,#rank,#Gmail{
     color: white;
     font-weight: bold;
     font-size: large;
-    background-color: #120f2d;
+    background-color: #337bdc;
     cursor: pointer;
+    border: none;
 }
 
 #mcq{
@@ -117,6 +118,20 @@ a,#rank,#Gmail{
     border: none;
     margin: auto;
     display: none;
+}
+
+#logout{
+    padding: 5px;
+    background-color: #337bdc;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    margin: auto;
+    display: block;
 }
 
 #name{
