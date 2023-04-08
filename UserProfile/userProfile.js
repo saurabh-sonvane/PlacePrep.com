@@ -5,6 +5,7 @@ console.log(data.password);
 document.getElementById("logout").addEventListener("click",()=>{
     localStorage.clear();
     alert("Logged Out Sucessfully!");
+    window.location.href="../index.html"
 })
 
 document.querySelector("form").addEventListener("submit", fun);
@@ -31,6 +32,10 @@ window.onload = function () {
     }
     let joinNowBtn = document.querySelector(".join-us-btn");
     let user = JSON.parse(localStorage.getItem('user'));
+
+    if(user){
+        document.getElementById("logout").style.display="block"
+    }
 
     let loc = "../login/loginSignup.html";
     console.log('xxx', user);

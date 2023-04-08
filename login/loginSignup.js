@@ -101,7 +101,7 @@ async function getUser({ email, password }) {
         console.log(json, 'sss');
         if (json.length > 0) {
             localStorage.setItem("user", JSON.stringify(json[0]));
-            location.href = '/HomePage/index.html'
+            location.href = '../HomePage/index.html'
         }
 
     } catch (error) {
