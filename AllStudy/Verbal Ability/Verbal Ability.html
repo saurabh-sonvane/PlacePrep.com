@@ -1,218 +1,486 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>PlacePrep - Interview Prepration Made Easy</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Content" name="keywords" />
+    <meta content="Content" name="description" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Verbal Ability</title>
-  <link rel="stylesheet" href="Verbal Ability.css" />
-</head>
+    <!-- Favicon -->
+    <link href="/HomePage/img/favicon.ico" rel="icon" />
 
-<body>
-  <h1>Verbal Ability</h1>
-  <div id="tab-menu-div">
-    <div class="tab">
-      <button id="firsttab" class="tablinks" onclick="openTab(event, 'Account')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p">Antonyms</p>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet" />
+
+    <!-- Libraries Stylesheet -->
+    <link
+      href="/HomePage/lib/owlcarousel/assets/owl.carousel.min.css"
+      rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../../HomePage/css/style.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="Verbal Ability.css" />
+    <style>
+      .table .thead-dark th {
+        color: #fff;
+        background-color: #343a40;
+        border-color: #454d55;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark">
+      <div class="row py-2 px-lg-5">
+        <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+          <div class="d-inline-flex align-items-center text-white">
+            <small><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</small>
+            <small class="px-3">|</small>
+            <small><i class="fa fa-envelope mr-2"></i>info@example.com</small>
           </div>
         </div>
-      </button>
-
-      <button class="tablinks" onclick="openTab(event, 'Replenish')">
-        <div class="tab-button">
-          <div class=" ">
-            <p class="font-payment-tab-button-p">Synonyms</p>
+        <div class="col-lg-6 text-center text-lg-right">
+          <div class="d-inline-flex align-items-center">
+            <a class="text-white px-2" href="">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="text-white px-2" href="">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a class="text-white px-2" href="">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a class="text-white px-2" href="">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a class="text-white pl-2" href="">
+              <i class="fab fa-youtube"></i>
+            </a>
           </div>
         </div>
-      </button>
+      </div>
+    </div>
+    <!-- Topbar End -->
 
-      <button class="tablinks" onclick="openTab(event, 'Same-Day')">
-        <div class="tab-button">
-          <div class=" ">
-            <p class="font-payment-tab-button-p">Spellings</p>
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+      <nav
+        class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="../../../HomePage/index.html" class="navbar-brand ml-lg-3">
+          <h1 class="m-0 text-uppercase text-primary"
+            ><i class="fa fa-book-reader mr-3"></i>PlacePrep</h1
+          >
+        </a>
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between px-lg-3"
+          id="navbarCollapse">
+          <div class="navbar-nav mx-auto py-0">
+            <a href="../../HomePage/index.html" class="nav-item nav-link">Home</a>
+            <a href="../../HomePage/about.html" class="nav-item nav-link">About</a>
+            <a href="../../HomePage/course.html" class="nav-item nav-link">Subjects</a>
+            <a href="../../QuizPage/QuizPage.html" class="nav-item nav-link"
+              >Quiz</a
+            >
+            <a href="../../chatBot/chatbot.html" class="nav-item nav-link">Chat-Bot</a>
+            <a href="../../ranking/ranking.html" class="nav-item nav-link active">Rankings</a>
+            <div class="nav-item dropdown">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+                >Pages</a
+              >
+              <div class="dropdown-menu m-0">
+                <!-- <a href="../detail.html" class="dropdown-item">Subject Detail</a> -->
+                <a href="../../HomePage/feature.html" class="dropdown-item">Our Features</a>
+                <a href="../../HomePage/team.html" class="dropdown-item">Mentors</a>
+              </div>
+            </div>
+            <a href="../../HomePage/contact.html" class="nav-item nav-link">Contact</a>
+          </div>
+          <a class="btn btn-primary py-2 px-4 d-none d-lg-block join-us-btn" href="../../login/loginSignup.html" target="_blank"
+            >Join Us</a
+          >
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Header Start -->
+    <div
+      class="jumbotron jumbotron-fluid page-header position-relative overlay-bottom"
+      style="margin-bottom: 30px">
+      <div class="container text-center py-5">
+        <h1 class="text-white display-1">VERBAL ABILITY</h1>
+        <div class="d-inline-flex text-white mb-5">
+          <p class="m-0 text-uppercase"
+            ><a class="text-white" href="../">Home</a></p
+          >
+          <i class="fa fa-angle-double-right pt-1 px-3"></i>
+          <p class="m-0 text-uppercase">Subjects</p>
+          <i class="fa fa-angle-double-right pt-1 px-3"></i>
+          <p class="m-0 text-uppercase">Verbal Ability</p>
+        </div>
+      </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Subjects Start -->
+    <div id="tab-menu-div">
+      <div class="tab">
+        <button id="firsttab" class="tablinks" onclick="openTab(event, 'Account')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">Antonyms</p>
+            </div>
+          </div>
+        </button>
+  
+        <button class="tablinks" onclick="openTab(event, 'Replenish')">
+          <div class="tab-button">
+            <div class=" ">
+              <p class="font-payment-tab-button-p">Synonyms</p>
+            </div>
+          </div>
+        </button>
+  
+        <button class="tablinks" onclick="openTab(event, 'Same-Day')">
+          <div class="tab-button">
+            <div class=" ">
+              <p class="font-payment-tab-button-p">Spellings</p>
+            </div>
+          </div>
+        </button>
+  
+        <button class="tablinks" onclick="openTab(event, 'Orders')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">Sentence Correction</p>
+            </div>
+          </div>
+        </button>
+  
+        <button class="tablinks" onclick="openTab(event, 'Subscriptions')">
+          <div class="tab-button">
+            <div class="">
+              <p class="font-payment-tab-button-p">Prepositions</p>
+            </div>
+          </div>
+        </button>
+  
+      </div>
+      <div id="Account" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">Antonyms</div>
+        <div id="hero-content">
+          <p dir="ltr"><span style="font-size: small;"><strong>1.ENORMOUS</strong></span></p>
+          <p style="text-align: left;"><strong>Soft</strong><br /><strong>Average</strong><br /><strong>Tiny</strong><br /><strong>Weak</strong></p>
+          <p dir="ltr"><span style="background-color: #ffff00;"><span style="color: #339966;">Answer:</span> <strong>C</strong></span></p>
+          <p dir="ltr"><span>&mdash;------------------------------</span></p>
+          <p dir="ltr"><strong><span style="font-size: small;">2.COMMISSIONED</span></strong></p>
+          <p><strong>Started</strong><br /><strong>Closed</strong><br /><strong>Finished</strong><br /><strong>Terminated</strong></p>
+          <p dir="ltr"><span style="background-color: #ffff00;"><span style="color: #339966;">Answer:</span> <strong>D</strong></span></p>
+          <p dir="ltr"><span>&mdash;------------------------------</span></p>
+          <p dir="ltr"><span style="font-size: small;"><strong>3.ARTIFICIAL</strong></span></p>
+          <p><strong>Red</strong><br /><strong>Natural</strong><br /><strong>Truthful</strong><br /><strong>Solid</strong></p>
+          <p dir="ltr"><span style="background-color: #ffff00;"><span style="color: #339966;">Answer:</span> <strong>B</strong></span></p>
+          <p dir="ltr"><span>&mdash;-------------------------------</span></p>
+          <p dir="ltr"><strong><span style="font-size: small;">4. EXODUS</span></strong></p>
+          <p><strong>Influx</strong><br /><strong>Home-coming</strong><br /><strong>Return</strong><br /><strong>Restoration</strong></p>
+          <p dir="ltr"><span style="background-color: #ffff00;"><span style="color: #339966;">Answer:</span><strong> A</strong></span></p>
+          <p dir="ltr"><span>&mdash;--------------------------------</span></p>
+          <p dir="ltr"><span style="font-size: small;"><strong>5. RELINQUISH</strong></span></p>
+          <p><strong>Abdicate</strong><br /><strong>Renounce</strong><br /><strong>Possess</strong><br /><strong>Deny</strong></p>
+          <p dir="ltr"><span style="background-color: #ffff00;">Answer: C</span></p>
+          <p><span>&nbsp;</span></p>
+        </div>
+  
+      </div>
+  
+      <div id="Replenish" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">Synonyms</div>
+        <div id="hero-content">
+          <p dir="ltr"><strong>1.CORPULENT</strong></p>
+          <p><em><strong>Lean</strong></em><br /><em><strong>Gaunt</strong></em><br /><em><strong>Emaciated</strong></em><br /><em><strong>Obese</strong></em></p>
+          <p dir="ltr"><span style="background-color: #ffff00;"><strong><span style="color: #339966;">Answer:</span> D</strong></span></p>
+          <p dir="ltr"><span>&mdash;------------------------------</span></p>
+          <p dir="ltr"><strong>2. BRIEF</strong></p>
+          <p><strong><em>Limited</em></strong><br /><strong><em>Small</em></strong><br /><strong><em>Little</em></strong><br /><strong><em>Short</em></strong></p>
+          <p dir="ltr"><strong><span style="background-color: #ffff00;"><span style="color: #339966;">Answer:</span> D</span></strong></p>
+          <p dir="ltr"><span>&mdash;------------------------------</span></p>
+          <p dir="ltr"><strong>3.EMBEZZLE</strong></p>
+          <p><em><strong>Misappropriate</strong></em><br /><em><strong>Balance</strong></em><br /><em><strong>Remunerate</strong></em><br /><em><strong>Clear</strong></em></p>
+          <p dir="ltr"><span style="background-color: #ffff00;"><strong><span style="color: #339966;">Answer:</span> A</strong></span></p>
+          <p dir="ltr"><span>&mdash;------------------------------</span></p>
+          <p dir="ltr"><strong>4.VENT</strong></p>
+          <p><em><strong>Opening</strong></em><br /><em><strong>Stodge</strong></em><br /><em><strong>End</strong></em><br /><em><strong>Past tense of go</strong></em></p>
+          <p dir="ltr"><span style="background-color: #ffff00;"><strong><span style="color: #339966;">Answer:</span> A</strong></span></p>
+          <p dir="ltr"><span>&mdash;------------------------------</span></p>
+          <p dir="ltr"><strong>5.AUGUST</strong></p>
+          <p><em><strong>Common</strong></em><br /><em><strong>Ridiculous</strong></em><br /><em><strong>Dignified</strong></em><br /><em><strong>Petty</strong></em></p>
+          <p dir="ltr"><span style="background-color: #ffff00;"><strong><span style="color: #339966;">Answer:</span> C</strong></span></p>
+          <p><span>&nbsp;</span></p>
+        </div>
+      </div>
+      <div id="Same-Day" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">Spellings</div>
+        <div id="hero-content">
+          <p style="text-align: left;" dir="ltr"><span style="text-decoration: underline;"><strong><em><span style="font-size: small;">Directions to Solve :</span></em></strong></span></p>
+          <p style="text-align: left;" dir="ltr"><span style="text-decoration: underline;"><strong><em><span style="font-size: small;">Find the correctly spelt words.</span></em></strong></span></p>
+          <p style="text-align: left;" dir="ltr">&nbsp;</p>
+          <p style="text-align: left;" dir="ltr"><strong>1.Efficient</strong></p>
+          <p style="text-align: left;"><strong><em>Treatmeant</em></strong><br /><strong><em>Beterment</em></strong><br /><strong><em>Employd</em></strong></p>
+          <p style="text-align: left;">&nbsp;</p>
+          <p style="text-align: left;" dir="ltr"><strong><span style="color: #339966; background-color: #ffff00;">Ans : A</span></strong></p>
+          <p style="text-align: left;" dir="ltr">&mdash;------------------------------------</p>
+          <p style="text-align: left;" dir="ltr"><strong>2.</strong></p>
+          <p><em><strong>Foreign</strong></em><br /><em><strong>Foreine</strong></em><br /><em><strong>Fariegn</strong></em><br /><em><strong>Forein</strong></em></p>
+          <p>&nbsp;</p>
+          <p style="text-align: left;" dir="ltr"><strong><span style="color: #339966; background-color: #ffff00;">Ans: A</span></strong></p>
+          <p style="text-align: left;" dir="ltr">&mdash;------------------------------------</p>
+          <p style="text-align: left;"><strong>3.</strong></p>
+          <p style="text-align: left;"><em><strong>Ommineous</strong></em><br /><em><strong>Omineous</strong></em><br /><em><strong>Ominous</strong></em><br /><em><strong>Omenous</strong></em></p>
+          <p style="text-align: left;" dir="ltr"><strong><span style="color: #339966; background-color: #ffff00;">Ans : C</span></strong></p>
+          <p style="text-align: left;" dir="ltr">&mdash;------------------------------------</p>
+          <p style="text-align: left;" dir="ltr">&nbsp;</p>
+          <p style="text-align: left;"><strong>4.</strong></p>
+          <p style="text-align: left;"><em><strong>Pessenger</strong></em><br /><em><strong>Passenger</strong></em><br /><em><strong>Pasanger</strong></em><br /><em><strong>Pesanger</strong></em></p>
+          <p style="text-align: left;" dir="ltr"><strong><span style="color: #339966; background-color: #ffff00;">Ans : B</span></strong></p>
+          <p style="text-align: left;" dir="ltr">&mdash;------------------------------------</p>
+          <p style="text-align: left;"><strong>5.</strong></p>
+          <p style="text-align: left;"><em><strong>Benefitted</strong></em><br /><em><strong>Benifited</strong></em><br /><em><strong>Benefited</strong></em><br /><em><strong>Benefeted</strong></em></p>
+          <p style="text-align: left;" dir="ltr"><span style="color: #339966; background-color: #ffff00;"><strong>Ans: C</strong></span></p>
+        </div>
+      </div>
+  
+      <div id="Orders" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">Sentence Correction</div>
+        <div id="hero-content">
+          <p>1.The small child does whatever his father <strong>was done</strong>.</p>
+          <p>&nbsp;</p>
+          <p><strong><em>has done</em></strong><br /><strong><em>did</em></strong><br /><strong><em>does</em></strong><br /><strong><em>had done</em></strong><br /><strong><em>No correction required</em></strong></p>
+          <p>&nbsp;</p>
+          <p dir="ltr"><strong><span style="background-color: #ffff00; color: #339966;">Ans : C</span></strong></p>
+          <p dir="ltr">&mdash;------------------------------------</p>
+          <p dir="ltr">2.<strong>You need not come unless you want to.</strong></p>
+          <p dir="ltr">&nbsp;</p>
+          <p><em><strong>You don't need to come unless you want to</strong></em><br /><em><strong>You come only when you want to</strong></em><br /><em><strong>You come unless you don't want to</strong></em><br /><em><strong>You needn't come until you don't want to</strong></em><br /><em><strong>No correction required</strong></em></p>
+          <p>&nbsp;</p>
+          <p dir="ltr"><strong><span style="background-color: #ffff00; color: #339966;">Ans : A</span></strong></p>
+          <p dir="ltr">&mdash;------------------------------------</p>
+          <p dir="ltr">3.There are not many men who are so famous that they are frequently referred to by their<strong> short names</strong> only</p>
+          <p dir="ltr">&nbsp;</p>
+          <p><em><strong>initials</strong></em><br /><em><strong>signatures</strong></em><br /><em><strong>pictures</strong></em><br /><em><strong>middle names</strong></em><br /><em><strong>No correction required</strong></em></p>
+          <p>&nbsp;</p>
+          <p dir="ltr"><strong><span style="color: #339966; background-color: #ffff00;">Ans : A</span></strong></p>
+          <p dir="ltr">&mdash;------------------------------------</p>
+          <p dir="ltr">4.The man<strong> to who I sold</strong> my house was a cheat.</p>
+          <p dir="ltr">&nbsp;</p>
+          <p><em><strong>to whom I sell</strong></em><br /><em><strong>to who I sell</strong></em><br /><em><strong>who was sold to</strong></em><br /><em><strong>to whom I sold</strong></em><br /><em><strong>No correction required</strong></em></p>
+          <p>&nbsp;</p>
+          <p dir="ltr"><span style="color: #339966; background-color: #ffff00;"><strong>Ans : D</strong></span></p>
+          <p dir="ltr">&mdash;------------------------------------</p>
+          <p dir="ltr">5.They <strong>were all shocked at</strong> his failure in the competition.</p>
+          <p dir="ltr">&nbsp;</p>
+          <p><strong><em>were shocked at all</em></strong><br /><strong><em>had all shocked at</em></strong><br /><strong><em>had all shocked by</em></strong><br /><strong><em>had been all shocked on</em></strong><br /><strong><em>No correction required</em></strong></p>
+          <p>&nbsp;</p>
+          <p dir="ltr"><span style="background-color: #ffff00;"><strong><span style="color: #339966;">Ans: E</span></strong></span></p>
+          <p dir="ltr">&nbsp;</p>
+          <p style="text-align: left;" dir="ltr">&nbsp;</p>
+        </div>
+      </div>
+  
+      <div id="Subscriptions" class="tabcontent" style="display: none">
+        <div class="tab-content-heading">Prepositions</div>
+        <div id="hero-content">
+          <p dir="ltr"><strong>1. I tripped ____ the cat and fell downstairs.</strong></p>
+          <p dir="ltr">&nbsp;</p>
+          <p><em><strong>A - over</strong></em><br /><em><strong>B - on</strong></em><br /><em><strong>C - above</strong></em><br /><em><strong>D - at</strong></em></p>
+          <p>&nbsp;</p>
+          <p dir="ltr"><span style="color: #339966; background-color: #ffff00;"><strong>Ans: A</strong></span></p>
+          <p dir="ltr"><strong>&mdash;------------------------------------</strong></p>
+          <p><strong>&nbsp;</strong></p>
+          <p dir="ltr"><strong>2.I am a bit weak ____ subjects related to Science but I am trying to improve.</strong></p>
+          <p dir="ltr">&nbsp;</p>
+          <p><em><strong>A - at</strong></em><br /><em><strong>B - in</strong></em><br /><em><strong>C - into</strong></em><br /><em><strong>D - on</strong></em></p>
+          <p>&nbsp;</p>
+          <p dir="ltr"><span style="color: #339966; background-color: #ffff00;"><strong>Ans: B</strong></span></p>
+          <p dir="ltr"><strong>&mdash;------------------------------------</strong></p>
+          <p dir="ltr"><strong>3.Amanda hasn't seen her older sister ____ last April.</strong></p>
+          <p dir="ltr">&nbsp;</p>
+          <p><em><strong>A - on</strong></em><br /><em><strong>B - in</strong></em><br /><em><strong>C - around</strong></em><br /><em><strong>D - since</strong></em></p>
+          <p>&nbsp;</p>
+          <p dir="ltr"><span style="color: #339966; background-color: #ffff00;"><strong>Ans: D</strong></span></p>
+          <p dir="ltr"><strong>&mdash;------------------------------------</strong></p>
+          <p dir="ltr"><strong>4.The detective chased the killer ____ the streets.</strong></p>
+          <p dir="ltr">&nbsp;</p>
+          <p><em><strong>A - since</strong></em><br /><em><strong>B - through</strong></em><br /><em><strong>C - during</strong></em><br /><em><strong>D - beyond</strong></em></p>
+          <p>&nbsp;</p>
+          <p dir="ltr"><span style="background-color: #ffff00; color: #339966;"><strong>Ans: B</strong></span></p>
+          <p dir="ltr"><strong>&mdash;------------------------------------</strong></p>
+          <p dir="ltr"><strong>5.I had not slept or eaten anything properly ____ two days.</strong></p>
+          <p dir="ltr">&nbsp;</p>
+          <p><em><strong>A - since</strong></em><br /><em><strong>B - from</strong></em><br /><em><strong>C - in</strong></em><br /><em><strong>D - for</strong></em></p>
+          <p>&nbsp;</p>
+          <p dir="ltr"><span style="color: #339966; background-color: #ffff00;"><strong>Ans: D</strong></span></p>
+          <p><strong>&nbsp;</strong></p>
+          <p style="text-align: left;" dir="ltr">&nbsp;</p>
+        </div>
+      </div>
+    </div>
+    <!-- Subjects End -->
+
+    <!-- Footer Start -->
+    <div
+      class="container-fluid position-relative overlay-top bg-dark text-white-50 py-5"
+      style="margin-top: 90px">
+      <div class="container mt-5 pt-5">
+        <div class="row">
+          <div class="col-md-6 mb-5">
+            <a href="index.html" class="navbar-brand">
+              <h1 class="mt-n2 text-uppercase text-white"
+                ><i class="fa fa-book-reader mr-3"></i>PlacePrep</h1
+              >
+            </a>
+            <p class="m-0"
+              >Accusam nonumy clita sed rebum kasd eirmod elitr. Ipsum ea lorem
+              at et diam est, tempor rebum ipsum sit ea tempor stet et
+              consetetur dolores. Justo stet diam ipsum lorem vero clita diam</p
+            >
+          </div>
+          <div class="col-md-6 mb-5">
+            <h3 class="text-white mb-4">Newsletter</h3>
+            <div class="w-100">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control border-light"
+                  style="padding: 30px"
+                  placeholder="Your Email Address" />
+                <div class="input-group-append">
+                  <button class="btn btn-primary px-4">Sign Up</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </button>
-
-      <button class="tablinks" onclick="openTab(event, 'Orders')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p">Sentence Correction</p>
+        <div class="row">
+          <div class="col-md-4 mb-5">
+            <h3 class="text-white mb-4">Get In Touch</h3>
+            <p
+              ><i class="fa fa-map-marker-alt mr-2"></i>123 Street,Pune,
+              Maharashtra
+            </p>
+            <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+            <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+            <div class="d-flex justify-content-start mt-4">
+              <a class="text-white mr-4" href="#"
+                ><i class="fab fa-2x fa-twitter"></i
+              ></a>
+              <a class="text-white mr-4" href="#"
+                ><i class="fab fa-2x fa-facebook-f"></i
+              ></a>
+              <a class="text-white mr-4" href="#"
+                ><i class="fab fa-2x fa-linkedin-in"></i
+              ></a>
+              <a class="text-white" href="#"
+                ><i class="fab fa-2x fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <h3 class="text-white mb-4">Our Subjects</h3>
+            <div class="d-flex flex-column justify-content-start">
+              <a class="text-white-50 mb-2" href="../AllStudy/STUDY MATERIAL/DSA/dsa.html"
+                ><i class="fa fa-angle-right mr-2"></i>Dsa</a
+              >
+              <a class="text-white-50 mb-2" href="../AllStudy/STUDY MATERIAL/OOPS/oops.html"
+                ><i class="fa fa-angle-right mr-2"></i>OOPs</a
+              >
+              <a class="text-white-50 mb-2" href="../AllStudy/STUDY MATERIAL/DBMS/dbms.html"
+                ><i class="fa fa-angle-right mr-2"></i>DBMS</a
+              >
+              <a class="text-white-50 mb-2" href="../AllStudy/Logical Reasoning/logical.html"
+                ><i class="fa fa-angle-right mr-2"></i>Research</a
+              >
+              <a class="text-white-50" href="../AllStudy/STUDY MATERIAL/OSA/osa.html"
+                ><i class="fa fa-angle-right mr-2"></i>OSA</a
+              >
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <h3 class="text-white mb-4">Quick Links</h3>
+            <div class="d-flex flex-column justify-content-start">
+              <a class="text-white-50 mb-2" href="#"
+                ><i class="fa fa-angle-right mr-2"></i>Privacy Policy</a
+              >
+              <a class="text-white-50 mb-2" href="#"
+                ><i class="fa fa-angle-right mr-2"></i>Terms & Condition</a
+              >
+              <a class="text-white-50 mb-2" href="#"
+                ><i class="fa fa-angle-right mr-2"></i>Regular FAQs</a
+              >
+              <a class="text-white-50 mb-2" href="#"
+                ><i class="fa fa-angle-right mr-2"></i>Help & Support</a
+              >
+              <a class="text-white-50" href="#"
+                ><i class="fa fa-angle-right mr-2"></i>Contact</a
+              >
+            </div>
           </div>
         </div>
-      </button>
-
-      <button class="tablinks" onclick="openTab(event, 'Subscriptions')">
-        <div class="tab-button">
-          <div class="">
-            <p class="font-payment-tab-button-p">Prepositions</p>
+      </div>
+    </div>
+    <div
+      class="container-fluid bg-dark text-white-50 border-top py-4"
+      style="border-color: rgba(256, 256, 256, 0.1) !important">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+            <p class="m-0"
+              >Copyright &copy; <a class="text-white" href="#"> PlacePrep</a>.
+              All Rights Reserved.
+            </p>
           </div>
+          <div class="col-md-6 text-center text-md-right"> </div>
         </div>
-      </button>
-
-    </div>
-    <div id="Account" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">Antonyms</div>
-      <div id="hero-content">
-        <p dir="ltr"><span style="font-size: small;"><strong>1.ENORMOUS</strong></span></p>
-        <p style="text-align: left;"><strong>Soft</strong><br /><strong>Average</strong><br /><strong>Tiny</strong><br /><strong>Weak</strong></p>
-        <p dir="ltr"><span style="background-color: #ffff00;"><span style="color: #339966;">Answer:</span> <strong>C</strong></span></p>
-        <p dir="ltr"><span>&mdash;------------------------------</span></p>
-        <p dir="ltr"><strong><span style="font-size: small;">2.COMMISSIONED</span></strong></p>
-        <p><strong>Started</strong><br /><strong>Closed</strong><br /><strong>Finished</strong><br /><strong>Terminated</strong></p>
-        <p dir="ltr"><span style="background-color: #ffff00;"><span style="color: #339966;">Answer:</span> <strong>D</strong></span></p>
-        <p dir="ltr"><span>&mdash;------------------------------</span></p>
-        <p dir="ltr"><span style="font-size: small;"><strong>3.ARTIFICIAL</strong></span></p>
-        <p><strong>Red</strong><br /><strong>Natural</strong><br /><strong>Truthful</strong><br /><strong>Solid</strong></p>
-        <p dir="ltr"><span style="background-color: #ffff00;"><span style="color: #339966;">Answer:</span> <strong>B</strong></span></p>
-        <p dir="ltr"><span>&mdash;-------------------------------</span></p>
-        <p dir="ltr"><strong><span style="font-size: small;">4. EXODUS</span></strong></p>
-        <p><strong>Influx</strong><br /><strong>Home-coming</strong><br /><strong>Return</strong><br /><strong>Restoration</strong></p>
-        <p dir="ltr"><span style="background-color: #ffff00;"><span style="color: #339966;">Answer:</span><strong> A</strong></span></p>
-        <p dir="ltr"><span>&mdash;--------------------------------</span></p>
-        <p dir="ltr"><span style="font-size: small;"><strong>5. RELINQUISH</strong></span></p>
-        <p><strong>Abdicate</strong><br /><strong>Renounce</strong><br /><strong>Possess</strong><br /><strong>Deny</strong></p>
-        <p dir="ltr"><span style="background-color: #ffff00;">Answer: C</span></p>
-        <p><span>&nbsp;</span></p>
-      </div>
-
-    </div>
-
-    <div id="Replenish" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">Synonyms</div>
-      <div id="hero-content">
-        <p dir="ltr"><strong>1.CORPULENT</strong></p>
-        <p><em><strong>Lean</strong></em><br /><em><strong>Gaunt</strong></em><br /><em><strong>Emaciated</strong></em><br /><em><strong>Obese</strong></em></p>
-        <p dir="ltr"><span style="background-color: #ffff00;"><strong><span style="color: #339966;">Answer:</span> D</strong></span></p>
-        <p dir="ltr"><span>&mdash;------------------------------</span></p>
-        <p dir="ltr"><strong>2. BRIEF</strong></p>
-        <p><strong><em>Limited</em></strong><br /><strong><em>Small</em></strong><br /><strong><em>Little</em></strong><br /><strong><em>Short</em></strong></p>
-        <p dir="ltr"><strong><span style="background-color: #ffff00;"><span style="color: #339966;">Answer:</span> D</span></strong></p>
-        <p dir="ltr"><span>&mdash;------------------------------</span></p>
-        <p dir="ltr"><strong>3.EMBEZZLE</strong></p>
-        <p><em><strong>Misappropriate</strong></em><br /><em><strong>Balance</strong></em><br /><em><strong>Remunerate</strong></em><br /><em><strong>Clear</strong></em></p>
-        <p dir="ltr"><span style="background-color: #ffff00;"><strong><span style="color: #339966;">Answer:</span> A</strong></span></p>
-        <p dir="ltr"><span>&mdash;------------------------------</span></p>
-        <p dir="ltr"><strong>4.VENT</strong></p>
-        <p><em><strong>Opening</strong></em><br /><em><strong>Stodge</strong></em><br /><em><strong>End</strong></em><br /><em><strong>Past tense of go</strong></em></p>
-        <p dir="ltr"><span style="background-color: #ffff00;"><strong><span style="color: #339966;">Answer:</span> A</strong></span></p>
-        <p dir="ltr"><span>&mdash;------------------------------</span></p>
-        <p dir="ltr"><strong>5.AUGUST</strong></p>
-        <p><em><strong>Common</strong></em><br /><em><strong>Ridiculous</strong></em><br /><em><strong>Dignified</strong></em><br /><em><strong>Petty</strong></em></p>
-        <p dir="ltr"><span style="background-color: #ffff00;"><strong><span style="color: #339966;">Answer:</span> C</strong></span></p>
-        <p><span>&nbsp;</span></p>
       </div>
     </div>
-    <div id="Same-Day" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">Spellings</div>
-      <div id="hero-content">
-        <p style="text-align: left;" dir="ltr"><span style="text-decoration: underline;"><strong><em><span style="font-size: small;">Directions to Solve :</span></em></strong></span></p>
-        <p style="text-align: left;" dir="ltr"><span style="text-decoration: underline;"><strong><em><span style="font-size: small;">Find the correctly spelt words.</span></em></strong></span></p>
-        <p style="text-align: left;" dir="ltr">&nbsp;</p>
-        <p style="text-align: left;" dir="ltr"><strong>1.Efficient</strong></p>
-        <p style="text-align: left;"><strong><em>Treatmeant</em></strong><br /><strong><em>Beterment</em></strong><br /><strong><em>Employd</em></strong></p>
-        <p style="text-align: left;">&nbsp;</p>
-        <p style="text-align: left;" dir="ltr"><strong><span style="color: #339966; background-color: #ffff00;">Ans : A</span></strong></p>
-        <p style="text-align: left;" dir="ltr">&mdash;------------------------------------</p>
-        <p style="text-align: left;" dir="ltr"><strong>2.</strong></p>
-        <p><em><strong>Foreign</strong></em><br /><em><strong>Foreine</strong></em><br /><em><strong>Fariegn</strong></em><br /><em><strong>Forein</strong></em></p>
-        <p>&nbsp;</p>
-        <p style="text-align: left;" dir="ltr"><strong><span style="color: #339966; background-color: #ffff00;">Ans: A</span></strong></p>
-        <p style="text-align: left;" dir="ltr">&mdash;------------------------------------</p>
-        <p style="text-align: left;"><strong>3.</strong></p>
-        <p style="text-align: left;"><em><strong>Ommineous</strong></em><br /><em><strong>Omineous</strong></em><br /><em><strong>Ominous</strong></em><br /><em><strong>Omenous</strong></em></p>
-        <p style="text-align: left;" dir="ltr"><strong><span style="color: #339966; background-color: #ffff00;">Ans : C</span></strong></p>
-        <p style="text-align: left;" dir="ltr">&mdash;------------------------------------</p>
-        <p style="text-align: left;" dir="ltr">&nbsp;</p>
-        <p style="text-align: left;"><strong>4.</strong></p>
-        <p style="text-align: left;"><em><strong>Pessenger</strong></em><br /><em><strong>Passenger</strong></em><br /><em><strong>Pasanger</strong></em><br /><em><strong>Pesanger</strong></em></p>
-        <p style="text-align: left;" dir="ltr"><strong><span style="color: #339966; background-color: #ffff00;">Ans : B</span></strong></p>
-        <p style="text-align: left;" dir="ltr">&mdash;------------------------------------</p>
-        <p style="text-align: left;"><strong>5.</strong></p>
-        <p style="text-align: left;"><em><strong>Benefitted</strong></em><br /><em><strong>Benifited</strong></em><br /><em><strong>Benefited</strong></em><br /><em><strong>Benefeted</strong></em></p>
-        <p style="text-align: left;" dir="ltr"><span style="color: #339966; background-color: #ffff00;"><strong>Ans: C</strong></span></p>
-      </div>
-    </div>
+    <!-- Footer End -->
 
-    <div id="Orders" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">Sentence Correction</div>
-      <div id="hero-content">
-        <p>1.The small child does whatever his father <strong>was done</strong>.</p>
-        <p>&nbsp;</p>
-        <p><strong><em>has done</em></strong><br /><strong><em>did</em></strong><br /><strong><em>does</em></strong><br /><strong><em>had done</em></strong><br /><strong><em>No correction required</em></strong></p>
-        <p>&nbsp;</p>
-        <p dir="ltr"><strong><span style="background-color: #ffff00; color: #339966;">Ans : C</span></strong></p>
-        <p dir="ltr">&mdash;------------------------------------</p>
-        <p dir="ltr">2.<strong>You need not come unless you want to.</strong></p>
-        <p dir="ltr">&nbsp;</p>
-        <p><em><strong>You don't need to come unless you want to</strong></em><br /><em><strong>You come only when you want to</strong></em><br /><em><strong>You come unless you don't want to</strong></em><br /><em><strong>You needn't come until you don't want to</strong></em><br /><em><strong>No correction required</strong></em></p>
-        <p>&nbsp;</p>
-        <p dir="ltr"><strong><span style="background-color: #ffff00; color: #339966;">Ans : A</span></strong></p>
-        <p dir="ltr">&mdash;------------------------------------</p>
-        <p dir="ltr">3.There are not many men who are so famous that they are frequently referred to by their<strong> short names</strong> only</p>
-        <p dir="ltr">&nbsp;</p>
-        <p><em><strong>initials</strong></em><br /><em><strong>signatures</strong></em><br /><em><strong>pictures</strong></em><br /><em><strong>middle names</strong></em><br /><em><strong>No correction required</strong></em></p>
-        <p>&nbsp;</p>
-        <p dir="ltr"><strong><span style="color: #339966; background-color: #ffff00;">Ans : A</span></strong></p>
-        <p dir="ltr">&mdash;------------------------------------</p>
-        <p dir="ltr">4.The man<strong> to who I sold</strong> my house was a cheat.</p>
-        <p dir="ltr">&nbsp;</p>
-        <p><em><strong>to whom I sell</strong></em><br /><em><strong>to who I sell</strong></em><br /><em><strong>who was sold to</strong></em><br /><em><strong>to whom I sold</strong></em><br /><em><strong>No correction required</strong></em></p>
-        <p>&nbsp;</p>
-        <p dir="ltr"><span style="color: #339966; background-color: #ffff00;"><strong>Ans : D</strong></span></p>
-        <p dir="ltr">&mdash;------------------------------------</p>
-        <p dir="ltr">5.They <strong>were all shocked at</strong> his failure in the competition.</p>
-        <p dir="ltr">&nbsp;</p>
-        <p><strong><em>were shocked at all</em></strong><br /><strong><em>had all shocked at</em></strong><br /><strong><em>had all shocked by</em></strong><br /><strong><em>had been all shocked on</em></strong><br /><strong><em>No correction required</em></strong></p>
-        <p>&nbsp;</p>
-        <p dir="ltr"><span style="background-color: #ffff00;"><strong><span style="color: #339966;">Ans: E</span></strong></span></p>
-        <p dir="ltr">&nbsp;</p>
-        <p style="text-align: left;" dir="ltr">&nbsp;</p>
-      </div>
-    </div>
+    <!-- Back to Top -->
+    <a
+      href="#"
+      class="btn btn-lg btn-primary rounded-0 btn-lg-square back-to-top"
+      ><i class="fa fa-angle-double-up"></i
+    ></a>
 
-    <div id="Subscriptions" class="tabcontent" style="display: none">
-      <div class="tab-content-heading">Prepositions</div>
-      <div id="hero-content">
-        <p dir="ltr"><strong>1. I tripped ____ the cat and fell downstairs.</strong></p>
-        <p dir="ltr">&nbsp;</p>
-        <p><em><strong>A - over</strong></em><br /><em><strong>B - on</strong></em><br /><em><strong>C - above</strong></em><br /><em><strong>D - at</strong></em></p>
-        <p>&nbsp;</p>
-        <p dir="ltr"><span style="color: #339966; background-color: #ffff00;"><strong>Ans: A</strong></span></p>
-        <p dir="ltr"><strong>&mdash;------------------------------------</strong></p>
-        <p><strong>&nbsp;</strong></p>
-        <p dir="ltr"><strong>2.I am a bit weak ____ subjects related to Science but I am trying to improve.</strong></p>
-        <p dir="ltr">&nbsp;</p>
-        <p><em><strong>A - at</strong></em><br /><em><strong>B - in</strong></em><br /><em><strong>C - into</strong></em><br /><em><strong>D - on</strong></em></p>
-        <p>&nbsp;</p>
-        <p dir="ltr"><span style="color: #339966; background-color: #ffff00;"><strong>Ans: B</strong></span></p>
-        <p dir="ltr"><strong>&mdash;------------------------------------</strong></p>
-        <p dir="ltr"><strong>3.Amanda hasn't seen her older sister ____ last April.</strong></p>
-        <p dir="ltr">&nbsp;</p>
-        <p><em><strong>A - on</strong></em><br /><em><strong>B - in</strong></em><br /><em><strong>C - around</strong></em><br /><em><strong>D - since</strong></em></p>
-        <p>&nbsp;</p>
-        <p dir="ltr"><span style="color: #339966; background-color: #ffff00;"><strong>Ans: D</strong></span></p>
-        <p dir="ltr"><strong>&mdash;------------------------------------</strong></p>
-        <p dir="ltr"><strong>4.The detective chased the killer ____ the streets.</strong></p>
-        <p dir="ltr">&nbsp;</p>
-        <p><em><strong>A - since</strong></em><br /><em><strong>B - through</strong></em><br /><em><strong>C - during</strong></em><br /><em><strong>D - beyond</strong></em></p>
-        <p>&nbsp;</p>
-        <p dir="ltr"><span style="background-color: #ffff00; color: #339966;"><strong>Ans: B</strong></span></p>
-        <p dir="ltr"><strong>&mdash;------------------------------------</strong></p>
-        <p dir="ltr"><strong>5.I had not slept or eaten anything properly ____ two days.</strong></p>
-        <p dir="ltr">&nbsp;</p>
-        <p><em><strong>A - since</strong></em><br /><em><strong>B - from</strong></em><br /><em><strong>C - in</strong></em><br /><em><strong>D - for</strong></em></p>
-        <p>&nbsp;</p>
-        <p dir="ltr"><span style="color: #339966; background-color: #ffff00;"><strong>Ans: D</strong></span></p>
-        <p><strong>&nbsp;</strong></p>
-        <p style="text-align: left;" dir="ltr">&nbsp;</p>
-      </div>
-    </div>
-  </div>
-</body>
-<script src="./Verbal Ability.js"></script>
-
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="../../HomePage/lib/easing/easing.min.js"></script>
+    <script src="../../HomePage/lib/waypoints/waypoints.min.js"></script>
+    <script src="../../HomePage/lib/counterup/counterup.min.js"></script>
+    <script src="../../HomePage/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <!-- Javascript -->
+    <script src="../../HomePage/js/main.js"></script>
+    <script src="Verbal Ability.js"></script>
+  </body>
 </html>
