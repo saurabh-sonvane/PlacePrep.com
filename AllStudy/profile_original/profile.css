@@ -21,7 +21,7 @@
   float: left;
   border: none;
   width: 22%;
-  min-width: 190px;
+  min-width: 200px;
   top: 50px;
 }
 
@@ -50,6 +50,13 @@
 .tab button.active p {
   font-weight: bold;
   text-decoration: none;
+  border:1px solid black;
+  color:white;
+  font-size:13px;
+  text-align:start;
+  background:#28a4eb;
+  border-radius:5px;
+  padding:3px 5px
 }
 
 /* Style the tab content */
@@ -65,6 +72,7 @@
   border-left: 1px solid #cdcccd;
 }
 .tab-content-heading {
+  width:90%;
   margin-left: 30px;
   font-size: 30px;
   font-weight: 500;

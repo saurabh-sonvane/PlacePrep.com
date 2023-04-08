@@ -213,6 +213,7 @@ textarea[name=chatbox] {
   border-radius: 8px 0px 0px 8px;
   font-family: inherit;
   font-size: 1em;
+  background:#646464
 }
 textarea[name=chatbox]:focus {
   outline: none;
