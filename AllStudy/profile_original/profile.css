@@ -50,13 +50,13 @@
 .tab button.active p {
   font-weight: bold;
   text-decoration: none;
-  border:1px solid black;
   color:white;
-  font-size:13px;
   text-align:start;
-  background:#28a4eb;
-  border-radius:5px;
-  padding:3px 5px
+  padding:0px 10px
+}
+
+.tab button.active>div{
+  background:#3D85ED;
 }
 
 /* Style the tab content */
