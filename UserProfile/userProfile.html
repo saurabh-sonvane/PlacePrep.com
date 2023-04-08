@@ -1,91 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="userProfile.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="userProfile.css" />
     <title>user profile</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="parent">
-        <div style="display: flex; flex-direction:column;  gap:3%;   width: 30%;">
-            <div class="firstchild">
-                <img src="https://img.freepik.com/premium-vector/businessman-avatar-cartoon-character-profile_18591-50581.jpg"
-                    class="userimg" alt="img">
-                <h3 id="name">Full Name</h3>
-                <p id="prof">Full Stack Developer</p>
-                <p id="coll">College Name</p>
-                <p id="cit">City</p>
-            </div>
-            <div class="secondchild">
-                <div>
-                    <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github" id="git">
-                    <a id="github" href="https://github.com/s17200" target="_blank">Github</a>
-                </div>
-                <hr>
-                <div>
-                    <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200x200-min.png" alt="geeksforgeeks" id="geek">
-                    <a id="geeksforgeeks" href="https://github.com/s17200" target="_blank">geeksforgeeks</a>
-                </div>
-                <hr>
-                <div>
-                    <img src="https://i.pinimg.com/originals/c5/d9/fc/c5d9fc1e18bcf039f464c2ab6cfb3eb6.jpg" alt="CodeChef" id="code">
-                    <a id="codef" href="https://github.com/s17200" target="_blank">CodeChef</a>
-
-                </div>
-                <hr>
-                <div>
-                    <img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/160_Hackerrank_logo_logos-512.png"
-                        alt="HackerRank" id="hack">
-                        <a id="HackerRank" href="https://github.com/s17200" target="_blank">HackerRank</a>
-                </div>
-                <hr>
-                <div>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png" alt="mail" id="mail">
-                    <p id="Gmail">Gmail</p>
-                </div>
-                <hr>
-                <div>
-                    <p style="font-weight: bold;">Quiz Rank</p>
-                    <p id="rank">1</p>
-                </div>
-                <hr>
-
-            </div>
+      <div style="display: flex; flex-direction: column; gap: 3%; width: 30%">
+        <div class="firstchild">
+          <img
+            src="https://img.freepik.com/premium-vector/businessman-avatar-cartoon-character-profile_18591-50581.jpg"
+            class="userimg"
+            alt="img" />
+          <h3 id="name">Full Name</h3>
+          <p id="prof">Full Stack Developer</p>
+          <p id="coll">College Name</p>
+          <p id="cit">City</p>
         </div>
-
-        <div class="thirdchild">
-            <div>
-            <form action="">
-                <label for="">Full Name</label><br>
-                <input type="text"  id="na"  placeholder="Enter Your Full Name"><br>
-                <label for="">Email</label><br>
-                <input type="text"   id="email" placeholder="Enter Your Email"><br>
-                <label for="">Mobile</label><br>
-                <input type="text"  id="mobile" placeholder="Enter Your Mobile No"><br>
-                <label for="">College</label><br>
-                <input type="text"  id="college" placeholder="Enter your College Name"><br>
-                <label for="">City</label><br>
-                <input type="text"  id="city" placeholder="Enter Your City"><br>
-                <label for="">Github</label><br>
-                <input type="text"  id="gi" placeholder="Enter Your Github profile Link"><br>
-                <label for="">Geeks for Geeks</label><br>
-                <input type="text"  id="gfg" placeholder="Enter Your Geeks for Geeks profile Link"><br>
-                <label for="">CodeChef</label><br>
-                <input type="text"  id="codechef" placeholder="Enter Your CodeChef profile Link"><br>
-                <label for="">HackerRank</label><br>
-                <input type="text"  id="hacker" placeholder="Enter Your HackerRank profile Link"><br>
-                <input type="submit"  name="" id="btn">
-            </form>
-            </div>
+        <div class="secondchild">
+          <div>
+            <img
+              src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+              alt="github"
+              id="git" />
+            <a id="github" href="https://github.com/s17200" target="_blank"
+              >Github</a
+            >
+          </div>
+          <hr />
+          <div>
+            <img
+              src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200x200-min.png"
+              alt="geeksforgeeks"
+              id="geek" />
+            <a
+              id="geeksforgeeks"
+              href="https://github.com/s17200"
+              target="_blank"
+              >geeksforgeeks</a
+            >
+          </div>
+          <hr />
+          <div>
+            <img
+              src="https://i.pinimg.com/originals/c5/d9/fc/c5d9fc1e18bcf039f464c2ab6cfb3eb6.jpg"
+              alt="CodeChef"
+              id="code" />
+            <a id="codef" href="https://github.com/s17200" target="_blank"
+              >CodeChef</a
+            >
+          </div>
+          <hr />
+          <div>
+            <img
+              src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/160_Hackerrank_logo_logos-512.png"
+              alt="HackerRank"
+              id="hack" />
+            <a id="HackerRank" href="https://github.com/s17200" target="_blank"
+              >HackerRank</a
+            >
+          </div>
+          <hr />
+          <div>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png"
+              alt="mail"
+              id="mail" />
+            <p id="Gmail">Gmail</p>
+          </div>
+          <hr />
+          <div>
+            <p style="font-weight: bold">Quiz Score</p>
+            <p id="score">1</p>
+          </div>
+          <hr />
         </div>
+      </div>
+
+      <div class="thirdchild">
+        <div>
+          <form action="">
+            <label for="">Full Name</label><br />
+            <input
+              type="text"
+              id="na"
+              placeholder="Enter Your Full Name" /><br />
+            <label for="">Email</label><br />
+            <input
+              type="text"
+              id="email"
+              disabled
+              placeholder="Enter Your Email" /><br />
+            <label for="">Mobile</label><br />
+            <input
+              type="text"
+              id="mobile"
+              placeholder="Enter Your Mobile No" /><br />
+            <label for="">College</label><br />
+            <input
+              type="text"
+              id="college"
+              placeholder="Enter your College Name" /><br />
+            <label for="">City</label><br />
+            <input type="text" id="city" placeholder="Enter Your City" /><br />
+            <label for="">Github</label><br />
+            <input
+              type="text"
+              id="gi"
+              placeholder="Enter Your Github profile Link" /><br />
+            <label for="">Geeks for Geeks</label><br />
+            <input
+              type="text"
+              id="gfg"
+              placeholder="Enter Your Geeks for Geeks profile Link" /><br />
+            <label for="">CodeChef</label><br />
+            <input
+              type="text"
+              id="codechef"
+              placeholder="Enter Your CodeChef profile Link" /><br />
+            <label for="">HackerRank</label><br />
+            <input
+              type="text"
+              id="hacker"
+              placeholder="Enter Your HackerRank profile Link" /><br />
+            <input type="submit" name="" id="btn" />
+          </form>
+        </div>
+      </div>
     </div>
+  </body>
 
-</body>
-
-<script src="userProfile.js"></script>
-
+  <script src="userProfile.js"></script>
 </html>

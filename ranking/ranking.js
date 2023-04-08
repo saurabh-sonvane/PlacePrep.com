@@ -18,6 +18,18 @@ window.onload = async function () {
         <td>${element.totalScore}</td>`
         body.appendChild(tr);
     });
+    let joinNowBtn = document.querySelector(".join-us-btn");
+    let user = JSON.parse(localStorage.getItem('user'));
+
+    let loc = "../login/loginSignup.html";
+    console.log('xxx', user);
+    if (user) {
+        loc = "../UserProfile/userProfile.html";
+        joinNowBtn.textContent = 'Profile'
+    }
+    joinNowBtn.addEventListener('click', function () {
+        location.href = loc;
+    })
 }
 async function getScores() {
     let user = JSON.parse(localStorage.getItem('user'));

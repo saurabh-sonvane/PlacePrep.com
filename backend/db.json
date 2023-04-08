@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "name": "Narayan Dutta1",
+      "name": "Narayan Dutta2",
       "email": "narayan69@gmail.com",
       "password": "SaurabhxSanket",
       "hackerRank": "https://www.hackerrank.com/riteshRanjan?hr_r=1",
@@ -103,12 +103,42 @@
       "id": 26
     },
     {
+      "name": "saurabh",
+      "email": "sonvanesaurabh7@gmail.com",
+      "password": "abc",
+      "totalScore": 0,
+      "quizScores": {},
+      "id": 27,
+      "college": "aa",
+      "mobile": "sd",
+      "city": "aaaaaa",
+      "github": "https://course.masaischool.com/dashboard",
+      "hackerRank": "aaaaaaaaaa",
+      "codeChef": "aaaaaa",
+      "gfg": "https://course.masaischool.com/dashboard"
+    },
+    {
       "name": "soumya",
       "email": "soumyaswaroopsootar@gmail.com",
       "password": "1234",
       "totalScore": 0,
       "quizScores": {},
       "id": 27
+    },
+    {
+      "name": "anurag",
+      "email": "jedenav968@duiter.com",
+      "password": "123",
+      "totalScore": 0,
+      "quizScores": {},
+      "id": 28,
+      "college": "123",
+      "mobile": "123",
+      "city": "1231",
+      "github": "12312312",
+      "hackerRank": "23232",
+      "codeChef": "32232",
+      "gfg": "1232323"
     }
   ],
   "mcq": [

@@ -144,6 +144,7 @@ window.onload = function () {
     let user = JSON.parse(localStorage.getItem('user'));
 
     let loc = "../login/loginSignup.html";
+    console.log('xxx', user);
     if (user) {
         loc = "../UserProfile/userProfile.html";
         joinNowBtn.textContent = 'Profile'
