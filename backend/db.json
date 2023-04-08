@@ -101,6 +101,14 @@
       "totalScore": 0,
       "quizScores": {},
       "id": 26
+    },
+    {
+      "name": "soumya",
+      "email": "soumyaswaroopsootar@gmail.com",
+      "password": "1234",
+      "totalScore": 0,
+      "quizScores": {},
+      "id": 27
     }
   ],
   "mcq": [

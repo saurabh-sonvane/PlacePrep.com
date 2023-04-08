@@ -145,7 +145,7 @@ window.onload = function () {
 
     let loc = "../login/loginSignup.html";
     if (user) {
-        loc = "../profile/profile.html";
+        loc = "../UserProfile/userProfile.html";
         joinNowBtn.textContent = 'Profile'
     }
     joinNowBtn.addEventListener('click', function () {
