@@ -6,9 +6,28 @@ const loginSubmitBtn = document.getElementById('login-btn');
 const signupSubmitBtn = document.getElementById('signup-btn');
 const optBtn = document.getElementById('otp-continue');
 const optCloseBtn = document.getElementById('otp-close-btn');
+const forgotPasswordBtn = document.getElementById('forgotPass');
+
 window.onload = () => {
     emailjs.init("a0ZPOjoa8Y8snS_y8");
 }
+forgotPasswordBtn.addEventListener('click', async () => {
+    let email = document.getElementById('login-email').value;
+    let user = await getUserWithEmail({ email: email });
+    console.log(user);
+    if (user) {
+        emailjs.send("service_co7vkub", "template_z7vnowc", { from_name: 'PlacePrep', to_name: user.name, to_email: email, the_pass: user.password, })
+            .then(function (response) {
+                console.log('SUCCESS!', response.status, response.text);
+                alert('Your Password has been sent to your registered email')
+            }, function (error) {
+                alert('An error has occurred while sending your password')
+                console.log('FAILED...', error);
+            });
+    } else {
+        alert('Email not found! Please try again')
+    }
+})
 loginBtn.addEventListener('click', (e) => {
     let parent = e.target.parentNode.parentNode;
     Array.from(e.target.parentNode.parentNode.classList).find((element) => {
@@ -102,6 +121,23 @@ async function getUser({ email, password }) {
         if (json.length > 0) {
             localStorage.setItem("user", JSON.stringify(json[0]));
             location.href = '../HomePage/index.html'
+        }
+
+    } catch (error) {
+        console.log("error", error);
+    }
+}
+async function getUserWithEmail({ email }) {
+    try {
+        const res = await fetch(`https://placeprepbackend.onrender.com/users?email=${email}`, {
+            headers: {
+                "Content-Type": "application/json",
+            },
+        });
+        let json = await res.json();
+        console.log(json, 'sss');
+        if (json.length > 0) {
+            return json[0];
         }
 
     } catch (error) {

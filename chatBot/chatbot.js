@@ -88,7 +88,7 @@ var checkInput = function (input) {
 
         isReaction = true;
         hasCorrectInput = true;
-        botResponse(textVal);
+        botResponse(textVal + 'aaa');
       }
     }
     if (input == "no" && previousInput == textVal) {
@@ -144,7 +144,7 @@ var checkInput = function (input) {
     if (input == textVal || input.indexOf(textVal) >= 0 && isReaction == false) {
       console.log("succes");
       hasCorrectInput = true;
-      botResponse(textVal);
+      botResponse(textVal + "bbb");
     }
   }
 
@@ -157,7 +157,7 @@ var checkInput = function (input) {
       //  console.log(quest)
       //  console.log("input")
       if (input == res[i].question.toLowerCase()) {
-        if (res[i].answerA) {
+        if (res[i].answerA == "true") {
           isReaction = true;
           hasCorrectInput = true;
           botResponse(res[i].optionA);
@@ -169,7 +169,7 @@ var checkInput = function (input) {
           // chatList.appendChild(userBubble) 
           textInput.value = "";
           hasCorrectInput = true;
-        } else if (res[i].answerB) {
+        } else if (res[i].answerB == "true") {
           isReaction = true;
           hasCorrectInput = true;
           botResponse(res[i].optionB);
@@ -181,7 +181,7 @@ var checkInput = function (input) {
           // chatList.appendChild(userBubble) 
           textInput.value = "";
           hasCorrectInput = true;
-        } else if (res[i].answerC) {
+        } else if (res[i].answerC == "true") {
           isReaction = true;
           hasCorrectInput = true;
           botResponse(res[i].optionC);
@@ -193,7 +193,7 @@ var checkInput = function (input) {
           // chatList.appendChild(userBubble) 
           textInput.value = "";
           hasCorrectInput = true;
-        } else if (res[i].answerD) {
+        } else if (res[i].answerD == "true") {
           isReaction = true;
           hasCorrectInput = true;
           botResponse(res[i].optionD);
