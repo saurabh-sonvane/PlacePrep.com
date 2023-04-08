@@ -1,3 +1,5 @@
+
+
 document.querySelector("form").addEventListener("submit", fun);
 var nameField = document.getElementById("na");
 var mail = document.getElementById("email");
@@ -9,9 +11,21 @@ var geeks = document.getElementById("gfg");
 var chef = document.getElementById("codechef");
 var hacker = document.getElementById("hacker");
 var score = document.getElementById("score");
+
+document.getElementById("mcq").addEventListener("click",()=>{
+    window.open("../data/index.html")
+})
+
 window.onload = function () {
     loadUser();
+    console.log(mail.value)
+    if(mail.value=="sonvanesaurabh77@gmail.com"){
+        
+            document.getElementById("mcq").style.display="block";
+    }
 };
+
+
 
 function loadUser() {
     let user = JSON.parse(localStorage.getItem('user'))
