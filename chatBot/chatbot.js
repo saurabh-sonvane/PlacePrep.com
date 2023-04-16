@@ -88,7 +88,7 @@ var checkInput = function (input) {
 
         isReaction = true;
         hasCorrectInput = true;
-        botResponse(textVal + 'aaa');
+        botResponse(textVal);
       }
     }
     if (input == "no" && previousInput == textVal) {
@@ -144,7 +144,7 @@ var checkInput = function (input) {
     if (input == textVal || input.indexOf(textVal) >= 0 && isReaction == false) {
       console.log("succes");
       hasCorrectInput = true;
-      botResponse(textVal + "bbb");
+      botResponse(textVal);
     }
   }
 
