@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./quiz.css" />
     <title>Quiz</title>
+    <style>
+      #cameraVideo {
+          width: 200px;
+          position: absolute;
+          bottom: 20px;;
+          right: 10px;
+          border-radius: 10px;
+      }
+  </style>
   </head>
   <body>
     <div class="container">
@@ -16,7 +25,7 @@
       <div class="main_div_container">
         <div id="que_div" class="question_container"> </div>
         <div class="store_result_container">
-          <div id="score">Score</div>
+          <div id="score">Score </div>
           <div id="your_answer" class="answer_store">
             <div class="your_choice">
               <div> Your Answer </div>
@@ -24,9 +33,76 @@
             </div>
           </div>
           <div id="result" class="result_show"> </div>
+          
         </div>
+        
+      </div>
+      <button id="startButton" style="display: none;">Start Recording</button>
+      <button id="stopButton" disabled style="display: none;">Stop Recording</button>
+      <div>
+          <video id="cameraVideo" autoplay></video>
+          <video id="screenVideo" style="display: none;"></video>
       </div>
     </div>
     <script src="./quiz.js"></script>
   </body>
 </html>
+<!-- <script>
+  let cameraStream = null;
+  let screenStream = null;
+  let mediaRecorder = null;
+  let recordedChunks = [];
+
+  const startButton = document.getElementById('startButton');
+  const stopButton = document.getElementById('stopButton');
+  const cameraVideo = document.getElementById('cameraVideo');
+  const screenVideo = document.getElementById('screenVideo');
+
+  startButton.addEventListener('click', async () => {
+      try {
+          // get camera stream
+          cameraStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+          // get screen stream
+          screenStream = await navigator.mediaDevices.getDisplayMedia({ video: true, audio: true });
+
+          // display camera stream in video element
+          cameraVideo.srcObject = cameraStream;
+
+          // create media recorder for screen stream
+          mediaRecorder = new MediaRecorder(screenStream, { mimeType: 'video/webm; codecs=vp9' });
+
+          mediaRecorder.ondataavailable = (event) => {
+              recordedChunks.push(event.data);
+          };
+
+          mediaRecorder.onstop = () => {
+              const blob = new Blob(recordedChunks, { type: 'video/webm' });
+              const url = URL.createObjectURL(blob);
+              const a = document.createElement('a');
+              a.href = url;
+              a.download = 'recording.webm';
+              document.body.appendChild(a);
+              a.click();
+              recordedChunks = [];
+              stopButton.disabled = true;
+              startButton.disabled = false;
+              cameraVideo.style.display = 'block';
+              screenVideo.style.display = 'none';
+          };
+
+          stopButton.disabled = false;
+          startButton.disabled = true;
+          mediaRecorder.start();
+      } catch (err) {
+          console.error(err);
+      }
+  });
+
+  stopButton.addEventListener('click', () => {
+      mediaRecorder.stop();
+      cameraStream.getTracks().forEach(track => track.stop());
+      screenStream.getTracks().forEach(track => track.stop());
+      cameraStream = null;
+      screenStream = null;
+  });
+</script> -->

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<head>
+    <title>Record Screen and Camera</title>
+    <style>
+        button {
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        button:disabled {
+            background-color: grey;
+            cursor: default;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="startButton">Start Recording</button>
+    <button id="stopButton" disabled>Stop Recording</button>
+    <div id="videoContainer"></div>
+
+    <script>
+        let mediaStream = null;
+let mediaRecorder = null;
+let recordedChunks = [];
+
+const startButton = document.getElementById('startButton');
+const stopButton = document.getElementById('stopButton');
+const videoContainer = document.getElementById('videoContainer');
+
+startButton.addEventListener('click', async () => {
+  try {
+    mediaStream = await navigator.mediaDevices.getDisplayMedia({ audio: true, video: true });
+    videoContainer.srcObject = mediaStream;
+    mediaRecorder = new MediaRecorder(mediaStream, { mimeType: 'video/webm; codecs=vp9' });
+    mediaRecorder.ondataavailable = (event) => {
+      recordedChunks.push(event.data);
+    };
+    mediaRecorder.onstop = () => {
+      const blob = new Blob(recordedChunks, { type: 'video/webm' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'recording.webm';
+      document.body.appendChild(a);
+      a.click();
+      recordedChunks = [];
+      stopButton.disabled = true;
+      startButton.disabled = false;
+      videoContainer.srcObject = null;
+    };
+    stopButton.disabled = false;
+    startButton.disabled = true;
+    mediaRecorder.start();
+  } catch (err) {
+    console.error(err);
+  }
+});
+
+stopButton.addEventListener('click', () => {
+  mediaRecorder.stop();
+  mediaStream.getTracks().forEach(track => track.stop());
+  mediaStream = null;
+});
+
+    </script>
+</body>
+
+</html>
