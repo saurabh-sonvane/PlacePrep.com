@@ -5,13 +5,69 @@ const scoreDiv = document.getElementById('score');
 const userAnswer = document.getElementsByTagName('input');
 const btn = document.getElementsByClassName('btn');
 const backBtn = document.getElementById('back-btn');
-window.onload = () => {
+
+
+
+//camera and screen recording
+let cameraStream = null;
+  let screenStream = null;
+  let mediaRecorder = null;
+  let recordedChunks = [];
+
+  const startButton = document.getElementById('startButton');
+  const stopButton = document.getElementById('stopButton');
+  const cameraVideo = document.getElementById('cameraVideo');
+  const screenVideo = document.getElementById('screenVideo');
+
+
+window.onload = async () => {
     const type = localStorage.getItem('quiz-type');
     if (type == 'test') {
         document.getElementById('your_answer').style.display = 'none';
         document.getElementById('result').style.display = 'none';
+
+
         // document.getElementsByClassName('question_container')[0].style.width = '70%';
         // document.getElementsByClassName('store_result_container')[0].style.width = '25%';
+
+        // Recording Start 
+        try {
+            // get camera stream
+            cameraStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+            // get screen stream
+            screenStream = await navigator.mediaDevices.getDisplayMedia({ video: true, audio: true });
+  
+            // display camera stream in video element
+            cameraVideo.srcObject = cameraStream;
+  
+            // create media recorder for screen stream
+            mediaRecorder = new MediaRecorder(screenStream, { mimeType: 'video/webm; codecs=vp9' });
+  
+            mediaRecorder.ondataavailable = (event) => {
+                recordedChunks.push(event.data);
+            };
+  
+            mediaRecorder.onstop = () => {
+                const blob = new Blob(recordedChunks, { type: 'video/webm' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'recording.webm';
+                document.body.appendChild(a);
+                a.click();
+                recordedChunks = [];
+                stopButton.disabled = true;
+                startButton.disabled = false;
+                cameraVideo.style.display = 'block';
+                screenVideo.style.display = 'none';
+            };
+  
+            stopButton.disabled = false;
+            startButton.disabled = true;
+            mediaRecorder.start();
+        } catch (err) {
+            console.error(err);
+        }
     }
     backBtn.addEventListener('click', () => {
         history.back()
@@ -88,8 +144,17 @@ function renderQuestion() {
         questionContainer.innerHTML = question;
     }
     if (counter === quizzes.length) {
+        btn[1].innerHTML = "Result";
         btn[1].style.display = "block";
         btn[2].style.display = "none";
+
+        //recording stop
+        mediaRecorder.stop();
+        cameraStream.getTracks().forEach(track => track.stop());
+        screenStream.getTracks().forEach(track => track.stop());
+        cameraStream = null;
+        screenStream = null;
+        history.back()
     }
 }
 
