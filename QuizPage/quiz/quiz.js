@@ -154,7 +154,9 @@ function renderQuestion() {
         screenStream.getTracks().forEach(track => track.stop());
         cameraStream = null;
         screenStream = null;
-        history.back()
+        setTimeout(()=>{
+            history.back()
+        },100000)
     }
 }
 
