@@ -8,10 +8,14 @@ document.getElementById("logout").addEventListener("click",()=>{
     window.location.href="../index.html"
 })
 
+document.getElementById("sdetail").addEventListener("click",()=>{
+    location.href="../StudentDetails/student.html"
+})
+
 document.querySelector("form").addEventListener("submit", fun);
 var nameField = document.getElementById("na");
 var mail = document.getElementById("email");
-var Number = document.getElementById("mobile");
+var number = document.getElementById("mobile");
 var college = document.getElementById("college");
 var city = document.getElementById("city");
 var github = document.getElementById("gi");
@@ -29,6 +33,7 @@ window.onload = function () {
     console.log(mail.value)
     if(mail.value=="sonvanesaurabh77@gmail.com" && data.password=="admin"){
             document.getElementById("mcq").style.display="block";
+            document.getElementById("sdetail").style.display="block";
     }
     let joinNowBtn = document.querySelector(".join-us-btn");
     let user = JSON.parse(localStorage.getItem('user'));
@@ -54,7 +59,7 @@ function loadUser() {
     let user = JSON.parse(localStorage.getItem('user'))
     nameField.value = user?.name || "";
     mail.value = user?.email || "";
-    Number.value = user?.mobile || "";
+    number.value = user?.mobile || "";
     score.textContent = user?.totalScore;
     college.value = user?.college || "";
     city.value = user?.city || "";
@@ -78,7 +83,7 @@ function fun(event) {
     event.preventDefault()
     nameFieldValue = nameField.value;
     mailValue = mail.value;
-    NumberValue = Number.value;
+    NumberValue = number.value;
     collegeValue = college.value;
     cityValue = city.value;
     githubValue = github.value;
