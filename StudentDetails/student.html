@@ -28,14 +28,16 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="../HomePage/css/style.css" rel="stylesheet" />
-
-    <link rel="stylesheet" href="userProfile.css">
     <style>
       .table .thead-dark th {
         color: #fff;
         background-color: #343a40;
         border-color: #454d55;
       }
+      /* #rankTable{
+        margin-left: -100px;
+      } */
+
     </style>
   </head>
   <body>
@@ -105,7 +107,7 @@
             <a href="../chatBot/chatbot.html" class="nav-item nav-link"
               >Chat-Bot</a
             >
-            <a href="../ranking/ranking.html" class="nav-item nav-link"
+            <a href="../ranking/ranking.html" class="nav-item nav-link "
               >Rankings</a
             >
             <div class="nav-item dropdown">
@@ -140,148 +142,46 @@
       class="jumbotron jumbotron-fluid page-header position-relative overlay-bottom"
       style="margin-bottom: 30px">
       <div class="container text-center py-5">
-        <h1 class="text-white display-1">PROFILE</h1>
+        <h1 class="text-white display-1">Student Details</h1>
         <div class="d-inline-flex text-white mb-5">
           <p class="m-0 text-uppercase"
             ><a class="text-white" href="">Home</a></p
           >
           <i class="fa fa-angle-double-right pt-1 px-3"></i>
-          <p class="m-0 text-uppercase">PROFILE</p>
+          <p class="m-0 text-uppercase">Student Details</p>
         </div>
       </div>
     </div>
     <!-- Header End -->
 
     <!-- Subjects Start -->
-    <div class="parent">
-      <div style="display: flex; flex-direction: column; gap: 3%; width: 30%">
-        <div class="firstchild">
-          <img
-            src="https://img.freepik.com/premium-vector/businessman-avatar-cartoon-character-profile_18591-50581.jpg"
-            class="userimg"
-            alt="img" />
-          <h3 id="name">Full Name</h3>
-          <p id="prof">Full Stack Developer</p>
-          <p id="coll">College Name</p>
-          <p id="cit">City</p>
-          <div style="display: flex; justify-content: space-evenly;">
-            <button id="mcq">Add MCQs</button>
-            <button id="logout">Logout</button>
-          </div>
-          <div style="display: flex; justify-content: center; margin-top: 15px;">
-            <button id="sdetail">Student Details</button>
-          </div>
-        </div>
-        <div class="secondchild">
-          <div>
-            <img
-              src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-              alt="github"
-              id="git" />
-            <a id="github" href="https://github.com/s17200" target="_blank"
-              >Github</a
-            >
-          </div>
-          <hr />
-          <div>
-            <img
-              src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gfg_200x200-min.png"
-              alt="geeksforgeeks"
-              id="geek" />
-            <a
-              id="geeksforgeeks"
-              href="https://github.com/s17200"
-              target="_blank"
-              >geeksforgeeks</a
-            >
-          </div>
-          <hr />
-          <div>
-            <img
-              src="https://i.pinimg.com/originals/c5/d9/fc/c5d9fc1e18bcf039f464c2ab6cfb3eb6.jpg"
-              alt="CodeChef"
-              id="code" />
-            <a id="codef" href="https://github.com/s17200" target="_blank"
-              >CodeChef</a
-            >
-          </div>
-          <hr />
-          <div>
-            <img
-              src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/160_Hackerrank_logo_logos-512.png"
-              alt="HackerRank"
-              id="hack" />
-            <a id="HackerRank" href="https://github.com/s17200" target="_blank"
-              >HackerRank</a
-            >
-          </div>
-          <hr />
-          <div>
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png"
-              alt="mail"
-              id="mail" />
-            <p id="Gmail">Gmail</p>
-          </div>
-          <hr />
-          <div>
-            <p style="font-weight: bold">Quiz Score</p>
-            <p id="score">1</p>
-          </div>
-          <hr />
-        </div>
-      </div>
-
-      <div class="thirdchild">
-        <div>
-          <form action="">
-            <label for="">Full Name</label><br />
-            <input
-              type="text"
-              id="na"
-              placeholder="Enter Your Full Name" /><br />
-            <label for="">Email</label><br />
-            <input
-              type="text"
-              id="email"
-              disabled
-              placeholder="Enter Your Email" /><br />
-            <label for="">Mobile</label><br />
-            <input
-              type="text"
-              id="mobile"
-              placeholder="Enter Your Mobile No" /><br />
-            <label for="">College</label><br />
-            <input
-              type="text"
-              id="college"
-              placeholder="Enter your College Name" /><br />
-            <label for="">City</label><br />
-            <input type="text" id="city" placeholder="Enter Your City" /><br />
-            <label for="">Github</label><br />
-            <input
-              type="text"
-              id="gi"
-              placeholder="Enter Your Github profile Link" /><br />
-            <label for="">Geeks for Geeks</label><br />
-            <input
-              type="text"
-              id="gfg"
-              placeholder="Enter Your Geeks for Geeks profile Link" /><br />
-            <label for="">CodeChef</label><br />
-            <input
-              type="text"
-              id="codechef"
-              placeholder="Enter Your CodeChef profile Link" /><br />
-            <label for="">HackerRank</label><br />
-            <input
-              type="text"
-              id="hacker"
-              placeholder="Enter Your HackerRank profile Link" /><br />
-            <input type="submit" name="" id="btn" />
-          </form>
-        </div>
-      </div>
+    <div class="container-fluid py-5">
+      <!-- <div class="container py-2"> -->
+        <!-- <div class="row mx-0 justify-content-center"> </div> -->
+        <!-- <div class="row subject-grid"> -->
+          <!-- <button id="btnExport" type="button" class="btn btn-success"
+            >Export to Excel</button
+          > -->
+          <table class="table table-striped" id="rankTable">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Overall Score</th>
+                <th scope="col">Github</th>
+                <th scope="col">geeksforgeeks</th>
+                <th scope="col">CodeChef</th>
+                <th scope="col">HackerRank</th>
+                <th scope="col">Gmail</th>
+                <th scope="col">Mobile</th>
+                <th scope="col">City</th>
+              </tr>
+            </thead>
+            <tbody> </tbody>
+          </table>
+        <!-- </div> -->
+      <!-- </div> -->
     </div>
     <!-- Subjects End -->
 
@@ -433,7 +333,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
     <!-- Javascript -->
     <script src="../HomePage/js/main.js"></script>
-    <script src="userProfile.js"></script>
+    <script src="./student.js"></script>
   </body>
 </html>
-
