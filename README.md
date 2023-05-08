@@ -38,6 +38,16 @@ Visit the Deployed version using this <a href="https://place-prep-com-sigma.verc
 
 ## Team Members and Contributors
 
+### Soumya Swaroop Sootar
+- Github : soumyasootar
+- Visit Github : https://github.com/soumyasootar
+- Check out Linkedin : https://www.linkedin.com/in/soumya-swaroop-sootar-a4b708118/
+
+### Himanshu Sharma
+- Github : hero007noob
+- Visit Github : https://github.com/hero007noob
+- Check out Linkedin : https://www.linkedin.com/in/himanshu-s-747a0b133/
+
 
 ### Saurabh Sonvane
 - Github : s17200
