@@ -7,7 +7,7 @@ Placeprep.com is a Educational website where anybody can learn about coding rela
 
 
 ## **Tech stacks used :**
-To create this clone following Tech stack is used by contributors.  
+To create this website following Tech stack is used by contributors.  
 <br>
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
 <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/>
